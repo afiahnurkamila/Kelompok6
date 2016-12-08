@@ -36,10 +36,10 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Monotype Corsiva", 27.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(184, 16)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(196, 45)
+        Me.Label1.Size = New System.Drawing.Size(204, 45)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "DATABASE"
         '
@@ -57,7 +57,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(135, 278)
+        Me.Label3.Location = New System.Drawing.Point(135, 273)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(91, 16)
         Me.Label3.TabIndex = 3
@@ -67,7 +67,7 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(134, 301)
+        Me.Label4.Location = New System.Drawing.Point(134, 297)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(93, 18)
         Me.Label4.TabIndex = 4
@@ -75,14 +75,14 @@ Partial Class Form1
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(233, 275)
+        Me.TextBox1.Location = New System.Drawing.Point(233, 270)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(175, 21)
         Me.TextBox1.TabIndex = 5
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(233, 302)
+        Me.TextBox2.Location = New System.Drawing.Point(233, 297)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(175, 21)
         Me.TextBox2.TabIndex = 6
@@ -90,7 +90,7 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(171, 95)
+        Me.PictureBox1.Location = New System.Drawing.Point(172, 94)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(216, 167)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -101,7 +101,8 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(536, 346)
+        Me.BackColor = System.Drawing.Color.MediumAquamarine
+        Me.ClientSize = New System.Drawing.Size(560, 346)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
