@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Project_Kelompok6.Form1
+            Me.MainForm = Global.Project_Kelompok6.FormLogin
         End Sub
     End Class
 End Namespace
