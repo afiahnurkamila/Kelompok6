@@ -133,6 +133,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>project_kel6DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="project_kel6DataSet.vb">
+      <DependentUpon>project_kel6DataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="FormDataGuru.resx">
