@@ -185,7 +185,7 @@ Partial Class FormKelas
         Me.KelasDataGridView.DataSource = Me.KelasBindingSource
         Me.KelasDataGridView.Location = New System.Drawing.Point(267, 108)
         Me.KelasDataGridView.Name = "KelasDataGridView"
-        Me.KelasDataGridView.Size = New System.Drawing.Size(244, 220)
+        Me.KelasDataGridView.Size = New System.Drawing.Size(244, 126)
         Me.KelasDataGridView.TabIndex = 43
         '
         'DataGridViewTextBoxColumn1
@@ -220,7 +220,7 @@ Partial Class FormKelas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(702, 506)
+        Me.ClientSize = New System.Drawing.Size(523, 255)
         Me.Controls.Add(Id_kelasLabel)
         Me.Controls.Add(Me.Id_kelasTextBox)
         Me.Controls.Add(KelasLabel)

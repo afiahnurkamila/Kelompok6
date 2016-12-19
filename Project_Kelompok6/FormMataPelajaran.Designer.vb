@@ -56,6 +56,33 @@ Partial Class FormMataPelajaran
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'Id_mata_pelajaranLabel
+        '
+        Id_mata_pelajaranLabel.AutoSize = True
+        Id_mata_pelajaranLabel.Location = New System.Drawing.Point(8, 103)
+        Id_mata_pelajaranLabel.Name = "Id_mata_pelajaranLabel"
+        Id_mata_pelajaranLabel.Size = New System.Drawing.Size(90, 13)
+        Id_mata_pelajaranLabel.TabIndex = 1
+        Id_mata_pelajaranLabel.Text = "id mata pelajaran:"
+        '
+        'Nama_mata_pelajaranLabel
+        '
+        Nama_mata_pelajaranLabel.AutoSize = True
+        Nama_mata_pelajaranLabel.Location = New System.Drawing.Point(8, 129)
+        Nama_mata_pelajaranLabel.Name = "Nama_mata_pelajaranLabel"
+        Nama_mata_pelajaranLabel.Size = New System.Drawing.Size(108, 13)
+        Nama_mata_pelajaranLabel.TabIndex = 3
+        Nama_mata_pelajaranLabel.Text = "nama mata pelajaran:"
+        '
+        'KkmLabel
+        '
+        KkmLabel.AutoSize = True
+        KkmLabel.Location = New System.Drawing.Point(8, 155)
+        KkmLabel.Name = "KkmLabel"
+        KkmLabel.Size = New System.Drawing.Size(30, 13)
+        KkmLabel.TabIndex = 5
+        KkmLabel.Text = "kkm:"
+        '
         'Project_kel6DataSet
         '
         Me.Project_kel6DataSet.DataSetName = "project_kel6DataSet"
@@ -87,7 +114,7 @@ Partial Class FormMataPelajaran
         Me.Mata_pelajaranDataGridView.DataSource = Me.Mata_pelajaranBindingSource
         Me.Mata_pelajaranDataGridView.Location = New System.Drawing.Point(271, 100)
         Me.Mata_pelajaranDataGridView.Name = "Mata_pelajaranDataGridView"
-        Me.Mata_pelajaranDataGridView.Size = New System.Drawing.Size(343, 220)
+        Me.Mata_pelajaranDataGridView.Size = New System.Drawing.Size(343, 142)
         Me.Mata_pelajaranDataGridView.TabIndex = 0
         '
         'DataGridViewTextBoxColumn1
@@ -108,15 +135,6 @@ Partial Class FormMataPelajaran
         Me.DataGridViewTextBoxColumn3.HeaderText = "kkm"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
-        'Id_mata_pelajaranLabel
-        '
-        Id_mata_pelajaranLabel.AutoSize = True
-        Id_mata_pelajaranLabel.Location = New System.Drawing.Point(8, 103)
-        Id_mata_pelajaranLabel.Name = "Id_mata_pelajaranLabel"
-        Id_mata_pelajaranLabel.Size = New System.Drawing.Size(90, 13)
-        Id_mata_pelajaranLabel.TabIndex = 1
-        Id_mata_pelajaranLabel.Text = "id mata pelajaran:"
-        '
         'Id_mata_pelajaranTextBox
         '
         Me.Id_mata_pelajaranTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Mata_pelajaranBindingSource, "id_mata_pelajaran", True))
@@ -125,15 +143,6 @@ Partial Class FormMataPelajaran
         Me.Id_mata_pelajaranTextBox.Size = New System.Drawing.Size(143, 20)
         Me.Id_mata_pelajaranTextBox.TabIndex = 2
         '
-        'Nama_mata_pelajaranLabel
-        '
-        Nama_mata_pelajaranLabel.AutoSize = True
-        Nama_mata_pelajaranLabel.Location = New System.Drawing.Point(8, 129)
-        Nama_mata_pelajaranLabel.Name = "Nama_mata_pelajaranLabel"
-        Nama_mata_pelajaranLabel.Size = New System.Drawing.Size(108, 13)
-        Nama_mata_pelajaranLabel.TabIndex = 3
-        Nama_mata_pelajaranLabel.Text = "nama mata pelajaran:"
-        '
         'Nama_mata_pelajaranTextBox
         '
         Me.Nama_mata_pelajaranTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Mata_pelajaranBindingSource, "nama_mata_pelajaran", True))
@@ -141,15 +150,6 @@ Partial Class FormMataPelajaran
         Me.Nama_mata_pelajaranTextBox.Name = "Nama_mata_pelajaranTextBox"
         Me.Nama_mata_pelajaranTextBox.Size = New System.Drawing.Size(143, 20)
         Me.Nama_mata_pelajaranTextBox.TabIndex = 4
-        '
-        'KkmLabel
-        '
-        KkmLabel.AutoSize = True
-        KkmLabel.Location = New System.Drawing.Point(8, 155)
-        KkmLabel.Name = "KkmLabel"
-        KkmLabel.Size = New System.Drawing.Size(30, 13)
-        KkmLabel.TabIndex = 5
-        KkmLabel.Text = "kkm:"
         '
         'KkmTextBox
         '
@@ -247,7 +247,7 @@ Partial Class FormMataPelajaran
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(914, 402)
+        Me.ClientSize = New System.Drawing.Size(623, 253)
         Me.Controls.Add(Me.ButtonEdit)
         Me.Controls.Add(Me.ButtonKeluar)
         Me.Controls.Add(Me.ButtonRefresh)

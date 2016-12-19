@@ -436,7 +436,7 @@ Partial Class FormDataGuru
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1367, 514)
+        Me.ClientSize = New System.Drawing.Size(1349, 430)
         Me.Controls.Add(Me.ButtonEdit)
         Me.Controls.Add(Me.ButtonKeluar)
         Me.Controls.Add(Me.ButtonRefresh)
