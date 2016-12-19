@@ -47,44 +47,44 @@ Partial Class FormMenuUtama
         '
         Me.FILEToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MATAPELAJARANToolStripMenuItem, Me.KelasToolStripMenuItem})
         Me.FILEToolStripMenuItem.Name = "FILEToolStripMenuItem"
-        Me.FILEToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FILEToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
         Me.FILEToolStripMenuItem.Text = "File"
         '
         'MATAPELAJARANToolStripMenuItem
         '
         Me.MATAPELAJARANToolStripMenuItem.Name = "MATAPELAJARANToolStripMenuItem"
-        Me.MATAPELAJARANToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MATAPELAJARANToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.MATAPELAJARANToolStripMenuItem.Text = "Mata Pelajaran"
         '
         'KelasToolStripMenuItem
         '
         Me.KelasToolStripMenuItem.Name = "KelasToolStripMenuItem"
-        Me.KelasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.KelasToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.KelasToolStripMenuItem.Text = "Kelas"
         '
         'DATAToolStripMenuItem
         '
         Me.DATAToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DATASISWAToolStripMenuItem, Me.DATAGURUToolStripMenuItem})
         Me.DATAToolStripMenuItem.Name = "DATAToolStripMenuItem"
-        Me.DATAToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
+        Me.DATAToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
         Me.DATAToolStripMenuItem.Text = "Data"
         '
         'DATASISWAToolStripMenuItem
         '
         Me.DATASISWAToolStripMenuItem.Name = "DATASISWAToolStripMenuItem"
-        Me.DATASISWAToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DATASISWAToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.DATASISWAToolStripMenuItem.Text = "Data Siswa"
         '
         'DATAGURUToolStripMenuItem
         '
         Me.DATAGURUToolStripMenuItem.Name = "DATAGURUToolStripMenuItem"
-        Me.DATAGURUToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DATAGURUToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.DATAGURUToolStripMenuItem.Text = "Data Guru"
         '
         'LOGOUTToolStripMenuItem
         '
         Me.LOGOUTToolStripMenuItem.Name = "LOGOUTToolStripMenuItem"
-        Me.LOGOUTToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.LOGOUTToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
         Me.LOGOUTToolStripMenuItem.Text = "Logout"
         '
         'FormMenuUtama
@@ -96,7 +96,7 @@ Partial Class FormMenuUtama
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "FormMenuUtama"
-        Me.Text = "SI SMP Bunga Nusantara"
+        Me.Text = "Menu SMP Bunga Nusantara"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)

@@ -47,6 +47,7 @@ Partial Class FormMataPelajaran
         Me.ButtonSimpan = New System.Windows.Forms.Button()
         Me.ButtonHapus = New System.Windows.Forms.Button()
         Me.ButtonTambah = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Id_mata_pelajaranLabel = New System.Windows.Forms.Label()
         Nama_mata_pelajaranLabel = New System.Windows.Forms.Label()
         KkmLabel = New System.Windows.Forms.Label()
@@ -54,34 +55,35 @@ Partial Class FormMataPelajaran
         CType(Me.Mata_pelajaranBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Mata_pelajaranDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Id_mata_pelajaranLabel
         '
         Id_mata_pelajaranLabel.AutoSize = True
-        Id_mata_pelajaranLabel.Location = New System.Drawing.Point(8, 103)
+        Id_mata_pelajaranLabel.Location = New System.Drawing.Point(9, 22)
         Id_mata_pelajaranLabel.Name = "Id_mata_pelajaranLabel"
-        Id_mata_pelajaranLabel.Size = New System.Drawing.Size(90, 13)
+        Id_mata_pelajaranLabel.Size = New System.Drawing.Size(98, 13)
         Id_mata_pelajaranLabel.TabIndex = 1
-        Id_mata_pelajaranLabel.Text = "id mata pelajaran:"
+        Id_mata_pelajaranLabel.Text = "ID Mata Pelajaran :"
         '
         'Nama_mata_pelajaranLabel
         '
         Nama_mata_pelajaranLabel.AutoSize = True
-        Nama_mata_pelajaranLabel.Location = New System.Drawing.Point(8, 129)
+        Nama_mata_pelajaranLabel.Location = New System.Drawing.Point(9, 48)
         Nama_mata_pelajaranLabel.Name = "Nama_mata_pelajaranLabel"
-        Nama_mata_pelajaranLabel.Size = New System.Drawing.Size(108, 13)
+        Nama_mata_pelajaranLabel.Size = New System.Drawing.Size(115, 13)
         Nama_mata_pelajaranLabel.TabIndex = 3
-        Nama_mata_pelajaranLabel.Text = "nama mata pelajaran:"
+        Nama_mata_pelajaranLabel.Text = "Nama Mata Pelajaran :"
         '
         'KkmLabel
         '
         KkmLabel.AutoSize = True
-        KkmLabel.Location = New System.Drawing.Point(8, 155)
+        KkmLabel.Location = New System.Drawing.Point(9, 74)
         KkmLabel.Name = "KkmLabel"
-        KkmLabel.Size = New System.Drawing.Size(30, 13)
+        KkmLabel.Size = New System.Drawing.Size(36, 13)
         KkmLabel.TabIndex = 5
-        KkmLabel.Text = "kkm:"
+        KkmLabel.Text = "KKM :"
         '
         'Project_kel6DataSet
         '
@@ -112,9 +114,9 @@ Partial Class FormMataPelajaran
         Me.Mata_pelajaranDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.Mata_pelajaranDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3})
         Me.Mata_pelajaranDataGridView.DataSource = Me.Mata_pelajaranBindingSource
-        Me.Mata_pelajaranDataGridView.Location = New System.Drawing.Point(271, 100)
+        Me.Mata_pelajaranDataGridView.Location = New System.Drawing.Point(287, 107)
         Me.Mata_pelajaranDataGridView.Name = "Mata_pelajaranDataGridView"
-        Me.Mata_pelajaranDataGridView.Size = New System.Drawing.Size(343, 142)
+        Me.Mata_pelajaranDataGridView.Size = New System.Drawing.Size(343, 162)
         Me.Mata_pelajaranDataGridView.TabIndex = 0
         '
         'DataGridViewTextBoxColumn1
@@ -138,7 +140,7 @@ Partial Class FormMataPelajaran
         'Id_mata_pelajaranTextBox
         '
         Me.Id_mata_pelajaranTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Mata_pelajaranBindingSource, "id_mata_pelajaran", True))
-        Me.Id_mata_pelajaranTextBox.Location = New System.Drawing.Point(122, 100)
+        Me.Id_mata_pelajaranTextBox.Location = New System.Drawing.Point(123, 19)
         Me.Id_mata_pelajaranTextBox.Name = "Id_mata_pelajaranTextBox"
         Me.Id_mata_pelajaranTextBox.Size = New System.Drawing.Size(143, 20)
         Me.Id_mata_pelajaranTextBox.TabIndex = 2
@@ -146,7 +148,7 @@ Partial Class FormMataPelajaran
         'Nama_mata_pelajaranTextBox
         '
         Me.Nama_mata_pelajaranTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Mata_pelajaranBindingSource, "nama_mata_pelajaran", True))
-        Me.Nama_mata_pelajaranTextBox.Location = New System.Drawing.Point(122, 126)
+        Me.Nama_mata_pelajaranTextBox.Location = New System.Drawing.Point(123, 45)
         Me.Nama_mata_pelajaranTextBox.Name = "Nama_mata_pelajaranTextBox"
         Me.Nama_mata_pelajaranTextBox.Size = New System.Drawing.Size(143, 20)
         Me.Nama_mata_pelajaranTextBox.TabIndex = 4
@@ -154,7 +156,7 @@ Partial Class FormMataPelajaran
         'KkmTextBox
         '
         Me.KkmTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Mata_pelajaranBindingSource, "kkm", True))
-        Me.KkmTextBox.Location = New System.Drawing.Point(122, 152)
+        Me.KkmTextBox.Location = New System.Drawing.Point(123, 71)
         Me.KkmTextBox.Name = "KkmTextBox"
         Me.KkmTextBox.Size = New System.Drawing.Size(143, 20)
         Me.KkmTextBox.TabIndex = 6
@@ -191,7 +193,7 @@ Partial Class FormMataPelajaran
         '
         'ButtonEdit
         '
-        Me.ButtonEdit.Location = New System.Drawing.Point(93, 219)
+        Me.ButtonEdit.Location = New System.Drawing.Point(94, 138)
         Me.ButtonEdit.Name = "ButtonEdit"
         Me.ButtonEdit.Size = New System.Drawing.Size(75, 23)
         Me.ButtonEdit.TabIndex = 39
@@ -200,7 +202,7 @@ Partial Class FormMataPelajaran
         '
         'ButtonKeluar
         '
-        Me.ButtonKeluar.Location = New System.Drawing.Point(175, 219)
+        Me.ButtonKeluar.Location = New System.Drawing.Point(176, 138)
         Me.ButtonKeluar.Name = "ButtonKeluar"
         Me.ButtonKeluar.Size = New System.Drawing.Size(75, 23)
         Me.ButtonKeluar.TabIndex = 38
@@ -209,7 +211,7 @@ Partial Class FormMataPelajaran
         '
         'ButtonRefresh
         '
-        Me.ButtonRefresh.Location = New System.Drawing.Point(12, 219)
+        Me.ButtonRefresh.Location = New System.Drawing.Point(13, 138)
         Me.ButtonRefresh.Name = "ButtonRefresh"
         Me.ButtonRefresh.Size = New System.Drawing.Size(75, 23)
         Me.ButtonRefresh.TabIndex = 37
@@ -218,7 +220,7 @@ Partial Class FormMataPelajaran
         '
         'ButtonSimpan
         '
-        Me.ButtonSimpan.Location = New System.Drawing.Point(175, 190)
+        Me.ButtonSimpan.Location = New System.Drawing.Point(176, 109)
         Me.ButtonSimpan.Name = "ButtonSimpan"
         Me.ButtonSimpan.Size = New System.Drawing.Size(75, 23)
         Me.ButtonSimpan.TabIndex = 36
@@ -227,7 +229,7 @@ Partial Class FormMataPelajaran
         '
         'ButtonHapus
         '
-        Me.ButtonHapus.Location = New System.Drawing.Point(94, 190)
+        Me.ButtonHapus.Location = New System.Drawing.Point(95, 109)
         Me.ButtonHapus.Name = "ButtonHapus"
         Me.ButtonHapus.Size = New System.Drawing.Size(75, 23)
         Me.ButtonHapus.TabIndex = 35
@@ -236,40 +238,52 @@ Partial Class FormMataPelajaran
         '
         'ButtonTambah
         '
-        Me.ButtonTambah.Location = New System.Drawing.Point(12, 190)
+        Me.ButtonTambah.Location = New System.Drawing.Point(13, 109)
         Me.ButtonTambah.Name = "ButtonTambah"
         Me.ButtonTambah.Size = New System.Drawing.Size(75, 23)
         Me.ButtonTambah.TabIndex = 34
         Me.ButtonTambah.Text = "Tambah"
         Me.ButtonTambah.UseVisualStyleBackColor = True
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.ButtonKeluar)
+        Me.GroupBox1.Controls.Add(Me.ButtonEdit)
+        Me.GroupBox1.Controls.Add(Me.KkmTextBox)
+        Me.GroupBox1.Controls.Add(KkmLabel)
+        Me.GroupBox1.Controls.Add(Me.ButtonRefresh)
+        Me.GroupBox1.Controls.Add(Me.Nama_mata_pelajaranTextBox)
+        Me.GroupBox1.Controls.Add(Me.ButtonSimpan)
+        Me.GroupBox1.Controls.Add(Nama_mata_pelajaranLabel)
+        Me.GroupBox1.Controls.Add(Me.ButtonHapus)
+        Me.GroupBox1.Controls.Add(Me.Id_mata_pelajaranTextBox)
+        Me.GroupBox1.Controls.Add(Me.ButtonTambah)
+        Me.GroupBox1.Controls.Add(Id_mata_pelajaranLabel)
+        Me.GroupBox1.Location = New System.Drawing.Point(3, 97)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(278, 172)
+        Me.GroupBox1.TabIndex = 40
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Isi Data"
+        '
         'FormMataPelajaran
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(623, 253)
-        Me.Controls.Add(Me.ButtonEdit)
-        Me.Controls.Add(Me.ButtonKeluar)
-        Me.Controls.Add(Me.ButtonRefresh)
-        Me.Controls.Add(Me.ButtonSimpan)
-        Me.Controls.Add(Me.ButtonHapus)
-        Me.Controls.Add(Me.ButtonTambah)
+        Me.ClientSize = New System.Drawing.Size(638, 274)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Id_mata_pelajaranLabel)
-        Me.Controls.Add(Me.Id_mata_pelajaranTextBox)
-        Me.Controls.Add(Nama_mata_pelajaranLabel)
-        Me.Controls.Add(Me.Nama_mata_pelajaranTextBox)
-        Me.Controls.Add(KkmLabel)
-        Me.Controls.Add(Me.KkmTextBox)
         Me.Controls.Add(Me.Mata_pelajaranDataGridView)
         Me.Name = "FormMataPelajaran"
-        Me.Text = "FormMataPelajaran"
+        Me.Text = "Data MataPelajaran SMP Bunga Nusantara"
         CType(Me.Project_kel6DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Mata_pelajaranBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Mata_pelajaranDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -294,4 +308,5 @@ Partial Class FormMataPelajaran
     Friend WithEvents ButtonSimpan As System.Windows.Forms.Button
     Friend WithEvents ButtonHapus As System.Windows.Forms.Button
     Friend WithEvents ButtonTambah As System.Windows.Forms.Button
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
 End Class

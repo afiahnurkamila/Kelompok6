@@ -44,35 +44,37 @@ Partial Class FormKelas
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Id_kelasTextBox = New System.Windows.Forms.TextBox()
         Me.KelasTextBox = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Id_kelasLabel = New System.Windows.Forms.Label()
         KelasLabel = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Project_kel6DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KelasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KelasDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Id_kelasLabel
         '
         Id_kelasLabel.AutoSize = True
-        Id_kelasLabel.Location = New System.Drawing.Point(25, 120)
+        Id_kelasLabel.Location = New System.Drawing.Point(8, 21)
         Id_kelasLabel.Name = "Id_kelasLabel"
-        Id_kelasLabel.Size = New System.Drawing.Size(46, 13)
+        Id_kelasLabel.Size = New System.Drawing.Size(53, 13)
         Id_kelasLabel.TabIndex = 43
-        Id_kelasLabel.Text = "id kelas:"
+        Id_kelasLabel.Text = "ID Kelas :"
         '
         'KelasLabel
         '
         KelasLabel.AutoSize = True
-        KelasLabel.Location = New System.Drawing.Point(25, 146)
+        KelasLabel.Location = New System.Drawing.Point(8, 47)
         KelasLabel.Name = "KelasLabel"
-        KelasLabel.Size = New System.Drawing.Size(35, 13)
+        KelasLabel.Size = New System.Drawing.Size(39, 13)
         KelasLabel.TabIndex = 45
-        KelasLabel.Text = "kelas:"
+        KelasLabel.Text = "Kelas :"
         '
         'ButtonEdit
         '
-        Me.ButtonEdit.Location = New System.Drawing.Point(93, 211)
+        Me.ButtonEdit.Location = New System.Drawing.Point(91, 100)
         Me.ButtonEdit.Name = "ButtonEdit"
         Me.ButtonEdit.Size = New System.Drawing.Size(75, 23)
         Me.ButtonEdit.TabIndex = 39
@@ -81,7 +83,7 @@ Partial Class FormKelas
         '
         'ButtonKeluar
         '
-        Me.ButtonKeluar.Location = New System.Drawing.Point(175, 211)
+        Me.ButtonKeluar.Location = New System.Drawing.Point(173, 100)
         Me.ButtonKeluar.Name = "ButtonKeluar"
         Me.ButtonKeluar.Size = New System.Drawing.Size(75, 23)
         Me.ButtonKeluar.TabIndex = 38
@@ -90,7 +92,7 @@ Partial Class FormKelas
         '
         'ButtonRefresh
         '
-        Me.ButtonRefresh.Location = New System.Drawing.Point(12, 211)
+        Me.ButtonRefresh.Location = New System.Drawing.Point(10, 100)
         Me.ButtonRefresh.Name = "ButtonRefresh"
         Me.ButtonRefresh.Size = New System.Drawing.Size(75, 23)
         Me.ButtonRefresh.TabIndex = 37
@@ -99,7 +101,7 @@ Partial Class FormKelas
         '
         'ButtonSimpan
         '
-        Me.ButtonSimpan.Location = New System.Drawing.Point(175, 182)
+        Me.ButtonSimpan.Location = New System.Drawing.Point(173, 71)
         Me.ButtonSimpan.Name = "ButtonSimpan"
         Me.ButtonSimpan.Size = New System.Drawing.Size(75, 23)
         Me.ButtonSimpan.TabIndex = 36
@@ -108,7 +110,7 @@ Partial Class FormKelas
         '
         'ButtonHapus
         '
-        Me.ButtonHapus.Location = New System.Drawing.Point(94, 182)
+        Me.ButtonHapus.Location = New System.Drawing.Point(92, 71)
         Me.ButtonHapus.Name = "ButtonHapus"
         Me.ButtonHapus.Size = New System.Drawing.Size(75, 23)
         Me.ButtonHapus.TabIndex = 35
@@ -117,7 +119,7 @@ Partial Class FormKelas
         '
         'ButtonTambah
         '
-        Me.ButtonTambah.Location = New System.Drawing.Point(12, 182)
+        Me.ButtonTambah.Location = New System.Drawing.Point(10, 71)
         Me.ButtonTambah.Name = "ButtonTambah"
         Me.ButtonTambah.Size = New System.Drawing.Size(75, 23)
         Me.ButtonTambah.TabIndex = 34
@@ -183,7 +185,7 @@ Partial Class FormKelas
         Me.KelasDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.KelasDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2})
         Me.KelasDataGridView.DataSource = Me.KelasBindingSource
-        Me.KelasDataGridView.Location = New System.Drawing.Point(267, 108)
+        Me.KelasDataGridView.Location = New System.Drawing.Point(270, 108)
         Me.KelasDataGridView.Name = "KelasDataGridView"
         Me.KelasDataGridView.Size = New System.Drawing.Size(244, 126)
         Me.KelasDataGridView.TabIndex = 43
@@ -203,7 +205,7 @@ Partial Class FormKelas
         'Id_kelasTextBox
         '
         Me.Id_kelasTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.KelasBindingSource, "id_kelas", True))
-        Me.Id_kelasTextBox.Location = New System.Drawing.Point(77, 117)
+        Me.Id_kelasTextBox.Location = New System.Drawing.Point(60, 18)
         Me.Id_kelasTextBox.Name = "Id_kelasTextBox"
         Me.Id_kelasTextBox.Size = New System.Drawing.Size(100, 20)
         Me.Id_kelasTextBox.TabIndex = 44
@@ -211,36 +213,48 @@ Partial Class FormKelas
         'KelasTextBox
         '
         Me.KelasTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.KelasBindingSource, "kelas", True))
-        Me.KelasTextBox.Location = New System.Drawing.Point(77, 143)
+        Me.KelasTextBox.Location = New System.Drawing.Point(60, 44)
         Me.KelasTextBox.Name = "KelasTextBox"
         Me.KelasTextBox.Size = New System.Drawing.Size(100, 20)
         Me.KelasTextBox.TabIndex = 46
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.ButtonKeluar)
+        Me.GroupBox1.Controls.Add(Id_kelasLabel)
+        Me.GroupBox1.Controls.Add(Me.ButtonTambah)
+        Me.GroupBox1.Controls.Add(Me.Id_kelasTextBox)
+        Me.GroupBox1.Controls.Add(Me.ButtonHapus)
+        Me.GroupBox1.Controls.Add(KelasLabel)
+        Me.GroupBox1.Controls.Add(Me.ButtonSimpan)
+        Me.GroupBox1.Controls.Add(Me.KelasTextBox)
+        Me.GroupBox1.Controls.Add(Me.ButtonRefresh)
+        Me.GroupBox1.Controls.Add(Me.ButtonEdit)
+        Me.GroupBox1.Location = New System.Drawing.Point(4, 99)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(258, 136)
+        Me.GroupBox1.TabIndex = 47
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Isi Data"
         '
         'FormKelas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(523, 255)
-        Me.Controls.Add(Id_kelasLabel)
-        Me.Controls.Add(Me.Id_kelasTextBox)
-        Me.Controls.Add(KelasLabel)
-        Me.Controls.Add(Me.KelasTextBox)
+        Me.ClientSize = New System.Drawing.Size(523, 245)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.KelasDataGridView)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.ButtonEdit)
-        Me.Controls.Add(Me.ButtonKeluar)
-        Me.Controls.Add(Me.ButtonRefresh)
-        Me.Controls.Add(Me.ButtonSimpan)
-        Me.Controls.Add(Me.ButtonHapus)
-        Me.Controls.Add(Me.ButtonTambah)
         Me.Name = "FormKelas"
-        Me.Text = "FormKelas"
+        Me.Text = "Data Kelas SMP Bunga Nusantara"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Project_kel6DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KelasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KelasDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -263,4 +277,5 @@ Partial Class FormKelas
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Id_kelasTextBox As System.Windows.Forms.TextBox
     Friend WithEvents KelasTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
 End Class

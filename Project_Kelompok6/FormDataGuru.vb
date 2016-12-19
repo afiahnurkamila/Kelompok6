@@ -1,22 +1,30 @@
 ﻿Public Class FormDataGuru
 
-    Private Sub GuruBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub ButtonTambah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonTambah.Click
+        GuruBindingSource.AddNew()
+    End Sub
+
+    Private Sub ButtonHapus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonHapus.Click
+        GuruBindingSource.RemoveCurrent()
+        MessageBox.Show("Data Telah Terhapus !!!")
+    End Sub
+
+    Private Sub ButtonSimpan_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonSimpan.Click
         Me.Validate()
         Me.GuruBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Project_kel6DataSet)
+        MessageBox.Show("Data Telah Tersimpan !!!")
+    End Sub
+
+    Private Sub ButtonRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonRefresh.Click
 
     End Sub
 
-    Private Sub GuruBindingNavigatorSaveItem_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GuruBindingNavigatorSaveItem.Click
-        Me.Validate()
-        Me.GuruBindingSource.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me.Project_kel6DataSet)
-
+    Private Sub ButtonEdit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonEdit.Click
+        GuruBindingSource.CancelEdit()
     End Sub
 
-    Private Sub FormDataGuru_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'Project_kel6DataSet.guru' table. You can move, or remove it, as needed.
-        Me.GuruTableAdapter.Fill(Me.Project_kel6DataSet.guru)
-
+    Private Sub ButtonKeluar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonKeluar.Click
+        End
     End Sub
 End Class

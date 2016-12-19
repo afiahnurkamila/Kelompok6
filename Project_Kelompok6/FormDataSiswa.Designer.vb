@@ -51,7 +51,6 @@ Partial Class FormDataSiswa
         Me.Tempat_lahirTextBox = New System.Windows.Forms.TextBox()
         Me.Tanggal_lahirDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.JenkelTextBox = New System.Windows.Forms.TextBox()
-        Me.AlamatTextBox = New System.Windows.Forms.TextBox()
         Me.AgamaTextBox = New System.Windows.Forms.TextBox()
         Me.ButtonTambah = New System.Windows.Forms.Button()
         Me.ButtonHapus = New System.Windows.Forms.Button()
@@ -59,6 +58,8 @@ Partial Class FormDataSiswa
         Me.ButtonRefresh = New System.Windows.Forms.Button()
         Me.ButtonKeluar = New System.Windows.Forms.Button()
         Me.ButtonEdit = New System.Windows.Forms.Button()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         NisLabel = New System.Windows.Forms.Label()
         NamaLabel = New System.Windows.Forms.Label()
         Tempat_lahirLabel = New System.Windows.Forms.Label()
@@ -70,12 +71,13 @@ Partial Class FormDataSiswa
         CType(Me.Project_kel6DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SiswaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SiswaDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'NisLabel
         '
         NisLabel.AutoSize = True
-        NisLabel.Location = New System.Drawing.Point(6, 112)
+        NisLabel.Location = New System.Drawing.Point(15, 26)
         NisLabel.Name = "NisLabel"
         NisLabel.Size = New System.Drawing.Size(31, 13)
         NisLabel.TabIndex = 5
@@ -84,7 +86,7 @@ Partial Class FormDataSiswa
         'NamaLabel
         '
         NamaLabel.AutoSize = True
-        NamaLabel.Location = New System.Drawing.Point(6, 138)
+        NamaLabel.Location = New System.Drawing.Point(15, 52)
         NamaLabel.Name = "NamaLabel"
         NamaLabel.Size = New System.Drawing.Size(38, 13)
         NamaLabel.TabIndex = 7
@@ -93,7 +95,7 @@ Partial Class FormDataSiswa
         'Tempat_lahirLabel
         '
         Tempat_lahirLabel.AutoSize = True
-        Tempat_lahirLabel.Location = New System.Drawing.Point(6, 164)
+        Tempat_lahirLabel.Location = New System.Drawing.Point(15, 78)
         Tempat_lahirLabel.Name = "Tempat_lahirLabel"
         Tempat_lahirLabel.Size = New System.Drawing.Size(75, 13)
         Tempat_lahirLabel.TabIndex = 9
@@ -102,7 +104,7 @@ Partial Class FormDataSiswa
         'Tanggal_lahirLabel
         '
         Tanggal_lahirLabel.AutoSize = True
-        Tanggal_lahirLabel.Location = New System.Drawing.Point(6, 191)
+        Tanggal_lahirLabel.Location = New System.Drawing.Point(15, 105)
         Tanggal_lahirLabel.Name = "Tanggal_lahirLabel"
         Tanggal_lahirLabel.Size = New System.Drawing.Size(78, 13)
         Tanggal_lahirLabel.TabIndex = 11
@@ -111,7 +113,7 @@ Partial Class FormDataSiswa
         'JenkelLabel
         '
         JenkelLabel.AutoSize = True
-        JenkelLabel.Location = New System.Drawing.Point(6, 216)
+        JenkelLabel.Location = New System.Drawing.Point(15, 130)
         JenkelLabel.Name = "JenkelLabel"
         JenkelLabel.Size = New System.Drawing.Size(44, 13)
         JenkelLabel.TabIndex = 13
@@ -120,7 +122,7 @@ Partial Class FormDataSiswa
         'AlamatLabel
         '
         AlamatLabel.AutoSize = True
-        AlamatLabel.Location = New System.Drawing.Point(6, 242)
+        AlamatLabel.Location = New System.Drawing.Point(15, 156)
         AlamatLabel.Name = "AlamatLabel"
         AlamatLabel.Size = New System.Drawing.Size(45, 13)
         AlamatLabel.TabIndex = 15
@@ -129,7 +131,7 @@ Partial Class FormDataSiswa
         'AgamaLabel
         '
         AgamaLabel.AutoSize = True
-        AgamaLabel.Location = New System.Drawing.Point(6, 268)
+        AgamaLabel.Location = New System.Drawing.Point(15, 233)
         AgamaLabel.Name = "AgamaLabel"
         AgamaLabel.Size = New System.Drawing.Size(46, 13)
         AgamaLabel.TabIndex = 17
@@ -194,9 +196,9 @@ Partial Class FormDataSiswa
         Me.SiswaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.SiswaDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
         Me.SiswaDataGridView.DataSource = Me.SiswaBindingSource
-        Me.SiswaDataGridView.Location = New System.Drawing.Point(297, 99)
+        Me.SiswaDataGridView.Location = New System.Drawing.Point(328, 100)
         Me.SiswaDataGridView.Name = "SiswaDataGridView"
-        Me.SiswaDataGridView.Size = New System.Drawing.Size(744, 216)
+        Me.SiswaDataGridView.Size = New System.Drawing.Size(543, 323)
         Me.SiswaDataGridView.TabIndex = 4
         '
         'DataGridViewTextBoxColumn1
@@ -244,7 +246,7 @@ Partial Class FormDataSiswa
         'NisTextBox
         '
         Me.NisTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SiswaBindingSource, "nis", True))
-        Me.NisTextBox.Location = New System.Drawing.Point(91, 109)
+        Me.NisTextBox.Location = New System.Drawing.Point(100, 23)
         Me.NisTextBox.Name = "NisTextBox"
         Me.NisTextBox.Size = New System.Drawing.Size(200, 20)
         Me.NisTextBox.TabIndex = 6
@@ -252,7 +254,7 @@ Partial Class FormDataSiswa
         'NamaTextBox
         '
         Me.NamaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SiswaBindingSource, "nama", True))
-        Me.NamaTextBox.Location = New System.Drawing.Point(91, 135)
+        Me.NamaTextBox.Location = New System.Drawing.Point(100, 49)
         Me.NamaTextBox.Name = "NamaTextBox"
         Me.NamaTextBox.Size = New System.Drawing.Size(200, 20)
         Me.NamaTextBox.TabIndex = 8
@@ -260,7 +262,7 @@ Partial Class FormDataSiswa
         'Tempat_lahirTextBox
         '
         Me.Tempat_lahirTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SiswaBindingSource, "tempat_lahir", True))
-        Me.Tempat_lahirTextBox.Location = New System.Drawing.Point(91, 161)
+        Me.Tempat_lahirTextBox.Location = New System.Drawing.Point(100, 75)
         Me.Tempat_lahirTextBox.Name = "Tempat_lahirTextBox"
         Me.Tempat_lahirTextBox.Size = New System.Drawing.Size(200, 20)
         Me.Tempat_lahirTextBox.TabIndex = 10
@@ -268,7 +270,7 @@ Partial Class FormDataSiswa
         'Tanggal_lahirDateTimePicker
         '
         Me.Tanggal_lahirDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.SiswaBindingSource, "tanggal_lahir", True))
-        Me.Tanggal_lahirDateTimePicker.Location = New System.Drawing.Point(91, 187)
+        Me.Tanggal_lahirDateTimePicker.Location = New System.Drawing.Point(100, 101)
         Me.Tanggal_lahirDateTimePicker.Name = "Tanggal_lahirDateTimePicker"
         Me.Tanggal_lahirDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.Tanggal_lahirDateTimePicker.TabIndex = 12
@@ -276,30 +278,22 @@ Partial Class FormDataSiswa
         'JenkelTextBox
         '
         Me.JenkelTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SiswaBindingSource, "jenkel", True))
-        Me.JenkelTextBox.Location = New System.Drawing.Point(91, 213)
+        Me.JenkelTextBox.Location = New System.Drawing.Point(100, 127)
         Me.JenkelTextBox.Name = "JenkelTextBox"
         Me.JenkelTextBox.Size = New System.Drawing.Size(200, 20)
         Me.JenkelTextBox.TabIndex = 14
         '
-        'AlamatTextBox
-        '
-        Me.AlamatTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SiswaBindingSource, "alamat", True))
-        Me.AlamatTextBox.Location = New System.Drawing.Point(91, 239)
-        Me.AlamatTextBox.Name = "AlamatTextBox"
-        Me.AlamatTextBox.Size = New System.Drawing.Size(200, 20)
-        Me.AlamatTextBox.TabIndex = 16
-        '
         'AgamaTextBox
         '
         Me.AgamaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SiswaBindingSource, "agama", True))
-        Me.AgamaTextBox.Location = New System.Drawing.Point(91, 265)
+        Me.AgamaTextBox.Location = New System.Drawing.Point(100, 230)
         Me.AgamaTextBox.Name = "AgamaTextBox"
         Me.AgamaTextBox.Size = New System.Drawing.Size(200, 20)
         Me.AgamaTextBox.TabIndex = 18
         '
         'ButtonTambah
         '
-        Me.ButtonTambah.Location = New System.Drawing.Point(9, 317)
+        Me.ButtonTambah.Location = New System.Drawing.Point(38, 261)
         Me.ButtonTambah.Name = "ButtonTambah"
         Me.ButtonTambah.Size = New System.Drawing.Size(75, 23)
         Me.ButtonTambah.TabIndex = 19
@@ -308,7 +302,7 @@ Partial Class FormDataSiswa
         '
         'ButtonHapus
         '
-        Me.ButtonHapus.Location = New System.Drawing.Point(91, 317)
+        Me.ButtonHapus.Location = New System.Drawing.Point(120, 261)
         Me.ButtonHapus.Name = "ButtonHapus"
         Me.ButtonHapus.Size = New System.Drawing.Size(75, 23)
         Me.ButtonHapus.TabIndex = 20
@@ -317,7 +311,7 @@ Partial Class FormDataSiswa
         '
         'ButtonSimpan
         '
-        Me.ButtonSimpan.Location = New System.Drawing.Point(172, 317)
+        Me.ButtonSimpan.Location = New System.Drawing.Point(201, 261)
         Me.ButtonSimpan.Name = "ButtonSimpan"
         Me.ButtonSimpan.Size = New System.Drawing.Size(75, 23)
         Me.ButtonSimpan.TabIndex = 21
@@ -326,7 +320,7 @@ Partial Class FormDataSiswa
         '
         'ButtonRefresh
         '
-        Me.ButtonRefresh.Location = New System.Drawing.Point(9, 346)
+        Me.ButtonRefresh.Location = New System.Drawing.Point(38, 290)
         Me.ButtonRefresh.Name = "ButtonRefresh"
         Me.ButtonRefresh.Size = New System.Drawing.Size(75, 23)
         Me.ButtonRefresh.TabIndex = 22
@@ -335,7 +329,7 @@ Partial Class FormDataSiswa
         '
         'ButtonKeluar
         '
-        Me.ButtonKeluar.Location = New System.Drawing.Point(172, 346)
+        Me.ButtonKeluar.Location = New System.Drawing.Point(201, 290)
         Me.ButtonKeluar.Name = "ButtonKeluar"
         Me.ButtonKeluar.Size = New System.Drawing.Size(75, 23)
         Me.ButtonKeluar.TabIndex = 23
@@ -344,48 +338,68 @@ Partial Class FormDataSiswa
         '
         'ButtonEdit
         '
-        Me.ButtonEdit.Location = New System.Drawing.Point(90, 346)
+        Me.ButtonEdit.Location = New System.Drawing.Point(119, 290)
         Me.ButtonEdit.Name = "ButtonEdit"
         Me.ButtonEdit.Size = New System.Drawing.Size(75, 23)
         Me.ButtonEdit.TabIndex = 33
         Me.ButtonEdit.Text = "Edit"
         Me.ButtonEdit.UseVisualStyleBackColor = True
         '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(100, 153)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(200, 62)
+        Me.RichTextBox1.TabIndex = 42
+        Me.RichTextBox1.Text = ""
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.RichTextBox1)
+        Me.GroupBox1.Controls.Add(Me.ButtonEdit)
+        Me.GroupBox1.Controls.Add(Me.AgamaTextBox)
+        Me.GroupBox1.Controls.Add(Me.ButtonKeluar)
+        Me.GroupBox1.Controls.Add(Me.ButtonRefresh)
+        Me.GroupBox1.Controls.Add(AgamaLabel)
+        Me.GroupBox1.Controls.Add(Me.ButtonSimpan)
+        Me.GroupBox1.Controls.Add(AlamatLabel)
+        Me.GroupBox1.Controls.Add(Me.ButtonHapus)
+        Me.GroupBox1.Controls.Add(Me.JenkelTextBox)
+        Me.GroupBox1.Controls.Add(Me.ButtonTambah)
+        Me.GroupBox1.Controls.Add(JenkelLabel)
+        Me.GroupBox1.Controls.Add(Me.Tanggal_lahirDateTimePicker)
+        Me.GroupBox1.Controls.Add(Tanggal_lahirLabel)
+        Me.GroupBox1.Controls.Add(NisLabel)
+        Me.GroupBox1.Controls.Add(Me.Tempat_lahirTextBox)
+        Me.GroupBox1.Controls.Add(Me.NisTextBox)
+        Me.GroupBox1.Controls.Add(Tempat_lahirLabel)
+        Me.GroupBox1.Controls.Add(NamaLabel)
+        Me.GroupBox1.Controls.Add(Me.NamaTextBox)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 95)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(309, 328)
+        Me.GroupBox1.TabIndex = 43
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Isi Data"
+        '
         'FormDataSiswa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(961, 465)
-        Me.Controls.Add(Me.ButtonEdit)
-        Me.Controls.Add(Me.ButtonKeluar)
-        Me.Controls.Add(Me.ButtonRefresh)
-        Me.Controls.Add(Me.ButtonSimpan)
-        Me.Controls.Add(Me.ButtonHapus)
-        Me.Controls.Add(Me.ButtonTambah)
-        Me.Controls.Add(NisLabel)
-        Me.Controls.Add(Me.NisTextBox)
-        Me.Controls.Add(NamaLabel)
-        Me.Controls.Add(Me.NamaTextBox)
-        Me.Controls.Add(Tempat_lahirLabel)
-        Me.Controls.Add(Me.Tempat_lahirTextBox)
-        Me.Controls.Add(Tanggal_lahirLabel)
-        Me.Controls.Add(Me.Tanggal_lahirDateTimePicker)
-        Me.Controls.Add(JenkelLabel)
-        Me.Controls.Add(Me.JenkelTextBox)
-        Me.Controls.Add(AlamatLabel)
-        Me.Controls.Add(Me.AlamatTextBox)
-        Me.Controls.Add(AgamaLabel)
-        Me.Controls.Add(Me.AgamaTextBox)
+        Me.ClientSize = New System.Drawing.Size(883, 430)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.SiswaDataGridView)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "FormDataSiswa"
-        Me.Text = "FormDataSiswa"
+        Me.Text = "Data Siswa/i SMP Bunga Nusantara"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Project_kel6DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SiswaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SiswaDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -410,7 +424,6 @@ Partial Class FormDataSiswa
     Friend WithEvents Tempat_lahirTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Tanggal_lahirDateTimePicker As System.Windows.Forms.DateTimePicker
     Friend WithEvents JenkelTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents AlamatTextBox As System.Windows.Forms.TextBox
     Friend WithEvents AgamaTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ButtonTambah As System.Windows.Forms.Button
     Friend WithEvents ButtonHapus As System.Windows.Forms.Button
@@ -418,4 +431,6 @@ Partial Class FormDataSiswa
     Friend WithEvents ButtonRefresh As System.Windows.Forms.Button
     Friend WithEvents ButtonKeluar As System.Windows.Forms.Button
     Friend WithEvents ButtonEdit As System.Windows.Forms.Button
+    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
 End Class

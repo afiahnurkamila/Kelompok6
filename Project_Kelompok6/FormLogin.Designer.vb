@@ -139,7 +139,7 @@ Partial Class FormLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.ClientSize = New System.Drawing.Size(560, 346)
+        Me.ClientSize = New System.Drawing.Size(554, 340)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -152,7 +152,7 @@ Partial Class FormLogin
         Me.Controls.Add(Me.Label2)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "FormLogin"
-        Me.Text = "Login Database Sekolah Bunga Nusantara"
+        Me.Text = "Login Database SMP Bunga Nusantara"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
