@@ -152,7 +152,7 @@ Partial Class FormLogin
         Me.Controls.Add(Me.Label2)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "FormLogin"
-        Me.Text = "Login Database Sekolah Bunga Bangsa"
+        Me.Text = "Login Database Sekolah Bunga Nusantara"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
