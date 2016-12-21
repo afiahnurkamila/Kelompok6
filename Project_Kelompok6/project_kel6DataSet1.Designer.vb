@@ -20,9 +20,9 @@ Option Explicit On
  Global.System.ComponentModel.DesignerCategoryAttribute("code"),  _
  Global.System.ComponentModel.ToolboxItem(true),  _
  Global.System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema"),  _
- Global.System.Xml.Serialization.XmlRootAttribute("project_kel6DataSet"),  _
+ Global.System.Xml.Serialization.XmlRootAttribute("project_kel6DataSet1"),  _
  Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")>  _
-Partial Public Class project_kel6DataSet
+Partial Public Class project_kel6DataSet1
     Inherits Global.System.Data.DataSet
     
     Private tableguru As guruDataTable
@@ -173,7 +173,7 @@ Partial Public Class project_kel6DataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Overrides Function Clone() As Global.System.Data.DataSet
-        Dim cln As project_kel6DataSet = CType(MyBase.Clone,project_kel6DataSet)
+        Dim cln As project_kel6DataSet1 = CType(MyBase.Clone,project_kel6DataSet1)
         cln.InitVars
         cln.SchemaSerializationMode = Me.SchemaSerializationMode
         Return cln
@@ -271,9 +271,9 @@ Partial Public Class project_kel6DataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Private Sub InitClass()
-        Me.DataSetName = "project_kel6DataSet"
+        Me.DataSetName = "project_kel6DataSet1"
         Me.Prefix = ""
-        Me.Namespace = "http://tempuri.org/project_kel6DataSet.xsd"
+        Me.Namespace = "http://tempuri.org/project_kel6DataSet1.xsd"
         Me.EnforceConstraints = true
         Me.SchemaSerializationMode = Global.System.Data.SchemaSerializationMode.IncludeSchema
         Me.tableguru = New guruDataTable()
@@ -321,7 +321,7 @@ Partial Public Class project_kel6DataSet
     <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
     Public Shared Function GetTypedDataSetSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
-        Dim ds As project_kel6DataSet = New project_kel6DataSet()
+        Dim ds As project_kel6DataSet1 = New project_kel6DataSet1()
         Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
         Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
         Dim any As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
@@ -388,25 +388,29 @@ Partial Public Class project_kel6DataSet
     Partial Public Class guruDataTable
         Inherits Global.System.Data.TypedTableBase(Of guruRow)
         
-        Private columnnip_guru As Global.System.Data.DataColumn
+        Private columnNIP_Guru As Global.System.Data.DataColumn
         
-        Private columnnama As Global.System.Data.DataColumn
+        Private columnNama As Global.System.Data.DataColumn
         
-        Private columnalamat As Global.System.Data.DataColumn
+        Private columnAlamat As Global.System.Data.DataColumn
         
-        Private columntempat_lahir As Global.System.Data.DataColumn
+        Private columnTempat_Lahir As Global.System.Data.DataColumn
         
-        Private columntanggal_lahir As Global.System.Data.DataColumn
+        Private columnTanggal_Lahir As Global.System.Data.DataColumn
         
-        Private columnjenkel As Global.System.Data.DataColumn
+        Private columnJenkel As Global.System.Data.DataColumn
         
-        Private columnno_telpon As Global.System.Data.DataColumn
+        Private columnNo_Telpon As Global.System.Data.DataColumn
         
-        Private columnstatus As Global.System.Data.DataColumn
+        Private columnStatus As Global.System.Data.DataColumn
         
-        Private columnpendidikan As Global.System.Data.DataColumn
+        Private columnPendidikan As Global.System.Data.DataColumn
         
-        Private columnagama As Global.System.Data.DataColumn
+        Private columnAgama As Global.System.Data.DataColumn
+        
+        Private columnID_Mata_Pelajaran As Global.System.Data.DataColumn
+        
+        Private columnMata_Pelajaran As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -445,81 +449,97 @@ Partial Public Class project_kel6DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property nip_guruColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property NIP_GuruColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnnip_guru
+                Return Me.columnNIP_Guru
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property namaColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property NamaColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnnama
+                Return Me.columnNama
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property alamatColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property AlamatColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnalamat
+                Return Me.columnAlamat
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property tempat_lahirColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property Tempat_LahirColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columntempat_lahir
+                Return Me.columnTempat_Lahir
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property tanggal_lahirColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property Tanggal_LahirColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columntanggal_lahir
+                Return Me.columnTanggal_Lahir
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property jenkelColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property JenkelColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnjenkel
+                Return Me.columnJenkel
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property no_telponColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property No_TelponColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnno_telpon
+                Return Me.columnNo_Telpon
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property statusColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property StatusColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnstatus
+                Return Me.columnStatus
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property pendidikanColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property PendidikanColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnpendidikan
+                Return Me.columnPendidikan
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property agamaColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property AgamaColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnagama
+                Return Me.columnAgama
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property ID_Mata_PelajaranColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnID_Mata_Pelajaran
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Mata_PelajaranColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnMata_Pelajaran
             End Get
         End Property
         
@@ -560,9 +580,9 @@ Partial Public Class project_kel6DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddguruRow(ByVal nip_guru As Integer, ByVal nama As String, ByVal alamat As String, ByVal tempat_lahir As String, ByVal tanggal_lahir As Date, ByVal jenkel As String, ByVal no_telpon As Integer, ByVal status As String, ByVal pendidikan As String, ByVal agama As String) As guruRow
+        Public Overloads Function AddguruRow(ByVal NIP_Guru As Integer, ByVal Nama As String, ByVal Alamat As String, ByVal Tempat_Lahir As String, ByVal Tanggal_Lahir As Date, ByVal Jenkel As String, ByVal No_Telpon As Integer, ByVal Status As String, ByVal Pendidikan As String, ByVal Agama As String, ByVal ID_Mata_Pelajaran As String, ByVal Mata_Pelajaran As String) As guruRow
             Dim rowguruRow As guruRow = CType(Me.NewRow,guruRow)
-            Dim columnValuesArray() As Object = New Object() {nip_guru, nama, alamat, tempat_lahir, tanggal_lahir, jenkel, no_telpon, status, pendidikan, agama}
+            Dim columnValuesArray() As Object = New Object() {NIP_Guru, Nama, Alamat, Tempat_Lahir, Tanggal_Lahir, Jenkel, No_Telpon, Status, Pendidikan, Agama, ID_Mata_Pelajaran, Mata_Pelajaran}
             rowguruRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowguruRow)
             Return rowguruRow
@@ -585,48 +605,58 @@ Partial Public Class project_kel6DataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Friend Sub InitVars()
-            Me.columnnip_guru = MyBase.Columns("nip_guru")
-            Me.columnnama = MyBase.Columns("nama")
-            Me.columnalamat = MyBase.Columns("alamat")
-            Me.columntempat_lahir = MyBase.Columns("tempat_lahir")
-            Me.columntanggal_lahir = MyBase.Columns("tanggal_lahir")
-            Me.columnjenkel = MyBase.Columns("jenkel")
-            Me.columnno_telpon = MyBase.Columns("no_telpon")
-            Me.columnstatus = MyBase.Columns("status")
-            Me.columnpendidikan = MyBase.Columns("pendidikan")
-            Me.columnagama = MyBase.Columns("agama")
+            Me.columnNIP_Guru = MyBase.Columns("NIP_Guru")
+            Me.columnNama = MyBase.Columns("Nama")
+            Me.columnAlamat = MyBase.Columns("Alamat")
+            Me.columnTempat_Lahir = MyBase.Columns("Tempat_Lahir")
+            Me.columnTanggal_Lahir = MyBase.Columns("Tanggal_Lahir")
+            Me.columnJenkel = MyBase.Columns("Jenkel")
+            Me.columnNo_Telpon = MyBase.Columns("No_Telpon")
+            Me.columnStatus = MyBase.Columns("Status")
+            Me.columnPendidikan = MyBase.Columns("Pendidikan")
+            Me.columnAgama = MyBase.Columns("Agama")
+            Me.columnID_Mata_Pelajaran = MyBase.Columns("ID_Mata_Pelajaran")
+            Me.columnMata_Pelajaran = MyBase.Columns("Mata_Pelajaran")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitClass()
-            Me.columnnip_guru = New Global.System.Data.DataColumn("nip_guru", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnnip_guru)
-            Me.columnnama = New Global.System.Data.DataColumn("nama", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnnama)
-            Me.columnalamat = New Global.System.Data.DataColumn("alamat", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnalamat)
-            Me.columntempat_lahir = New Global.System.Data.DataColumn("tempat_lahir", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columntempat_lahir)
-            Me.columntanggal_lahir = New Global.System.Data.DataColumn("tanggal_lahir", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columntanggal_lahir)
-            Me.columnjenkel = New Global.System.Data.DataColumn("jenkel", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnjenkel)
-            Me.columnno_telpon = New Global.System.Data.DataColumn("no_telpon", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnno_telpon)
-            Me.columnstatus = New Global.System.Data.DataColumn("status", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnstatus)
-            Me.columnpendidikan = New Global.System.Data.DataColumn("pendidikan", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnpendidikan)
-            Me.columnagama = New Global.System.Data.DataColumn("agama", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnagama)
-            Me.columnnama.MaxLength = 45
-            Me.columnalamat.MaxLength = 45
-            Me.columntempat_lahir.MaxLength = 45
-            Me.columnjenkel.MaxLength = 45
-            Me.columnstatus.MaxLength = 45
-            Me.columnpendidikan.MaxLength = 45
-            Me.columnagama.MaxLength = 45
+            Me.columnNIP_Guru = New Global.System.Data.DataColumn("NIP_Guru", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnNIP_Guru)
+            Me.columnNama = New Global.System.Data.DataColumn("Nama", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnNama)
+            Me.columnAlamat = New Global.System.Data.DataColumn("Alamat", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnAlamat)
+            Me.columnTempat_Lahir = New Global.System.Data.DataColumn("Tempat_Lahir", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnTempat_Lahir)
+            Me.columnTanggal_Lahir = New Global.System.Data.DataColumn("Tanggal_Lahir", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnTanggal_Lahir)
+            Me.columnJenkel = New Global.System.Data.DataColumn("Jenkel", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnJenkel)
+            Me.columnNo_Telpon = New Global.System.Data.DataColumn("No_Telpon", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnNo_Telpon)
+            Me.columnStatus = New Global.System.Data.DataColumn("Status", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnStatus)
+            Me.columnPendidikan = New Global.System.Data.DataColumn("Pendidikan", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnPendidikan)
+            Me.columnAgama = New Global.System.Data.DataColumn("Agama", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnAgama)
+            Me.columnID_Mata_Pelajaran = New Global.System.Data.DataColumn("ID_Mata_Pelajaran", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnID_Mata_Pelajaran)
+            Me.columnMata_Pelajaran = New Global.System.Data.DataColumn("Mata_Pelajaran", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnMata_Pelajaran)
+            Me.columnNama.MaxLength = 45
+            Me.columnAlamat.MaxLength = 45
+            Me.columnTempat_Lahir.MaxLength = 45
+            Me.columnJenkel.MaxLength = 45
+            Me.columnStatus.MaxLength = 45
+            Me.columnPendidikan.MaxLength = 45
+            Me.columnAgama.MaxLength = 45
+            Me.columnID_Mata_Pelajaran.AllowDBNull = false
+            Me.columnID_Mata_Pelajaran.MaxLength = 10
+            Me.columnMata_Pelajaran.AllowDBNull = false
+            Me.columnMata_Pelajaran.MaxLength = 45
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -694,7 +724,7 @@ Partial Public Class project_kel6DataSet
         Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
             Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
             Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
-            Dim ds As project_kel6DataSet = New project_kel6DataSet()
+            Dim ds As project_kel6DataSet1 = New project_kel6DataSet1()
             Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
             any1.Namespace = "http://www.w3.org/2001/XMLSchema"
             any1.MinOccurs = New Decimal(0)
@@ -764,9 +794,13 @@ Partial Public Class project_kel6DataSet
     Partial Public Class kelasDataTable
         Inherits Global.System.Data.TypedTableBase(Of kelasRow)
         
-        Private columnid_kelas As Global.System.Data.DataColumn
+        Private columnID_Kelas As Global.System.Data.DataColumn
         
-        Private columnkelas As Global.System.Data.DataColumn
+        Private columnKelas As Global.System.Data.DataColumn
+        
+        Private columnNIP_Guru As Global.System.Data.DataColumn
+        
+        Private columnNIP_Siswa As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -805,17 +839,33 @@ Partial Public Class project_kel6DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property id_kelasColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property ID_KelasColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnid_kelas
+                Return Me.columnID_Kelas
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property kelasColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property KelasColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnkelas
+                Return Me.columnKelas
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property NIP_GuruColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnNIP_Guru
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property NIP_SiswaColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnNIP_Siswa
             End Get
         End Property
         
@@ -856,9 +906,9 @@ Partial Public Class project_kel6DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddkelasRow(ByVal id_kelas As String, ByVal kelas As String) As kelasRow
+        Public Overloads Function AddkelasRow(ByVal ID_Kelas As String, ByVal Kelas As String, ByVal NIP_Guru As Integer, ByVal NIP_Siswa As Integer) As kelasRow
             Dim rowkelasRow As kelasRow = CType(Me.NewRow,kelasRow)
-            Dim columnValuesArray() As Object = New Object() {id_kelas, kelas}
+            Dim columnValuesArray() As Object = New Object() {ID_Kelas, Kelas, NIP_Guru, NIP_Siswa}
             rowkelasRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowkelasRow)
             Return rowkelasRow
@@ -881,19 +931,27 @@ Partial Public Class project_kel6DataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Friend Sub InitVars()
-            Me.columnid_kelas = MyBase.Columns("id_kelas")
-            Me.columnkelas = MyBase.Columns("kelas")
+            Me.columnID_Kelas = MyBase.Columns("ID_Kelas")
+            Me.columnKelas = MyBase.Columns("Kelas")
+            Me.columnNIP_Guru = MyBase.Columns("NIP_Guru")
+            Me.columnNIP_Siswa = MyBase.Columns("NIP_Siswa")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitClass()
-            Me.columnid_kelas = New Global.System.Data.DataColumn("id_kelas", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnid_kelas)
-            Me.columnkelas = New Global.System.Data.DataColumn("kelas", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnkelas)
-            Me.columnid_kelas.MaxLength = 10
-            Me.columnkelas.MaxLength = 45
+            Me.columnID_Kelas = New Global.System.Data.DataColumn("ID_Kelas", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnID_Kelas)
+            Me.columnKelas = New Global.System.Data.DataColumn("Kelas", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnKelas)
+            Me.columnNIP_Guru = New Global.System.Data.DataColumn("NIP_Guru", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnNIP_Guru)
+            Me.columnNIP_Siswa = New Global.System.Data.DataColumn("NIP_Siswa", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnNIP_Siswa)
+            Me.columnID_Kelas.MaxLength = 10
+            Me.columnKelas.MaxLength = 45
+            Me.columnNIP_Guru.AllowDBNull = false
+            Me.columnNIP_Siswa.AllowDBNull = false
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -961,7 +1019,7 @@ Partial Public Class project_kel6DataSet
         Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
             Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
             Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
-            Dim ds As project_kel6DataSet = New project_kel6DataSet()
+            Dim ds As project_kel6DataSet1 = New project_kel6DataSet1()
             Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
             any1.Namespace = "http://www.w3.org/2001/XMLSchema"
             any1.MinOccurs = New Decimal(0)
@@ -1031,11 +1089,13 @@ Partial Public Class project_kel6DataSet
     Partial Public Class mata_pelajaranDataTable
         Inherits Global.System.Data.TypedTableBase(Of mata_pelajaranRow)
         
-        Private columnid_mata_pelajaran As Global.System.Data.DataColumn
+        Private columnID_Mata_Pelajaran As Global.System.Data.DataColumn
         
-        Private columnnama_mata_pelajaran As Global.System.Data.DataColumn
+        Private columnNama_Mata_Pelajaran As Global.System.Data.DataColumn
         
-        Private columnkkm As Global.System.Data.DataColumn
+        Private columnKKM As Global.System.Data.DataColumn
+        
+        Private columnNIP_Guru As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -1074,25 +1134,33 @@ Partial Public Class project_kel6DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property id_mata_pelajaranColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property ID_Mata_PelajaranColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnid_mata_pelajaran
+                Return Me.columnID_Mata_Pelajaran
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property nama_mata_pelajaranColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property Nama_Mata_PelajaranColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnnama_mata_pelajaran
+                Return Me.columnNama_Mata_Pelajaran
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property kkmColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property KKMColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnkkm
+                Return Me.columnKKM
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property NIP_GuruColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnNIP_Guru
             End Get
         End Property
         
@@ -1133,9 +1201,9 @@ Partial Public Class project_kel6DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function Addmata_pelajaranRow(ByVal id_mata_pelajaran As Integer, ByVal nama_mata_pelajaran As String, ByVal kkm As Integer) As mata_pelajaranRow
+        Public Overloads Function Addmata_pelajaranRow(ByVal ID_Mata_Pelajaran As Integer, ByVal Nama_Mata_Pelajaran As String, ByVal KKM As Integer, ByVal NIP_Guru As Integer) As mata_pelajaranRow
             Dim rowmata_pelajaranRow As mata_pelajaranRow = CType(Me.NewRow,mata_pelajaranRow)
-            Dim columnValuesArray() As Object = New Object() {id_mata_pelajaran, nama_mata_pelajaran, kkm}
+            Dim columnValuesArray() As Object = New Object() {ID_Mata_Pelajaran, Nama_Mata_Pelajaran, KKM, NIP_Guru}
             rowmata_pelajaranRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowmata_pelajaranRow)
             Return rowmata_pelajaranRow
@@ -1158,22 +1226,26 @@ Partial Public Class project_kel6DataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Friend Sub InitVars()
-            Me.columnid_mata_pelajaran = MyBase.Columns("id_mata_pelajaran")
-            Me.columnnama_mata_pelajaran = MyBase.Columns("nama_mata_pelajaran")
-            Me.columnkkm = MyBase.Columns("kkm")
+            Me.columnID_Mata_Pelajaran = MyBase.Columns("ID_Mata_Pelajaran")
+            Me.columnNama_Mata_Pelajaran = MyBase.Columns("Nama_Mata_Pelajaran")
+            Me.columnKKM = MyBase.Columns("KKM")
+            Me.columnNIP_Guru = MyBase.Columns("NIP_Guru")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitClass()
-            Me.columnid_mata_pelajaran = New Global.System.Data.DataColumn("id_mata_pelajaran", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnid_mata_pelajaran)
-            Me.columnnama_mata_pelajaran = New Global.System.Data.DataColumn("nama_mata_pelajaran", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnnama_mata_pelajaran)
-            Me.columnkkm = New Global.System.Data.DataColumn("kkm", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnkkm)
-            Me.columnnama_mata_pelajaran.MaxLength = 45
-            Me.columnkkm.AllowDBNull = false
+            Me.columnID_Mata_Pelajaran = New Global.System.Data.DataColumn("ID_Mata_Pelajaran", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnID_Mata_Pelajaran)
+            Me.columnNama_Mata_Pelajaran = New Global.System.Data.DataColumn("Nama_Mata_Pelajaran", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnNama_Mata_Pelajaran)
+            Me.columnKKM = New Global.System.Data.DataColumn("KKM", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnKKM)
+            Me.columnNIP_Guru = New Global.System.Data.DataColumn("NIP_Guru", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnNIP_Guru)
+            Me.columnNama_Mata_Pelajaran.MaxLength = 45
+            Me.columnKKM.AllowDBNull = false
+            Me.columnNIP_Guru.AllowDBNull = false
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1241,7 +1313,7 @@ Partial Public Class project_kel6DataSet
         Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
             Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
             Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
-            Dim ds As project_kel6DataSet = New project_kel6DataSet()
+            Dim ds As project_kel6DataSet1 = New project_kel6DataSet1()
             Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
             any1.Namespace = "http://www.w3.org/2001/XMLSchema"
             any1.MinOccurs = New Decimal(0)
@@ -1311,19 +1383,23 @@ Partial Public Class project_kel6DataSet
     Partial Public Class siswaDataTable
         Inherits Global.System.Data.TypedTableBase(Of siswaRow)
         
-        Private columnnis As Global.System.Data.DataColumn
+        Private columnNIS As Global.System.Data.DataColumn
         
-        Private columnnama As Global.System.Data.DataColumn
+        Private columnNama As Global.System.Data.DataColumn
         
-        Private columntempat_lahir As Global.System.Data.DataColumn
+        Private columnTempat_Lahir As Global.System.Data.DataColumn
         
-        Private columntanggal_lahir As Global.System.Data.DataColumn
+        Private columnTanggal_Lahir As Global.System.Data.DataColumn
         
-        Private columnjenkel As Global.System.Data.DataColumn
+        Private columnJenkel As Global.System.Data.DataColumn
         
-        Private columnalamat As Global.System.Data.DataColumn
+        Private columnAlamat As Global.System.Data.DataColumn
         
-        Private columnagama As Global.System.Data.DataColumn
+        Private columnAgama As Global.System.Data.DataColumn
+        
+        Private columnID_Kelas As Global.System.Data.DataColumn
+        
+        Private columnKelas As Global.System.Data.DataColumn
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
@@ -1362,57 +1438,73 @@ Partial Public Class project_kel6DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property nisColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property NISColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnnis
+                Return Me.columnNIS
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property namaColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property NamaColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnnama
+                Return Me.columnNama
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property tempat_lahirColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property Tempat_LahirColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columntempat_lahir
+                Return Me.columnTempat_Lahir
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property tanggal_lahirColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property Tanggal_LahirColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columntanggal_lahir
+                Return Me.columnTanggal_Lahir
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property jenkelColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property JenkelColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnjenkel
+                Return Me.columnJenkel
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property alamatColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property AlamatColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnalamat
+                Return Me.columnAlamat
             End Get
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public ReadOnly Property agamaColumn() As Global.System.Data.DataColumn
+        Public ReadOnly Property AgamaColumn() As Global.System.Data.DataColumn
             Get
-                Return Me.columnagama
+                Return Me.columnAgama
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property ID_KelasColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnID_Kelas
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property KelasColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnKelas
             End Get
         End Property
         
@@ -1453,9 +1545,9 @@ Partial Public Class project_kel6DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddsiswaRow(ByVal nis As Integer, ByVal nama As String, ByVal tempat_lahir As String, ByVal tanggal_lahir As Date, ByVal jenkel As String, ByVal alamat As String, ByVal agama As String) As siswaRow
+        Public Overloads Function AddsiswaRow(ByVal NIS As Integer, ByVal Nama As String, ByVal Tempat_Lahir As String, ByVal Tanggal_Lahir As Date, ByVal Jenkel As String, ByVal Alamat As String, ByVal Agama As String, ByVal ID_Kelas As String, ByVal Kelas As String) As siswaRow
             Dim rowsiswaRow As siswaRow = CType(Me.NewRow,siswaRow)
-            Dim columnValuesArray() As Object = New Object() {nis, nama, tempat_lahir, tanggal_lahir, jenkel, alamat, agama}
+            Dim columnValuesArray() As Object = New Object() {NIS, Nama, Tempat_Lahir, Tanggal_Lahir, Jenkel, Alamat, Agama, ID_Kelas, Kelas}
             rowsiswaRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowsiswaRow)
             Return rowsiswaRow
@@ -1478,37 +1570,48 @@ Partial Public Class project_kel6DataSet
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Friend Sub InitVars()
-            Me.columnnis = MyBase.Columns("nis")
-            Me.columnnama = MyBase.Columns("nama")
-            Me.columntempat_lahir = MyBase.Columns("tempat_lahir")
-            Me.columntanggal_lahir = MyBase.Columns("tanggal_lahir")
-            Me.columnjenkel = MyBase.Columns("jenkel")
-            Me.columnalamat = MyBase.Columns("alamat")
-            Me.columnagama = MyBase.Columns("agama")
+            Me.columnNIS = MyBase.Columns("NIS")
+            Me.columnNama = MyBase.Columns("Nama")
+            Me.columnTempat_Lahir = MyBase.Columns("Tempat_Lahir")
+            Me.columnTanggal_Lahir = MyBase.Columns("Tanggal_Lahir")
+            Me.columnJenkel = MyBase.Columns("Jenkel")
+            Me.columnAlamat = MyBase.Columns("Alamat")
+            Me.columnAgama = MyBase.Columns("Agama")
+            Me.columnID_Kelas = MyBase.Columns("ID_Kelas")
+            Me.columnKelas = MyBase.Columns("Kelas")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Private Sub InitClass()
-            Me.columnnis = New Global.System.Data.DataColumn("nis", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnnis)
-            Me.columnnama = New Global.System.Data.DataColumn("nama", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnnama)
-            Me.columntempat_lahir = New Global.System.Data.DataColumn("tempat_lahir", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columntempat_lahir)
-            Me.columntanggal_lahir = New Global.System.Data.DataColumn("tanggal_lahir", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columntanggal_lahir)
-            Me.columnjenkel = New Global.System.Data.DataColumn("jenkel", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnjenkel)
-            Me.columnalamat = New Global.System.Data.DataColumn("alamat", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnalamat)
-            Me.columnagama = New Global.System.Data.DataColumn("agama", GetType(String), Nothing, Global.System.Data.MappingType.Element)
-            MyBase.Columns.Add(Me.columnagama)
-            Me.columnnama.MaxLength = 45
-            Me.columntempat_lahir.MaxLength = 45
-            Me.columnjenkel.MaxLength = 45
-            Me.columnalamat.MaxLength = 45
-            Me.columnagama.MaxLength = 45
+            Me.columnNIS = New Global.System.Data.DataColumn("NIS", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnNIS)
+            Me.columnNama = New Global.System.Data.DataColumn("Nama", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnNama)
+            Me.columnTempat_Lahir = New Global.System.Data.DataColumn("Tempat_Lahir", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnTempat_Lahir)
+            Me.columnTanggal_Lahir = New Global.System.Data.DataColumn("Tanggal_Lahir", GetType(Date), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnTanggal_Lahir)
+            Me.columnJenkel = New Global.System.Data.DataColumn("Jenkel", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnJenkel)
+            Me.columnAlamat = New Global.System.Data.DataColumn("Alamat", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnAlamat)
+            Me.columnAgama = New Global.System.Data.DataColumn("Agama", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnAgama)
+            Me.columnID_Kelas = New Global.System.Data.DataColumn("ID_Kelas", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnID_Kelas)
+            Me.columnKelas = New Global.System.Data.DataColumn("Kelas", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnKelas)
+            Me.columnNIS.AllowDBNull = false
+            Me.columnNama.MaxLength = 45
+            Me.columnTempat_Lahir.MaxLength = 45
+            Me.columnJenkel.MaxLength = 45
+            Me.columnAlamat.MaxLength = 45
+            Me.columnAgama.MaxLength = 45
+            Me.columnID_Kelas.AllowDBNull = false
+            Me.columnID_Kelas.MaxLength = 10
+            Me.columnKelas.AllowDBNull = false
+            Me.columnKelas.MaxLength = 45
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1576,7 +1679,7 @@ Partial Public Class project_kel6DataSet
         Public Shared Function GetTypedTableSchema(ByVal xs As Global.System.Xml.Schema.XmlSchemaSet) As Global.System.Xml.Schema.XmlSchemaComplexType
             Dim type As Global.System.Xml.Schema.XmlSchemaComplexType = New Global.System.Xml.Schema.XmlSchemaComplexType()
             Dim sequence As Global.System.Xml.Schema.XmlSchemaSequence = New Global.System.Xml.Schema.XmlSchemaSequence()
-            Dim ds As project_kel6DataSet = New project_kel6DataSet()
+            Dim ds As project_kel6DataSet1 = New project_kel6DataSet1()
             Dim any1 As Global.System.Xml.Schema.XmlSchemaAny = New Global.System.Xml.Schema.XmlSchemaAny()
             any1.Namespace = "http://www.w3.org/2001/XMLSchema"
             any1.MinOccurs = New Decimal(0)
@@ -1655,272 +1758,294 @@ Partial Public Class project_kel6DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property nip_guru() As Integer
+        Public Property NIP_Guru() As Integer
             Get
                 Try 
-                    Return CType(Me(Me.tableguru.nip_guruColumn),Integer)
+                    Return CType(Me(Me.tableguru.NIP_GuruColumn),Integer)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'nip_guru' in table 'guru' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'NIP_Guru' in table 'guru' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tableguru.nip_guruColumn) = value
+                Me(Me.tableguru.NIP_GuruColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property nama() As String
+        Public Property Nama() As String
             Get
                 Try 
-                    Return CType(Me(Me.tableguru.namaColumn),String)
+                    Return CType(Me(Me.tableguru.NamaColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'nama' in table 'guru' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Nama' in table 'guru' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tableguru.namaColumn) = value
+                Me(Me.tableguru.NamaColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property alamat() As String
+        Public Property Alamat() As String
             Get
                 Try 
-                    Return CType(Me(Me.tableguru.alamatColumn),String)
+                    Return CType(Me(Me.tableguru.AlamatColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'alamat' in table 'guru' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Alamat' in table 'guru' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tableguru.alamatColumn) = value
+                Me(Me.tableguru.AlamatColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property tempat_lahir() As String
+        Public Property Tempat_Lahir() As String
             Get
                 Try 
-                    Return CType(Me(Me.tableguru.tempat_lahirColumn),String)
+                    Return CType(Me(Me.tableguru.Tempat_LahirColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'tempat_lahir' in table 'guru' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Tempat_Lahir' in table 'guru' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tableguru.tempat_lahirColumn) = value
+                Me(Me.tableguru.Tempat_LahirColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property tanggal_lahir() As Date
+        Public Property Tanggal_Lahir() As Date
             Get
                 Try 
-                    Return CType(Me(Me.tableguru.tanggal_lahirColumn),Date)
+                    Return CType(Me(Me.tableguru.Tanggal_LahirColumn),Date)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'tanggal_lahir' in table 'guru' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Tanggal_Lahir' in table 'guru' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tableguru.tanggal_lahirColumn) = value
+                Me(Me.tableguru.Tanggal_LahirColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property jenkel() As String
+        Public Property Jenkel() As String
             Get
                 Try 
-                    Return CType(Me(Me.tableguru.jenkelColumn),String)
+                    Return CType(Me(Me.tableguru.JenkelColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'jenkel' in table 'guru' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Jenkel' in table 'guru' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tableguru.jenkelColumn) = value
+                Me(Me.tableguru.JenkelColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property no_telpon() As Integer
+        Public Property No_Telpon() As Integer
             Get
                 Try 
-                    Return CType(Me(Me.tableguru.no_telponColumn),Integer)
+                    Return CType(Me(Me.tableguru.No_TelponColumn),Integer)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'no_telpon' in table 'guru' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'No_Telpon' in table 'guru' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tableguru.no_telponColumn) = value
+                Me(Me.tableguru.No_TelponColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property status() As String
+        Public Property Status() As String
             Get
                 Try 
-                    Return CType(Me(Me.tableguru.statusColumn),String)
+                    Return CType(Me(Me.tableguru.StatusColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'status' in table 'guru' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Status' in table 'guru' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tableguru.statusColumn) = value
+                Me(Me.tableguru.StatusColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property pendidikan() As String
+        Public Property Pendidikan() As String
             Get
                 Try 
-                    Return CType(Me(Me.tableguru.pendidikanColumn),String)
+                    Return CType(Me(Me.tableguru.PendidikanColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'pendidikan' in table 'guru' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Pendidikan' in table 'guru' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tableguru.pendidikanColumn) = value
+                Me(Me.tableguru.PendidikanColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property agama() As String
+        Public Property Agama() As String
             Get
                 Try 
-                    Return CType(Me(Me.tableguru.agamaColumn),String)
+                    Return CType(Me(Me.tableguru.AgamaColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'agama' in table 'guru' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Agama' in table 'guru' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tableguru.agamaColumn) = value
+                Me(Me.tableguru.AgamaColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function Isnip_guruNull() As Boolean
-            Return Me.IsNull(Me.tableguru.nip_guruColumn)
+        Public Property ID_Mata_Pelajaran() As String
+            Get
+                Return CType(Me(Me.tableguru.ID_Mata_PelajaranColumn),String)
+            End Get
+            Set
+                Me(Me.tableguru.ID_Mata_PelajaranColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Mata_Pelajaran() As String
+            Get
+                Return CType(Me(Me.tableguru.Mata_PelajaranColumn),String)
+            End Get
+            Set
+                Me(Me.tableguru.Mata_PelajaranColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsNIP_GuruNull() As Boolean
+            Return Me.IsNull(Me.tableguru.NIP_GuruColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub Setnip_guruNull()
-            Me(Me.tableguru.nip_guruColumn) = Global.System.Convert.DBNull
+        Public Sub SetNIP_GuruNull()
+            Me(Me.tableguru.NIP_GuruColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsnamaNull() As Boolean
-            Return Me.IsNull(Me.tableguru.namaColumn)
+        Public Function IsNamaNull() As Boolean
+            Return Me.IsNull(Me.tableguru.NamaColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetnamaNull()
-            Me(Me.tableguru.namaColumn) = Global.System.Convert.DBNull
+        Public Sub SetNamaNull()
+            Me(Me.tableguru.NamaColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsalamatNull() As Boolean
-            Return Me.IsNull(Me.tableguru.alamatColumn)
+        Public Function IsAlamatNull() As Boolean
+            Return Me.IsNull(Me.tableguru.AlamatColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetalamatNull()
-            Me(Me.tableguru.alamatColumn) = Global.System.Convert.DBNull
+        Public Sub SetAlamatNull()
+            Me(Me.tableguru.AlamatColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function Istempat_lahirNull() As Boolean
-            Return Me.IsNull(Me.tableguru.tempat_lahirColumn)
+        Public Function IsTempat_LahirNull() As Boolean
+            Return Me.IsNull(Me.tableguru.Tempat_LahirColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub Settempat_lahirNull()
-            Me(Me.tableguru.tempat_lahirColumn) = Global.System.Convert.DBNull
+        Public Sub SetTempat_LahirNull()
+            Me(Me.tableguru.Tempat_LahirColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function Istanggal_lahirNull() As Boolean
-            Return Me.IsNull(Me.tableguru.tanggal_lahirColumn)
+        Public Function IsTanggal_LahirNull() As Boolean
+            Return Me.IsNull(Me.tableguru.Tanggal_LahirColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub Settanggal_lahirNull()
-            Me(Me.tableguru.tanggal_lahirColumn) = Global.System.Convert.DBNull
+        Public Sub SetTanggal_LahirNull()
+            Me(Me.tableguru.Tanggal_LahirColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsjenkelNull() As Boolean
-            Return Me.IsNull(Me.tableguru.jenkelColumn)
+        Public Function IsJenkelNull() As Boolean
+            Return Me.IsNull(Me.tableguru.JenkelColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetjenkelNull()
-            Me(Me.tableguru.jenkelColumn) = Global.System.Convert.DBNull
+        Public Sub SetJenkelNull()
+            Me(Me.tableguru.JenkelColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function Isno_telponNull() As Boolean
-            Return Me.IsNull(Me.tableguru.no_telponColumn)
+        Public Function IsNo_TelponNull() As Boolean
+            Return Me.IsNull(Me.tableguru.No_TelponColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub Setno_telponNull()
-            Me(Me.tableguru.no_telponColumn) = Global.System.Convert.DBNull
+        Public Sub SetNo_TelponNull()
+            Me(Me.tableguru.No_TelponColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsstatusNull() As Boolean
-            Return Me.IsNull(Me.tableguru.statusColumn)
+        Public Function IsStatusNull() As Boolean
+            Return Me.IsNull(Me.tableguru.StatusColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetstatusNull()
-            Me(Me.tableguru.statusColumn) = Global.System.Convert.DBNull
+        Public Sub SetStatusNull()
+            Me(Me.tableguru.StatusColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IspendidikanNull() As Boolean
-            Return Me.IsNull(Me.tableguru.pendidikanColumn)
+        Public Function IsPendidikanNull() As Boolean
+            Return Me.IsNull(Me.tableguru.PendidikanColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetpendidikanNull()
-            Me(Me.tableguru.pendidikanColumn) = Global.System.Convert.DBNull
+        Public Sub SetPendidikanNull()
+            Me(Me.tableguru.PendidikanColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsagamaNull() As Boolean
-            Return Me.IsNull(Me.tableguru.agamaColumn)
+        Public Function IsAgamaNull() As Boolean
+            Return Me.IsNull(Me.tableguru.AgamaColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetagamaNull()
-            Me(Me.tableguru.agamaColumn) = Global.System.Convert.DBNull
+        Public Sub SetAgamaNull()
+            Me(Me.tableguru.AgamaColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -1941,56 +2066,78 @@ Partial Public Class project_kel6DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property id_kelas() As String
+        Public Property ID_Kelas() As String
             Get
                 Try 
-                    Return CType(Me(Me.tablekelas.id_kelasColumn),String)
+                    Return CType(Me(Me.tablekelas.ID_KelasColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'id_kelas' in table 'kelas' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'ID_Kelas' in table 'kelas' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tablekelas.id_kelasColumn) = value
+                Me(Me.tablekelas.ID_KelasColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property kelas() As String
+        Public Property Kelas() As String
             Get
                 Try 
-                    Return CType(Me(Me.tablekelas.kelasColumn),String)
+                    Return CType(Me(Me.tablekelas.KelasColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'kelas' in table 'kelas' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Kelas' in table 'kelas' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tablekelas.kelasColumn) = value
+                Me(Me.tablekelas.KelasColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function Isid_kelasNull() As Boolean
-            Return Me.IsNull(Me.tablekelas.id_kelasColumn)
+        Public Property NIP_Guru() As Integer
+            Get
+                Return CType(Me(Me.tablekelas.NIP_GuruColumn),Integer)
+            End Get
+            Set
+                Me(Me.tablekelas.NIP_GuruColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property NIP_Siswa() As Integer
+            Get
+                Return CType(Me(Me.tablekelas.NIP_SiswaColumn),Integer)
+            End Get
+            Set
+                Me(Me.tablekelas.NIP_SiswaColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsID_KelasNull() As Boolean
+            Return Me.IsNull(Me.tablekelas.ID_KelasColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub Setid_kelasNull()
-            Me(Me.tablekelas.id_kelasColumn) = Global.System.Convert.DBNull
+        Public Sub SetID_KelasNull()
+            Me(Me.tablekelas.ID_KelasColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IskelasNull() As Boolean
-            Return Me.IsNull(Me.tablekelas.kelasColumn)
+        Public Function IsKelasNull() As Boolean
+            Return Me.IsNull(Me.tablekelas.KelasColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetkelasNull()
-            Me(Me.tablekelas.kelasColumn) = Global.System.Convert.DBNull
+        Public Sub SetKelasNull()
+            Me(Me.tablekelas.KelasColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -2011,67 +2158,78 @@ Partial Public Class project_kel6DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property id_mata_pelajaran() As Integer
+        Public Property ID_Mata_Pelajaran() As Integer
             Get
                 Try 
-                    Return CType(Me(Me.tablemata_pelajaran.id_mata_pelajaranColumn),Integer)
+                    Return CType(Me(Me.tablemata_pelajaran.ID_Mata_PelajaranColumn),Integer)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'id_mata_pelajaran' in table 'mata_pelajaran' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'ID_Mata_Pelajaran' in table 'mata_pelajaran' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tablemata_pelajaran.id_mata_pelajaranColumn) = value
+                Me(Me.tablemata_pelajaran.ID_Mata_PelajaranColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property nama_mata_pelajaran() As String
+        Public Property Nama_Mata_Pelajaran() As String
             Get
                 Try 
-                    Return CType(Me(Me.tablemata_pelajaran.nama_mata_pelajaranColumn),String)
+                    Return CType(Me(Me.tablemata_pelajaran.Nama_Mata_PelajaranColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'nama_mata_pelajaran' in table 'mata_pelajaran' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Nama_Mata_Pelajaran' in table 'mata_pelajaran' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tablemata_pelajaran.nama_mata_pelajaranColumn) = value
+                Me(Me.tablemata_pelajaran.Nama_Mata_PelajaranColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property kkm() As Integer
+        Public Property KKM() As Integer
             Get
-                Return CType(Me(Me.tablemata_pelajaran.kkmColumn),Integer)
+                Return CType(Me(Me.tablemata_pelajaran.KKMColumn),Integer)
             End Get
             Set
-                Me(Me.tablemata_pelajaran.kkmColumn) = value
+                Me(Me.tablemata_pelajaran.KKMColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function Isid_mata_pelajaranNull() As Boolean
-            Return Me.IsNull(Me.tablemata_pelajaran.id_mata_pelajaranColumn)
+        Public Property NIP_Guru() As Integer
+            Get
+                Return CType(Me(Me.tablemata_pelajaran.NIP_GuruColumn),Integer)
+            End Get
+            Set
+                Me(Me.tablemata_pelajaran.NIP_GuruColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsID_Mata_PelajaranNull() As Boolean
+            Return Me.IsNull(Me.tablemata_pelajaran.ID_Mata_PelajaranColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub Setid_mata_pelajaranNull()
-            Me(Me.tablemata_pelajaran.id_mata_pelajaranColumn) = Global.System.Convert.DBNull
+        Public Sub SetID_Mata_PelajaranNull()
+            Me(Me.tablemata_pelajaran.ID_Mata_PelajaranColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function Isnama_mata_pelajaranNull() As Boolean
-            Return Me.IsNull(Me.tablemata_pelajaran.nama_mata_pelajaranColumn)
+        Public Function IsNama_Mata_PelajaranNull() As Boolean
+            Return Me.IsNull(Me.tablemata_pelajaran.Nama_Mata_PelajaranColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub Setnama_mata_pelajaranNull()
-            Me(Me.tablemata_pelajaran.nama_mata_pelajaranColumn) = Global.System.Convert.DBNull
+        Public Sub SetNama_Mata_PelajaranNull()
+            Me(Me.tablemata_pelajaran.Nama_Mata_PelajaranColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -2092,191 +2250,197 @@ Partial Public Class project_kel6DataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property nis() As Integer
+        Public Property NIS() As Integer
             Get
-                Try 
-                    Return CType(Me(Me.tablesiswa.nisColumn),Integer)
-                Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'nis' in table 'siswa' is DBNull.", e)
-                End Try
+                Return CType(Me(Me.tablesiswa.NISColumn),Integer)
             End Get
             Set
-                Me(Me.tablesiswa.nisColumn) = value
+                Me(Me.tablesiswa.NISColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property nama() As String
+        Public Property Nama() As String
             Get
                 Try 
-                    Return CType(Me(Me.tablesiswa.namaColumn),String)
+                    Return CType(Me(Me.tablesiswa.NamaColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'nama' in table 'siswa' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Nama' in table 'siswa' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tablesiswa.namaColumn) = value
+                Me(Me.tablesiswa.NamaColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property tempat_lahir() As String
+        Public Property Tempat_Lahir() As String
             Get
                 Try 
-                    Return CType(Me(Me.tablesiswa.tempat_lahirColumn),String)
+                    Return CType(Me(Me.tablesiswa.Tempat_LahirColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'tempat_lahir' in table 'siswa' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Tempat_Lahir' in table 'siswa' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tablesiswa.tempat_lahirColumn) = value
+                Me(Me.tablesiswa.Tempat_LahirColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property tanggal_lahir() As Date
+        Public Property Tanggal_Lahir() As Date
             Get
                 Try 
-                    Return CType(Me(Me.tablesiswa.tanggal_lahirColumn),Date)
+                    Return CType(Me(Me.tablesiswa.Tanggal_LahirColumn),Date)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'tanggal_lahir' in table 'siswa' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Tanggal_Lahir' in table 'siswa' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tablesiswa.tanggal_lahirColumn) = value
+                Me(Me.tablesiswa.Tanggal_LahirColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property jenkel() As String
+        Public Property Jenkel() As String
             Get
                 Try 
-                    Return CType(Me(Me.tablesiswa.jenkelColumn),String)
+                    Return CType(Me(Me.tablesiswa.JenkelColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'jenkel' in table 'siswa' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Jenkel' in table 'siswa' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tablesiswa.jenkelColumn) = value
+                Me(Me.tablesiswa.JenkelColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property alamat() As String
+        Public Property Alamat() As String
             Get
                 Try 
-                    Return CType(Me(Me.tablesiswa.alamatColumn),String)
+                    Return CType(Me(Me.tablesiswa.AlamatColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'alamat' in table 'siswa' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Alamat' in table 'siswa' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tablesiswa.alamatColumn) = value
+                Me(Me.tablesiswa.AlamatColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Property agama() As String
+        Public Property Agama() As String
             Get
                 Try 
-                    Return CType(Me(Me.tablesiswa.agamaColumn),String)
+                    Return CType(Me(Me.tablesiswa.AgamaColumn),String)
                 Catch e As Global.System.InvalidCastException
-                    Throw New Global.System.Data.StrongTypingException("The value for column 'agama' in table 'siswa' is DBNull.", e)
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Agama' in table 'siswa' is DBNull.", e)
                 End Try
             End Get
             Set
-                Me(Me.tablesiswa.agamaColumn) = value
+                Me(Me.tablesiswa.AgamaColumn) = value
             End Set
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsnisNull() As Boolean
-            Return Me.IsNull(Me.tablesiswa.nisColumn)
+        Public Property ID_Kelas() As String
+            Get
+                Return CType(Me(Me.tablesiswa.ID_KelasColumn),String)
+            End Get
+            Set
+                Me(Me.tablesiswa.ID_KelasColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Kelas() As String
+            Get
+                Return CType(Me(Me.tablesiswa.KelasColumn),String)
+            End Get
+            Set
+                Me(Me.tablesiswa.KelasColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsNamaNull() As Boolean
+            Return Me.IsNull(Me.tablesiswa.NamaColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetnisNull()
-            Me(Me.tablesiswa.nisColumn) = Global.System.Convert.DBNull
+        Public Sub SetNamaNull()
+            Me(Me.tablesiswa.NamaColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsnamaNull() As Boolean
-            Return Me.IsNull(Me.tablesiswa.namaColumn)
+        Public Function IsTempat_LahirNull() As Boolean
+            Return Me.IsNull(Me.tablesiswa.Tempat_LahirColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetnamaNull()
-            Me(Me.tablesiswa.namaColumn) = Global.System.Convert.DBNull
+        Public Sub SetTempat_LahirNull()
+            Me(Me.tablesiswa.Tempat_LahirColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function Istempat_lahirNull() As Boolean
-            Return Me.IsNull(Me.tablesiswa.tempat_lahirColumn)
+        Public Function IsTanggal_LahirNull() As Boolean
+            Return Me.IsNull(Me.tablesiswa.Tanggal_LahirColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub Settempat_lahirNull()
-            Me(Me.tablesiswa.tempat_lahirColumn) = Global.System.Convert.DBNull
+        Public Sub SetTanggal_LahirNull()
+            Me(Me.tablesiswa.Tanggal_LahirColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function Istanggal_lahirNull() As Boolean
-            Return Me.IsNull(Me.tablesiswa.tanggal_lahirColumn)
+        Public Function IsJenkelNull() As Boolean
+            Return Me.IsNull(Me.tablesiswa.JenkelColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub Settanggal_lahirNull()
-            Me(Me.tablesiswa.tanggal_lahirColumn) = Global.System.Convert.DBNull
+        Public Sub SetJenkelNull()
+            Me(Me.tablesiswa.JenkelColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsjenkelNull() As Boolean
-            Return Me.IsNull(Me.tablesiswa.jenkelColumn)
+        Public Function IsAlamatNull() As Boolean
+            Return Me.IsNull(Me.tablesiswa.AlamatColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetjenkelNull()
-            Me(Me.tablesiswa.jenkelColumn) = Global.System.Convert.DBNull
+        Public Sub SetAlamatNull()
+            Me(Me.tablesiswa.AlamatColumn) = Global.System.Convert.DBNull
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsalamatNull() As Boolean
-            Return Me.IsNull(Me.tablesiswa.alamatColumn)
+        Public Function IsAgamaNull() As Boolean
+            Return Me.IsNull(Me.tablesiswa.AgamaColumn)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetalamatNull()
-            Me(Me.tablesiswa.alamatColumn) = Global.System.Convert.DBNull
-        End Sub
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Function IsagamaNull() As Boolean
-            Return Me.IsNull(Me.tablesiswa.agamaColumn)
-        End Function
-        
-        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Sub SetagamaNull()
-            Me(Me.tablesiswa.agamaColumn) = Global.System.Convert.DBNull
+        Public Sub SetAgamaNull()
+            Me(Me.tablesiswa.AgamaColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -2425,7 +2589,7 @@ Partial Public Class project_kel6DataSet
     End Class
 End Class
 
-Namespace project_kel6DataSetTableAdapters
+Namespace project_kel6DataSet1TableAdapters
     
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
@@ -2554,92 +2718,109 @@ Namespace project_kel6DataSetTableAdapters
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
             tableMapping.DataSetTable = "guru"
-            tableMapping.ColumnMappings.Add("nip_guru", "nip_guru")
-            tableMapping.ColumnMappings.Add("nama", "nama")
-            tableMapping.ColumnMappings.Add("alamat", "alamat")
-            tableMapping.ColumnMappings.Add("tempat_lahir", "tempat_lahir")
-            tableMapping.ColumnMappings.Add("tanggal_lahir", "tanggal_lahir")
-            tableMapping.ColumnMappings.Add("jenkel", "jenkel")
-            tableMapping.ColumnMappings.Add("no_telpon", "no_telpon")
-            tableMapping.ColumnMappings.Add("status", "status")
-            tableMapping.ColumnMappings.Add("pendidikan", "pendidikan")
-            tableMapping.ColumnMappings.Add("agama", "agama")
+            tableMapping.ColumnMappings.Add("NIP_Guru", "NIP_Guru")
+            tableMapping.ColumnMappings.Add("Nama", "Nama")
+            tableMapping.ColumnMappings.Add("Alamat", "Alamat")
+            tableMapping.ColumnMappings.Add("Tempat_Lahir", "Tempat_Lahir")
+            tableMapping.ColumnMappings.Add("Tanggal_Lahir", "Tanggal_Lahir")
+            tableMapping.ColumnMappings.Add("Jenkel", "Jenkel")
+            tableMapping.ColumnMappings.Add("No_Telpon", "No_Telpon")
+            tableMapping.ColumnMappings.Add("Status", "Status")
+            tableMapping.ColumnMappings.Add("Pendidikan", "Pendidikan")
+            tableMapping.ColumnMappings.Add("Agama", "Agama")
+            tableMapping.ColumnMappings.Add("ID_Mata_Pelajaran", "ID_Mata_Pelajaran")
+            tableMapping.ColumnMappings.Add("Mata_Pelajaran", "Mata_Pelajaran")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.InsertCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `guru` (`nip_guru`, `nama`, `alamat`, `tempat_lahir`, `tanggal_lahir`"& _ 
-                ", `jenkel`, `no_telpon`, `status`, `pendidikan`, `agama`) VALUES (@p1, @p2, @p3,"& _ 
-                " @p4, @p5, @p6, @p7, @p8, @p9, @p10)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `guru` (`NIP_Guru`, `Nama`, `Alamat`, `Tempat_Lahir`, `Tanggal_Lahir`"& _ 
+                ", `Jenkel`, `No_Telpon`, `Status`, `Pendidikan`, `Agama`, `ID_Mata_Pelajaran`, `"& _ 
+                "Mata_Pelajaran`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11"& _ 
+                ", @p12)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.MySql.Data.MySqlClient.MySqlParameter = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "nip_guru"
+            param.SourceColumn = "NIP_Guru"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p2"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "nama"
+            param.SourceColumn = "Nama"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p3"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "alamat"
+            param.SourceColumn = "Alamat"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p4"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "tempat_lahir"
+            param.SourceColumn = "Tempat_Lahir"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p5"
             param.DbType = Global.System.Data.DbType.[Date]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.[Date]
             param.IsNullable = true
-            param.SourceColumn = "tanggal_lahir"
+            param.SourceColumn = "Tanggal_Lahir"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p6"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "jenkel"
+            param.SourceColumn = "Jenkel"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p7"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "no_telpon"
+            param.SourceColumn = "No_Telpon"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p8"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "status"
+            param.SourceColumn = "Status"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p9"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "pendidikan"
+            param.SourceColumn = "Pendidikan"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p10"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "agama"
+            param.SourceColumn = "Agama"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p11"
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "ID_Mata_Pelajaran"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p12"
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "Mata_Pelajaran"
             Me._adapter.InsertCommand.Parameters.Add(param)
         End Sub
         
@@ -2656,8 +2837,9 @@ Namespace project_kel6DataSetTableAdapters
             Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT `nip_guru`, `nama`, `alamat`, `tempat_lahir`, `tanggal_lahir`, `jenkel`, `"& _ 
-                "no_telpon`, `status`, `pendidikan`, `agama` FROM `guru`"
+            Me._commandCollection(0).CommandText = "SELECT `NIP_Guru`, `Nama`, `Alamat`, `Tempat_Lahir`, `Tanggal_Lahir`, `Jenkel`, `"& _ 
+                "No_Telpon`, `Status`, `Pendidikan`, `Agama`, `ID_Mata_Pelajaran`, `Mata_Pelajara"& _ 
+                "n` FROM `guru`"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -2665,7 +2847,7 @@ Namespace project_kel6DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As project_kel6DataSet.guruDataTable) As Integer
+        Public Overloads Overridable Function Fill(ByVal dataTable As project_kel6DataSet1.guruDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -2678,9 +2860,9 @@ Namespace project_kel6DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As project_kel6DataSet.guruDataTable
+        Public Overloads Overridable Function GetData() As project_kel6DataSet1.guruDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            Dim dataTable As project_kel6DataSet.guruDataTable = New project_kel6DataSet.guruDataTable()
+            Dim dataTable As project_kel6DataSet1.guruDataTable = New project_kel6DataSet1.guruDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
@@ -2688,14 +2870,14 @@ Namespace project_kel6DataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataTable As project_kel6DataSet.guruDataTable) As Integer
+        Public Overloads Overridable Function Update(ByVal dataTable As project_kel6DataSet1.guruDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataSet As project_kel6DataSet) As Integer
+        Public Overloads Overridable Function Update(ByVal dataSet As project_kel6DataSet1) As Integer
             Return Me.Adapter.Update(dataSet, "guru")
         End Function
         
@@ -2717,7 +2899,7 @@ Namespace project_kel6DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal p1 As Global.System.Nullable(Of Integer), ByVal p2 As String, ByVal p3 As String, ByVal p4 As String, ByVal p5 As Global.System.Nullable(Of Date), ByVal p6 As String, ByVal p7 As Global.System.Nullable(Of Integer), ByVal p8 As String, ByVal p9 As String, ByVal p10 As String) As Integer
+        Public Overloads Overridable Function Insert(ByVal p1 As Global.System.Nullable(Of Integer), ByVal p2 As String, ByVal p3 As String, ByVal p4 As String, ByVal p5 As Global.System.Nullable(Of Date), ByVal p6 As String, ByVal p7 As Global.System.Nullable(Of Integer), ByVal p8 As String, ByVal p9 As String, ByVal p10 As String, ByVal p11 As String, ByVal p12 As String) As Integer
             If (p1.HasValue = true) Then
                 Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1.Value,Integer)
             Else
@@ -2767,6 +2949,16 @@ Namespace project_kel6DataSetTableAdapters
                 Me.Adapter.InsertCommand.Parameters(9).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.InsertCommand.Parameters(9).Value = CType(p10,String)
+            End If
+            If (p11 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p11")
+            Else
+                Me.Adapter.InsertCommand.Parameters(10).Value = CType(p11,String)
+            End If
+            If (p12 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p12")
+            Else
+                Me.Adapter.InsertCommand.Parameters(11).Value = CType(p12,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -2911,26 +3103,43 @@ Namespace project_kel6DataSetTableAdapters
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
             tableMapping.DataSetTable = "kelas"
-            tableMapping.ColumnMappings.Add("id_kelas", "id_kelas")
-            tableMapping.ColumnMappings.Add("kelas", "kelas")
+            tableMapping.ColumnMappings.Add("ID_Kelas", "ID_Kelas")
+            tableMapping.ColumnMappings.Add("Kelas", "Kelas")
+            tableMapping.ColumnMappings.Add("NIP_Guru", "NIP_Guru")
+            tableMapping.ColumnMappings.Add("NIP_Siswa", "NIP_Siswa")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.InsertCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `kelas` (`id_kelas`, `kelas`) VALUES (@p1, @p2)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `kelas` (`ID_Kelas`, `Kelas`, `NIP_Guru`, `NIP_Siswa`) VALUES (@p1, @"& _ 
+                "p2, @p3, @p4)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.MySql.Data.MySqlClient.MySqlParameter = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "id_kelas"
+            param.SourceColumn = "ID_Kelas"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p2"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "kelas"
+            param.SourceColumn = "Kelas"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p3"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "NIP_Guru"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p4"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "NIP_Siswa"
             Me._adapter.InsertCommand.Parameters.Add(param)
         End Sub
         
@@ -2947,7 +3156,7 @@ Namespace project_kel6DataSetTableAdapters
             Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT `id_kelas`, `kelas` FROM `kelas`"
+            Me._commandCollection(0).CommandText = "SELECT `ID_Kelas`, `Kelas`, `NIP_Guru`, `NIP_Siswa` FROM `kelas`"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -2955,7 +3164,7 @@ Namespace project_kel6DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As project_kel6DataSet.kelasDataTable) As Integer
+        Public Overloads Overridable Function Fill(ByVal dataTable As project_kel6DataSet1.kelasDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -2968,9 +3177,9 @@ Namespace project_kel6DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As project_kel6DataSet.kelasDataTable
+        Public Overloads Overridable Function GetData() As project_kel6DataSet1.kelasDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            Dim dataTable As project_kel6DataSet.kelasDataTable = New project_kel6DataSet.kelasDataTable()
+            Dim dataTable As project_kel6DataSet1.kelasDataTable = New project_kel6DataSet1.kelasDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
@@ -2978,14 +3187,14 @@ Namespace project_kel6DataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataTable As project_kel6DataSet.kelasDataTable) As Integer
+        Public Overloads Overridable Function Update(ByVal dataTable As project_kel6DataSet1.kelasDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataSet As project_kel6DataSet) As Integer
+        Public Overloads Overridable Function Update(ByVal dataSet As project_kel6DataSet1) As Integer
             Return Me.Adapter.Update(dataSet, "kelas")
         End Function
         
@@ -3007,7 +3216,7 @@ Namespace project_kel6DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As String) As Integer
+        Public Overloads Overridable Function Insert(ByVal p1 As String, ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As Integer) As Integer
             If (p1 Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
             Else
@@ -3018,6 +3227,8 @@ Namespace project_kel6DataSetTableAdapters
             Else
                 Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,String)
             End If
+            Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,Integer)
+            Me.Adapter.InsertCommand.Parameters(3).Value = CType(p4,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -3161,35 +3372,43 @@ Namespace project_kel6DataSetTableAdapters
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
             tableMapping.DataSetTable = "mata_pelajaran"
-            tableMapping.ColumnMappings.Add("id_mata_pelajaran", "id_mata_pelajaran")
-            tableMapping.ColumnMappings.Add("nama_mata_pelajaran", "nama_mata_pelajaran")
-            tableMapping.ColumnMappings.Add("kkm", "kkm")
+            tableMapping.ColumnMappings.Add("ID_Mata_Pelajaran", "ID_Mata_Pelajaran")
+            tableMapping.ColumnMappings.Add("Nama_Mata_Pelajaran", "Nama_Mata_Pelajaran")
+            tableMapping.ColumnMappings.Add("KKM", "KKM")
+            tableMapping.ColumnMappings.Add("NIP_Guru", "NIP_Guru")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.InsertCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `mata_pelajaran` (`id_mata_pelajaran`, `nama_mata_pelajaran`, `kkm`) "& _ 
-                "VALUES (@p1, @p2, @p3)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `mata_pelajaran` (`ID_Mata_Pelajaran`, `Nama_Mata_Pelajaran`, `KKM`, "& _ 
+                "`NIP_Guru`) VALUES (@p1, @p2, @p3, @p4)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.MySql.Data.MySqlClient.MySqlParameter = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "id_mata_pelajaran"
+            param.SourceColumn = "ID_Mata_Pelajaran"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p2"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "nama_mata_pelajaran"
+            param.SourceColumn = "Nama_Mata_Pelajaran"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p3"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "kkm"
+            param.SourceColumn = "KKM"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p4"
+            param.DbType = Global.System.Data.DbType.Int32
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
+            param.IsNullable = true
+            param.SourceColumn = "NIP_Guru"
             Me._adapter.InsertCommand.Parameters.Add(param)
         End Sub
         
@@ -3206,7 +3425,8 @@ Namespace project_kel6DataSetTableAdapters
             Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT id_mata_pelajaran, nama_mata_pelajaran, kkm FROM mata_pelajaran"
+            Me._commandCollection(0).CommandText = "SELECT `ID_Mata_Pelajaran`, `Nama_Mata_Pelajaran`, `KKM`, `NIP_Guru` FROM `mata_p"& _ 
+                "elajaran`"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -3214,7 +3434,7 @@ Namespace project_kel6DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As project_kel6DataSet.mata_pelajaranDataTable) As Integer
+        Public Overloads Overridable Function Fill(ByVal dataTable As project_kel6DataSet1.mata_pelajaranDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -3227,9 +3447,9 @@ Namespace project_kel6DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As project_kel6DataSet.mata_pelajaranDataTable
+        Public Overloads Overridable Function GetData() As project_kel6DataSet1.mata_pelajaranDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            Dim dataTable As project_kel6DataSet.mata_pelajaranDataTable = New project_kel6DataSet.mata_pelajaranDataTable()
+            Dim dataTable As project_kel6DataSet1.mata_pelajaranDataTable = New project_kel6DataSet1.mata_pelajaranDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
@@ -3237,14 +3457,14 @@ Namespace project_kel6DataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataTable As project_kel6DataSet.mata_pelajaranDataTable) As Integer
+        Public Overloads Overridable Function Update(ByVal dataTable As project_kel6DataSet1.mata_pelajaranDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataSet As project_kel6DataSet) As Integer
+        Public Overloads Overridable Function Update(ByVal dataSet As project_kel6DataSet1) As Integer
             Return Me.Adapter.Update(dataSet, "mata_pelajaran")
         End Function
         
@@ -3266,7 +3486,7 @@ Namespace project_kel6DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal p1 As Global.System.Nullable(Of Integer), ByVal p2 As String, ByVal p3 As Integer) As Integer
+        Public Overloads Overridable Function Insert(ByVal p1 As Global.System.Nullable(Of Integer), ByVal p2 As String, ByVal p3 As Integer, ByVal p4 As Integer) As Integer
             If (p1.HasValue = true) Then
                 Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1.Value,Integer)
             Else
@@ -3278,6 +3498,7 @@ Namespace project_kel6DataSetTableAdapters
                 Me.Adapter.InsertCommand.Parameters(1).Value = CType(p2,String)
             End If
             Me.Adapter.InsertCommand.Parameters(2).Value = CType(p3,Integer)
+            Me.Adapter.InsertCommand.Parameters(3).Value = CType(p4,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -3421,67 +3642,84 @@ Namespace project_kel6DataSetTableAdapters
             Dim tableMapping As Global.System.Data.Common.DataTableMapping = New Global.System.Data.Common.DataTableMapping()
             tableMapping.SourceTable = "Table"
             tableMapping.DataSetTable = "siswa"
-            tableMapping.ColumnMappings.Add("nis", "nis")
-            tableMapping.ColumnMappings.Add("nama", "nama")
-            tableMapping.ColumnMappings.Add("tempat_lahir", "tempat_lahir")
-            tableMapping.ColumnMappings.Add("tanggal_lahir", "tanggal_lahir")
-            tableMapping.ColumnMappings.Add("jenkel", "jenkel")
-            tableMapping.ColumnMappings.Add("alamat", "alamat")
-            tableMapping.ColumnMappings.Add("agama", "agama")
+            tableMapping.ColumnMappings.Add("NIS", "NIS")
+            tableMapping.ColumnMappings.Add("Nama", "Nama")
+            tableMapping.ColumnMappings.Add("Tempat_Lahir", "Tempat_Lahir")
+            tableMapping.ColumnMappings.Add("Tanggal_Lahir", "Tanggal_Lahir")
+            tableMapping.ColumnMappings.Add("Jenkel", "Jenkel")
+            tableMapping.ColumnMappings.Add("Alamat", "Alamat")
+            tableMapping.ColumnMappings.Add("Agama", "Agama")
+            tableMapping.ColumnMappings.Add("ID_Kelas", "ID_Kelas")
+            tableMapping.ColumnMappings.Add("Kelas", "Kelas")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.InsertCommand = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
-            Me._adapter.InsertCommand.CommandText = "INSERT INTO `siswa` (`nis`, `nama`, `tempat_lahir`, `tanggal_lahir`, `jenkel`, `a"& _ 
-                "lamat`, `agama`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7)"
+            Me._adapter.InsertCommand.CommandText = "INSERT INTO `siswa` (`NIS`, `Nama`, `Tempat_Lahir`, `Tanggal_Lahir`, `Jenkel`, `A"& _ 
+                "lamat`, `Agama`, `ID_Kelas`, `Kelas`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7,"& _ 
+                " @p8, @p9)"
             Me._adapter.InsertCommand.CommandType = Global.System.Data.CommandType.Text
             Dim param As Global.MySql.Data.MySqlClient.MySqlParameter = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p1"
             param.DbType = Global.System.Data.DbType.Int32
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.Int32
             param.IsNullable = true
-            param.SourceColumn = "nis"
+            param.SourceColumn = "NIS"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p2"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "nama"
+            param.SourceColumn = "Nama"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p3"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "tempat_lahir"
+            param.SourceColumn = "Tempat_Lahir"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p4"
             param.DbType = Global.System.Data.DbType.[Date]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.[Date]
             param.IsNullable = true
-            param.SourceColumn = "tanggal_lahir"
+            param.SourceColumn = "Tanggal_Lahir"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p5"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "jenkel"
+            param.SourceColumn = "Jenkel"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p6"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "alamat"
+            param.SourceColumn = "Alamat"
             Me._adapter.InsertCommand.Parameters.Add(param)
             param = New Global.MySql.Data.MySqlClient.MySqlParameter()
             param.ParameterName = "@p7"
             param.DbType = Global.System.Data.DbType.[String]
             param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
             param.IsNullable = true
-            param.SourceColumn = "agama"
+            param.SourceColumn = "Agama"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p8"
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "ID_Kelas"
+            Me._adapter.InsertCommand.Parameters.Add(param)
+            param = New Global.MySql.Data.MySqlClient.MySqlParameter()
+            param.ParameterName = "@p9"
+            param.DbType = Global.System.Data.DbType.[String]
+            param.MySqlDbType = Global.MySql.Data.MySqlClient.MySqlDbType.VarChar
+            param.IsNullable = true
+            param.SourceColumn = "Kelas"
             Me._adapter.InsertCommand.Parameters.Add(param)
         End Sub
         
@@ -3498,8 +3736,8 @@ Namespace project_kel6DataSetTableAdapters
             Me._commandCollection = New Global.MySql.Data.MySqlClient.MySqlCommand(0) {}
             Me._commandCollection(0) = New Global.MySql.Data.MySqlClient.MySqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT `nis`, `nama`, `tempat_lahir`, `tanggal_lahir`, `jenkel`, `alamat`, `agama"& _ 
-                "` FROM `siswa`"
+            Me._commandCollection(0).CommandText = "SELECT NIS, Nama, Tempat_Lahir, Tanggal_Lahir, Jenkel, Alamat, Agama, ID_Kelas, K"& _ 
+                "elas FROM siswa"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -3507,7 +3745,7 @@ Namespace project_kel6DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Fill, true)>  _
-        Public Overloads Overridable Function Fill(ByVal dataTable As project_kel6DataSet.siswaDataTable) As Integer
+        Public Overloads Overridable Function Fill(ByVal dataTable As project_kel6DataSet1.siswaDataTable) As Integer
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
             If (Me.ClearBeforeFill = true) Then
                 dataTable.Clear
@@ -3520,9 +3758,9 @@ Namespace project_kel6DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.[Select], true)>  _
-        Public Overloads Overridable Function GetData() As project_kel6DataSet.siswaDataTable
+        Public Overloads Overridable Function GetData() As project_kel6DataSet1.siswaDataTable
             Me.Adapter.SelectCommand = Me.CommandCollection(0)
-            Dim dataTable As project_kel6DataSet.siswaDataTable = New project_kel6DataSet.siswaDataTable()
+            Dim dataTable As project_kel6DataSet1.siswaDataTable = New project_kel6DataSet1.siswaDataTable()
             Me.Adapter.Fill(dataTable)
             Return dataTable
         End Function
@@ -3530,14 +3768,14 @@ Namespace project_kel6DataSetTableAdapters
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataTable As project_kel6DataSet.siswaDataTable) As Integer
+        Public Overloads Overridable Function Update(ByVal dataTable As project_kel6DataSet1.siswaDataTable) As Integer
             Return Me.Adapter.Update(dataTable)
         End Function
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Public Overloads Overridable Function Update(ByVal dataSet As project_kel6DataSet) As Integer
+        Public Overloads Overridable Function Update(ByVal dataSet As project_kel6DataSet1) As Integer
             Return Me.Adapter.Update(dataSet, "siswa")
         End Function
         
@@ -3559,12 +3797,8 @@ Namespace project_kel6DataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Insert, true)>  _
-        Public Overloads Overridable Function Insert(ByVal p1 As Global.System.Nullable(Of Integer), ByVal p2 As String, ByVal p3 As String, ByVal p4 As Global.System.Nullable(Of Date), ByVal p5 As String, ByVal p6 As String, ByVal p7 As String) As Integer
-            If (p1.HasValue = true) Then
-                Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1.Value,Integer)
-            Else
-                Me.Adapter.InsertCommand.Parameters(0).Value = Global.System.DBNull.Value
-            End If
+        Public Overloads Overridable Function Insert(ByVal p1 As Integer, ByVal p2 As String, ByVal p3 As String, ByVal p4 As Global.System.Nullable(Of Date), ByVal p5 As String, ByVal p6 As String, ByVal p7 As String, ByVal p8 As String, ByVal p9 As String) As Integer
+            Me.Adapter.InsertCommand.Parameters(0).Value = CType(p1,Integer)
             If (p2 Is Nothing) Then
                 Me.Adapter.InsertCommand.Parameters(1).Value = Global.System.DBNull.Value
             Else
@@ -3594,6 +3828,16 @@ Namespace project_kel6DataSetTableAdapters
                 Me.Adapter.InsertCommand.Parameters(6).Value = Global.System.DBNull.Value
             Else
                 Me.Adapter.InsertCommand.Parameters(6).Value = CType(p7,String)
+            End If
+            If (p8 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p8")
+            Else
+                Me.Adapter.InsertCommand.Parameters(7).Value = CType(p8,String)
+            End If
+            If (p9 Is Nothing) Then
+                Throw New Global.System.ArgumentNullException("p9")
+            Else
+                Me.Adapter.InsertCommand.Parameters(8).Value = CType(p9,String)
             End If
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.InsertCommand.Connection.State
             If ((Me.Adapter.InsertCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
@@ -3772,7 +4016,7 @@ Namespace project_kel6DataSetTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Function UpdateUpdatedRows(ByVal dataSet As project_kel6DataSet, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow), ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
+        Private Function UpdateUpdatedRows(ByVal dataSet As project_kel6DataSet1, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow), ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
             If (Not (Me._guruTableAdapter) Is Nothing) Then
                 Dim updatedRows() As Global.System.Data.DataRow = dataSet.guru.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.ModifiedCurrent)
@@ -3818,7 +4062,7 @@ Namespace project_kel6DataSetTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Function UpdateInsertedRows(ByVal dataSet As project_kel6DataSet, ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
+        Private Function UpdateInsertedRows(ByVal dataSet As project_kel6DataSet1, ByVal allAddedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
             If (Not (Me._guruTableAdapter) Is Nothing) Then
                 Dim addedRows() As Global.System.Data.DataRow = dataSet.guru.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Added)
@@ -3860,7 +4104,7 @@ Namespace project_kel6DataSetTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Private Function UpdateDeletedRows(ByVal dataSet As project_kel6DataSet, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
+        Private Function UpdateDeletedRows(ByVal dataSet As project_kel6DataSet1, ByVal allChangedRows As Global.System.Collections.Generic.List(Of Global.System.Data.DataRow)) As Integer
             Dim result As Integer = 0
             If (Not (Me._siswaTableAdapter) Is Nothing) Then
                 Dim deletedRows() As Global.System.Data.DataRow = dataSet.siswa.Select(Nothing, Nothing, Global.System.Data.DataViewRowState.Deleted)
@@ -3928,7 +4172,7 @@ Namespace project_kel6DataSetTableAdapters
         '''</summary>
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overridable Function UpdateAll(ByVal dataSet As project_kel6DataSet) As Integer
+        Public Overridable Function UpdateAll(ByVal dataSet As project_kel6DataSet1) As Integer
             If (dataSet Is Nothing) Then
                 Throw New Global.System.ArgumentNullException("dataSet")
             End If

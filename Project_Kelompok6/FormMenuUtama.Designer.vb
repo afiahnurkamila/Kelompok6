@@ -53,13 +53,13 @@ Partial Class FormMenuUtama
         'MATAPELAJARANToolStripMenuItem
         '
         Me.MATAPELAJARANToolStripMenuItem.Name = "MATAPELAJARANToolStripMenuItem"
-        Me.MATAPELAJARANToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.MATAPELAJARANToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.MATAPELAJARANToolStripMenuItem.Text = "Mata Pelajaran"
         '
         'KelasToolStripMenuItem
         '
         Me.KelasToolStripMenuItem.Name = "KelasToolStripMenuItem"
-        Me.KelasToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.KelasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.KelasToolStripMenuItem.Text = "Kelas"
         '
         'DATAToolStripMenuItem
@@ -72,19 +72,20 @@ Partial Class FormMenuUtama
         'DATASISWAToolStripMenuItem
         '
         Me.DATASISWAToolStripMenuItem.Name = "DATASISWAToolStripMenuItem"
-        Me.DATASISWAToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
+        Me.DATASISWAToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.DATASISWAToolStripMenuItem.Text = "Data Siswa"
         '
         'DATAGURUToolStripMenuItem
         '
         Me.DATAGURUToolStripMenuItem.Name = "DATAGURUToolStripMenuItem"
-        Me.DATAGURUToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
+        Me.DATAGURUToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.DATAGURUToolStripMenuItem.Text = "Data Guru"
         '
         'LOGOUTToolStripMenuItem
         '
+        Me.LOGOUTToolStripMenuItem.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LOGOUTToolStripMenuItem.Name = "LOGOUTToolStripMenuItem"
-        Me.LOGOUTToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
+        Me.LOGOUTToolStripMenuItem.Size = New System.Drawing.Size(58, 20)
         Me.LOGOUTToolStripMenuItem.Text = "Logout"
         '
         'FormMenuUtama

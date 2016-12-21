@@ -1,9 +1,17 @@
-﻿Public Class FormMataPelajaran
+﻿Public Class FormSiswa
 
     Private Sub ButtonTambah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonTambah.Click
-        Mata_pelajaranBindingSource.AddNew()
+        SiswaBindingSource.AddNew()
 
-
+        NISTextBox.Enabled = True
+        NamaTextBox.Enabled = True
+        Tempat_LahirTextBox.Enabled = True
+        Tanggal_LahirDateTimePicker.Enabled = True
+        JenkelTextBox.Enabled = True
+        AlamatRichTextBox.Enabled = True
+        AgamaTextBox.Enabled = True
+        ID_KelasTextBox.Enabled = True
+        KelasTextBox.Enabled = True
 
         ButtonTambah.Enabled = True
         ButtonEdit.Enabled = True
@@ -14,7 +22,15 @@
     End Sub
 
     Private Sub ButtonEdit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonEdit.Click
-
+        NISTextBox.Enabled = True
+        NamaTextBox.Enabled = True
+        Tempat_LahirTextBox.Enabled = True
+        Tanggal_LahirDateTimePicker.Enabled = True
+        JenkelTextBox.Enabled = True
+        AlamatRichTextBox.Enabled = True
+        AgamaTextBox.Enabled = True
+        ID_KelasTextBox.Enabled = True
+        KelasTextBox.Enabled = True
 
         ButtonTambah.Enabled = False
         ButtonEdit.Enabled = True
@@ -26,9 +42,19 @@
 
     Private Sub ButtonSimpan_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonSimpan.Click
         Me.Validate()
-        Me.Mata_pelajaranBindingSource.EndEdit()
+        Me.SiswaBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me.Project_kel6DataSet1)
         MessageBox.Show("Data anda telah tersimpan !!!")
+
+        NISTextBox.Enabled = True
+        NamaTextBox.Enabled = True
+        Tempat_LahirTextBox.Enabled = True
+        Tanggal_LahirDateTimePicker.Enabled = True
+        JenkelTextBox.Enabled = True
+        AlamatRichTextBox.Enabled = True
+        AgamaTextBox.Enabled = True
+        ID_KelasTextBox.Enabled = True
+        KelasTextBox.Enabled = True
 
         ButtonTambah.Enabled = True
         ButtonEdit.Enabled = True
@@ -39,8 +65,18 @@
     End Sub
 
     Private Sub ButtonHapus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonHapus.Click
-        Mata_pelajaranBindingSource.RemoveCurrent()
+        SiswaBindingSource.RemoveCurrent()
         MessageBox.Show("Data anda telah terhapus !!!")
+
+        NISTextBox.Enabled = True
+        NamaTextBox.Enabled = True
+        Tempat_LahirTextBox.Enabled = True
+        Tanggal_LahirDateTimePicker.Enabled = True
+        JenkelTextBox.Enabled = True
+        AlamatRichTextBox.Enabled = True
+        AgamaTextBox.Enabled = True
+        ID_KelasTextBox.Enabled = True
+        KelasTextBox.Enabled = True
 
         ButtonTambah.Enabled = True
         ButtonEdit.Enabled = True
@@ -51,7 +87,15 @@
     End Sub
 
     Private Sub ButtonRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonRefresh.Click
-
+        NISTextBox.Enabled = True
+        NamaTextBox.Enabled = True
+        Tempat_LahirTextBox.Enabled = True
+        Tanggal_LahirDateTimePicker.Enabled = True
+        JenkelTextBox.Enabled = True
+        AlamatRichTextBox.Enabled = True
+        AgamaTextBox.Enabled = True
+        ID_KelasTextBox.Enabled = True
+        KelasTextBox.Enabled = True
 
         ButtonTambah.Enabled = True
         ButtonEdit.Enabled = True
