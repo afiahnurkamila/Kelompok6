@@ -161,7 +161,7 @@
   <xs:element name="project_kel6DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="project_kel6DataSet1" msprop:Generator_UserDSName="project_kel6DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="guru" msprop:Generator_TableClassName="guruDataTable" msprop:Generator_TableVarName="tableguru" msprop:Generator_RowChangedName="guruRowChanged" msprop:Generator_TablePropName="guru" msprop:Generator_RowDeletingName="guruRowDeleting" msprop:Generator_RowChangingName="guruRowChanging" msprop:Generator_RowEvHandlerName="guruRowChangeEventHandler" msprop:Generator_RowDeletedName="guruRowDeleted" msprop:Generator_RowClassName="guruRow" msprop:Generator_UserTableName="guru" msprop:Generator_RowEvArgName="guruRowChangeEvent">
+        <xs:element name="guru" msprop:Generator_TableClassName="guruDataTable" msprop:Generator_TableVarName="tableguru" msprop:Generator_TablePropName="guru" msprop:Generator_RowDeletingName="guruRowDeleting" msprop:Generator_RowChangingName="guruRowChanging" msprop:Generator_RowEvHandlerName="guruRowChangeEventHandler" msprop:Generator_RowDeletedName="guruRowDeleted" msprop:Generator_UserTableName="guru" msprop:Generator_RowChangedName="guruRowChanged" msprop:Generator_RowEvArgName="guruRowChangeEvent" msprop:Generator_RowClassName="guruRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NIP_Guru" msprop:Generator_ColumnVarNameInTable="columnNIP_Guru" msprop:Generator_ColumnPropNameInRow="NIP_Guru" msprop:Generator_ColumnPropNameInTable="NIP_GuruColumn" msprop:Generator_UserColumnName="NIP_Guru" type="xs:int" minOccurs="0" />
@@ -233,7 +233,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="kelas" msprop:Generator_TableClassName="kelasDataTable" msprop:Generator_TableVarName="tablekelas" msprop:Generator_RowChangedName="kelasRowChanged" msprop:Generator_TablePropName="kelas" msprop:Generator_RowDeletingName="kelasRowDeleting" msprop:Generator_RowChangingName="kelasRowChanging" msprop:Generator_RowEvHandlerName="kelasRowChangeEventHandler" msprop:Generator_RowDeletedName="kelasRowDeleted" msprop:Generator_RowClassName="kelasRow" msprop:Generator_UserTableName="kelas" msprop:Generator_RowEvArgName="kelasRowChangeEvent">
+        <xs:element name="kelas" msprop:Generator_TableClassName="kelasDataTable" msprop:Generator_TableVarName="tablekelas" msprop:Generator_TablePropName="kelas" msprop:Generator_RowDeletingName="kelasRowDeleting" msprop:Generator_RowChangingName="kelasRowChanging" msprop:Generator_RowEvHandlerName="kelasRowChangeEventHandler" msprop:Generator_RowDeletedName="kelasRowDeleted" msprop:Generator_UserTableName="kelas" msprop:Generator_RowChangedName="kelasRowChanged" msprop:Generator_RowEvArgName="kelasRowChangeEvent" msprop:Generator_RowClassName="kelasRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_Kelas" msprop:Generator_ColumnVarNameInTable="columnID_Kelas" msprop:Generator_ColumnPropNameInRow="ID_Kelas" msprop:Generator_ColumnPropNameInTable="ID_KelasColumn" msprop:Generator_UserColumnName="ID_Kelas" minOccurs="0">
@@ -255,7 +255,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="mata_pelajaran" msprop:Generator_TableClassName="mata_pelajaranDataTable" msprop:Generator_TableVarName="tablemata_pelajaran" msprop:Generator_RowChangedName="mata_pelajaranRowChanged" msprop:Generator_TablePropName="mata_pelajaran" msprop:Generator_RowDeletingName="mata_pelajaranRowDeleting" msprop:Generator_RowChangingName="mata_pelajaranRowChanging" msprop:Generator_RowEvHandlerName="mata_pelajaranRowChangeEventHandler" msprop:Generator_RowDeletedName="mata_pelajaranRowDeleted" msprop:Generator_RowClassName="mata_pelajaranRow" msprop:Generator_UserTableName="mata_pelajaran" msprop:Generator_RowEvArgName="mata_pelajaranRowChangeEvent">
+        <xs:element name="mata_pelajaran" msprop:Generator_TableClassName="mata_pelajaranDataTable" msprop:Generator_TableVarName="tablemata_pelajaran" msprop:Generator_TablePropName="mata_pelajaran" msprop:Generator_RowDeletingName="mata_pelajaranRowDeleting" msprop:Generator_RowChangingName="mata_pelajaranRowChanging" msprop:Generator_RowEvHandlerName="mata_pelajaranRowChangeEventHandler" msprop:Generator_RowDeletedName="mata_pelajaranRowDeleted" msprop:Generator_UserTableName="mata_pelajaran" msprop:Generator_RowChangedName="mata_pelajaranRowChanged" msprop:Generator_RowEvArgName="mata_pelajaranRowChangeEvent" msprop:Generator_RowClassName="mata_pelajaranRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID_Mata_Pelajaran" msprop:Generator_ColumnVarNameInTable="columnID_Mata_Pelajaran" msprop:Generator_ColumnPropNameInRow="ID_Mata_Pelajaran" msprop:Generator_ColumnPropNameInTable="ID_Mata_PelajaranColumn" msprop:Generator_UserColumnName="ID_Mata_Pelajaran" type="xs:int" minOccurs="0" />
@@ -271,7 +271,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="siswa" msprop:Generator_TableClassName="siswaDataTable" msprop:Generator_TableVarName="tablesiswa" msprop:Generator_RowChangedName="siswaRowChanged" msprop:Generator_TablePropName="siswa" msprop:Generator_RowDeletingName="siswaRowDeleting" msprop:Generator_RowChangingName="siswaRowChanging" msprop:Generator_RowEvHandlerName="siswaRowChangeEventHandler" msprop:Generator_RowDeletedName="siswaRowDeleted" msprop:Generator_RowClassName="siswaRow" msprop:Generator_UserTableName="siswa" msprop:Generator_RowEvArgName="siswaRowChangeEvent">
+        <xs:element name="siswa" msprop:Generator_TableClassName="siswaDataTable" msprop:Generator_TableVarName="tablesiswa" msprop:Generator_TablePropName="siswa" msprop:Generator_RowDeletingName="siswaRowDeleting" msprop:Generator_RowChangingName="siswaRowChanging" msprop:Generator_RowEvHandlerName="siswaRowChangeEventHandler" msprop:Generator_RowDeletedName="siswaRowDeleted" msprop:Generator_UserTableName="siswa" msprop:Generator_RowChangedName="siswaRowChanged" msprop:Generator_RowEvArgName="siswaRowChangeEvent" msprop:Generator_RowClassName="siswaRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NIS" msprop:Generator_ColumnVarNameInTable="columnNIS" msprop:Generator_ColumnPropNameInRow="NIS" msprop:Generator_ColumnPropNameInTable="NISColumn" msprop:Generator_UserColumnName="NIS" type="xs:int" />

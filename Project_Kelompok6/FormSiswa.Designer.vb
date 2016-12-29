@@ -48,7 +48,6 @@ Partial Class FormSiswa
         Me.NamaTextBox = New System.Windows.Forms.TextBox()
         Me.Tempat_LahirTextBox = New System.Windows.Forms.TextBox()
         Me.Tanggal_LahirDateTimePicker = New System.Windows.Forms.DateTimePicker()
-        Me.JenkelTextBox = New System.Windows.Forms.TextBox()
         Me.AgamaTextBox = New System.Windows.Forms.TextBox()
         Me.ButtonKeluar = New System.Windows.Forms.Button()
         Me.ButtonRefresh = New System.Windows.Forms.Button()
@@ -66,6 +65,7 @@ Partial Class FormSiswa
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         NISLabel = New System.Windows.Forms.Label()
         NamaLabel = New System.Windows.Forms.Label()
         Tempat_LahirLabel = New System.Windows.Forms.Label()
@@ -227,6 +227,7 @@ Partial Class FormSiswa
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(ID_KelasLabel)
         Me.GroupBox1.Controls.Add(Me.ID_KelasTextBox)
         Me.GroupBox1.Controls.Add(Me.AlamatRichTextBox)
@@ -241,7 +242,6 @@ Partial Class FormSiswa
         Me.GroupBox1.Controls.Add(Tanggal_LahirLabel)
         Me.GroupBox1.Controls.Add(Me.Tanggal_LahirDateTimePicker)
         Me.GroupBox1.Controls.Add(JenkelLabel)
-        Me.GroupBox1.Controls.Add(Me.JenkelTextBox)
         Me.GroupBox1.Controls.Add(AlamatLabel)
         Me.GroupBox1.Controls.Add(AgamaLabel)
         Me.GroupBox1.Controls.Add(Me.AgamaTextBox)
@@ -270,6 +270,7 @@ Partial Class FormSiswa
         '
         'AlamatRichTextBox
         '
+        Me.AlamatRichTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AlamatRichTextBox.Location = New System.Drawing.Point(102, 152)
         Me.AlamatRichTextBox.Name = "AlamatRichTextBox"
         Me.AlamatRichTextBox.Size = New System.Drawing.Size(200, 79)
@@ -320,15 +321,6 @@ Partial Class FormSiswa
         Me.Tanggal_LahirDateTimePicker.Name = "Tanggal_LahirDateTimePicker"
         Me.Tanggal_LahirDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.Tanggal_LahirDateTimePicker.TabIndex = 13
-        '
-        'JenkelTextBox
-        '
-        Me.JenkelTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.SiswaBindingSource, "Jenkel", True))
-        Me.JenkelTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.JenkelTextBox.Location = New System.Drawing.Point(102, 126)
-        Me.JenkelTextBox.Name = "JenkelTextBox"
-        Me.JenkelTextBox.Size = New System.Drawing.Size(200, 20)
-        Me.JenkelTextBox.TabIndex = 15
         '
         'AgamaTextBox
         '
@@ -464,6 +456,16 @@ Partial Class FormSiswa
         Me.DataGridViewTextBoxColumn9.HeaderText = "Kelas"
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Laki-Laki", "Perempuan"})
+        Me.ComboBox1.Location = New System.Drawing.Point(102, 126)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(200, 21)
+        Me.ComboBox1.TabIndex = 34
+        '
         'FormSiswa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -498,7 +500,6 @@ Partial Class FormSiswa
     Friend WithEvents NamaTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Tempat_LahirTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Tanggal_LahirDateTimePicker As System.Windows.Forms.DateTimePicker
-    Friend WithEvents JenkelTextBox As System.Windows.Forms.TextBox
     Friend WithEvents AgamaTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ButtonKeluar As System.Windows.Forms.Button
     Friend WithEvents ButtonRefresh As System.Windows.Forms.Button
@@ -519,4 +520,5 @@ Partial Class FormSiswa
     Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 End Class

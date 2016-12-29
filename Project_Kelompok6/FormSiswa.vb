@@ -7,7 +7,7 @@
         NamaTextBox.Enabled = True
         Tempat_LahirTextBox.Enabled = True
         Tanggal_LahirDateTimePicker.Enabled = True
-        JenkelTextBox.Enabled = True
+        ComboBox1.Enabled = True
         AlamatRichTextBox.Enabled = True
         AgamaTextBox.Enabled = True
         ID_KelasTextBox.Enabled = True
@@ -26,7 +26,7 @@
         NamaTextBox.Enabled = True
         Tempat_LahirTextBox.Enabled = True
         Tanggal_LahirDateTimePicker.Enabled = True
-        JenkelTextBox.Enabled = True
+        ComboBox1.Enabled = True
         AlamatRichTextBox.Enabled = True
         AgamaTextBox.Enabled = True
         ID_KelasTextBox.Enabled = True
@@ -50,7 +50,7 @@
         NamaTextBox.Enabled = True
         Tempat_LahirTextBox.Enabled = True
         Tanggal_LahirDateTimePicker.Enabled = True
-        JenkelTextBox.Enabled = True
+        ComboBox1.Enabled = True
         AlamatRichTextBox.Enabled = True
         AgamaTextBox.Enabled = True
         ID_KelasTextBox.Enabled = True
@@ -72,7 +72,7 @@
         NamaTextBox.Enabled = True
         Tempat_LahirTextBox.Enabled = True
         Tanggal_LahirDateTimePicker.Enabled = True
-        JenkelTextBox.Enabled = True
+        ComboBox1.Enabled = True
         AlamatRichTextBox.Enabled = True
         AgamaTextBox.Enabled = True
         ID_KelasTextBox.Enabled = True
@@ -91,7 +91,7 @@
         NamaTextBox.Enabled = True
         Tempat_LahirTextBox.Enabled = True
         Tanggal_LahirDateTimePicker.Enabled = True
-        JenkelTextBox.Enabled = True
+        ComboBox1.Enabled = True
         AlamatRichTextBox.Enabled = True
         AgamaTextBox.Enabled = True
         ID_KelasTextBox.Enabled = True

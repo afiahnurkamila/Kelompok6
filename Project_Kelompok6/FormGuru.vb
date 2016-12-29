@@ -1,6 +1,6 @@
 ﻿Public Class FormGuru
 
-    Private Sub ButtonTambah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonTambah.Click
+    Private Sub ButtonTambah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         GuruBindingSource.AddNew()
 
         NIP_GuruTextBox.Enabled = True
@@ -8,7 +8,7 @@
         AlamatRichTextBox.Enabled = True
         Tempat_LahirTextBox.Enabled = True
         Tanggal_LahirDateTimePicker.Enabled = True
-        JenkelTextBox.Enabled = True
+        ComboBox1.Enabled = True
         No_TelponTextBox.Enabled = True
         StatusTextBox.Enabled = True
         PendidikanTextBox.Enabled = True
@@ -24,13 +24,13 @@
         ButtonKeluar.Enabled = True
     End Sub
 
-    Private Sub ButtonEdit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonEdit.Click
+    Private Sub ButtonEdit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         NIP_GuruTextBox.Enabled = True
         NamaTextBox.Enabled = True
         AlamatRichTextBox.Enabled = True
         Tempat_LahirTextBox.Enabled = True
         Tanggal_LahirDateTimePicker.Enabled = True
-        JenkelTextBox.Enabled = True
+        ComboBox1.Enabled = True
         No_TelponTextBox.Enabled = True
         StatusTextBox.Enabled = True
         PendidikanTextBox.Enabled = True
@@ -57,7 +57,7 @@
         AlamatRichTextBox.Enabled = True
         Tempat_LahirTextBox.Enabled = True
         Tanggal_LahirDateTimePicker.Enabled = True
-        JenkelTextBox.Enabled = True
+        ComboBox1.Enabled = True
         No_TelponTextBox.Enabled = True
         StatusTextBox.Enabled = True
         PendidikanTextBox.Enabled = True
@@ -82,7 +82,7 @@
         AlamatRichTextBox.Enabled = True
         Tempat_LahirTextBox.Enabled = True
         Tanggal_LahirDateTimePicker.Enabled = True
-        JenkelTextBox.Enabled = True
+        ComboBox1.Enabled = True
         No_TelponTextBox.Enabled = True
         StatusTextBox.Enabled = True
         PendidikanTextBox.Enabled = True
@@ -104,7 +104,7 @@
         AlamatRichTextBox.Enabled = True
         Tempat_LahirTextBox.Enabled = True
         Tanggal_LahirDateTimePicker.Enabled = True
-        JenkelTextBox.Enabled = True
+        ComboBox1.Enabled = True
         No_TelponTextBox.Enabled = True
         StatusTextBox.Enabled = True
         PendidikanTextBox.Enabled = True
