@@ -24,13 +24,13 @@ Partial Class FormMenuUtama
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormMenuUtama))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.DATAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LOGOUTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DATASISWAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DATAGURUToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FILEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MATAPELAJARANToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.KelasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DATAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DATASISWAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DATAGURUToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LOGOUTToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -39,34 +39,9 @@ Partial Class FormMenuUtama
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FILEToolStripMenuItem, Me.DATAToolStripMenuItem, Me.LOGOUTToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(727, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(433, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
-        '
-        'DATAToolStripMenuItem
-        '
-        Me.DATAToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DATASISWAToolStripMenuItem, Me.DATAGURUToolStripMenuItem})
-        Me.DATAToolStripMenuItem.Name = "DATAToolStripMenuItem"
-        Me.DATAToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
-        Me.DATAToolStripMenuItem.Text = "Data"
-        '
-        'LOGOUTToolStripMenuItem
-        '
-        Me.LOGOUTToolStripMenuItem.Name = "LOGOUTToolStripMenuItem"
-        Me.LOGOUTToolStripMenuItem.Size = New System.Drawing.Size(52, 20)
-        Me.LOGOUTToolStripMenuItem.Text = "Logout"
-        '
-        'DATASISWAToolStripMenuItem
-        '
-        Me.DATASISWAToolStripMenuItem.Name = "DATASISWAToolStripMenuItem"
-        Me.DATASISWAToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.DATASISWAToolStripMenuItem.Text = "Data Siswa"
-        '
-        'DATAGURUToolStripMenuItem
-        '
-        Me.DATAGURUToolStripMenuItem.Name = "DATAGURUToolStripMenuItem"
-        Me.DATAGURUToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.DATAGURUToolStripMenuItem.Text = "Data Guru"
         '
         'FILEToolStripMenuItem
         '
@@ -87,16 +62,42 @@ Partial Class FormMenuUtama
         Me.KelasToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.KelasToolStripMenuItem.Text = "Kelas"
         '
+        'DATAToolStripMenuItem
+        '
+        Me.DATAToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DATASISWAToolStripMenuItem, Me.DATAGURUToolStripMenuItem})
+        Me.DATAToolStripMenuItem.Name = "DATAToolStripMenuItem"
+        Me.DATAToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
+        Me.DATAToolStripMenuItem.Text = "Data"
+        '
+        'DATASISWAToolStripMenuItem
+        '
+        Me.DATASISWAToolStripMenuItem.Name = "DATASISWAToolStripMenuItem"
+        Me.DATASISWAToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DATASISWAToolStripMenuItem.Text = "Data Siswa"
+        '
+        'DATAGURUToolStripMenuItem
+        '
+        Me.DATAGURUToolStripMenuItem.Name = "DATAGURUToolStripMenuItem"
+        Me.DATAGURUToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DATAGURUToolStripMenuItem.Text = "Data Guru"
+        '
+        'LOGOUTToolStripMenuItem
+        '
+        Me.LOGOUTToolStripMenuItem.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LOGOUTToolStripMenuItem.Name = "LOGOUTToolStripMenuItem"
+        Me.LOGOUTToolStripMenuItem.Size = New System.Drawing.Size(58, 20)
+        Me.LOGOUTToolStripMenuItem.Text = "Logout"
+        '
         'FormMenuUtama
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(727, 388)
+        Me.ClientSize = New System.Drawing.Size(433, 148)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "FormMenuUtama"
-        Me.Text = "SI SMP Bunga Nusantara"
+        Me.Text = "Menu SMP Bunga Nusantara"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)

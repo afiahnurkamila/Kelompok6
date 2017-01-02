@@ -41,7 +41,7 @@ Partial Class FormLogin
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Goudy Old Style", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Blue
-        Me.Label2.Location = New System.Drawing.Point(116, 143)
+        Me.Label2.Location = New System.Drawing.Point(80, 152)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(342, 33)
         Me.Label2.TabIndex = 2
@@ -51,7 +51,7 @@ Partial Class FormLogin
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(124, 225)
+        Me.Label3.Location = New System.Drawing.Point(98, 234)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(126, 18)
         Me.Label3.TabIndex = 3
@@ -61,7 +61,7 @@ Partial Class FormLogin
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(122, 249)
+        Me.Label4.Location = New System.Drawing.Point(96, 258)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(128, 18)
         Me.Label4.TabIndex = 4
@@ -69,24 +69,25 @@ Partial Class FormLogin
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(256, 222)
+        Me.TextBox1.Location = New System.Drawing.Point(230, 231)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(175, 21)
         Me.TextBox1.TabIndex = 5
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(256, 249)
+        Me.TextBox2.Location = New System.Drawing.Point(230, 258)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(175, 21)
         Me.TextBox2.TabIndex = 6
+        Me.TextBox2.UseSystemPasswordChar = True
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(224, 26)
+        Me.PictureBox1.Location = New System.Drawing.Point(176, 11)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(118, 93)
+        Me.PictureBox1.Size = New System.Drawing.Size(140, 121)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 7
         Me.PictureBox1.TabStop = False
@@ -95,7 +96,7 @@ Partial Class FormLogin
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Lucida Bright", 15.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(186, 122)
+        Me.Label1.Location = New System.Drawing.Point(150, 131)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(190, 24)
         Me.Label1.TabIndex = 8
@@ -105,9 +106,9 @@ Partial Class FormLogin
         '
         Me.Button1.BackColor = System.Drawing.Color.PowderBlue
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(157, 290)
+        Me.Button1.Location = New System.Drawing.Point(123, 294)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(112, 33)
+        Me.Button1.Size = New System.Drawing.Size(123, 31)
         Me.Button1.TabIndex = 9
         Me.Button1.Text = "MASUK"
         Me.Button1.UseVisualStyleBackColor = False
@@ -116,9 +117,9 @@ Partial Class FormLogin
         '
         Me.Button2.BackColor = System.Drawing.Color.SlateGray
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(289, 290)
+        Me.Button2.Location = New System.Drawing.Point(255, 294)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(112, 33)
+        Me.Button2.Size = New System.Drawing.Size(123, 31)
         Me.Button2.TabIndex = 10
         Me.Button2.Text = "BATAL"
         Me.Button2.UseVisualStyleBackColor = False
@@ -128,7 +129,7 @@ Partial Class FormLogin
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Goudy Old Style", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Blue
-        Me.Label5.Location = New System.Drawing.Point(178, 174)
+        Me.Label5.Location = New System.Drawing.Point(142, 183)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(219, 33)
         Me.Label5.TabIndex = 11
@@ -139,7 +140,7 @@ Partial Class FormLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.ClientSize = New System.Drawing.Size(560, 346)
+        Me.ClientSize = New System.Drawing.Size(529, 337)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -152,7 +153,7 @@ Partial Class FormLogin
         Me.Controls.Add(Me.Label2)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "FormLogin"
-        Me.Text = "Login Database Sekolah Bunga Bangsa"
+        Me.Text = "Login Database SMP Bunga Nusantara"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
