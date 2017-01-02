@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="project_kel6ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="project_kel6ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Project_Kelompok6.My.MySettings.GlobalReference.Default.project_kel6ConnectionString" Provider="MySql.Data.MySqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="project_kel6ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="project_kel6ConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Project_Kelompok6.My.MySettings.GlobalReference.Default.project_kel6ConnectionString" Provider="MySql.Data.MySqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="guruTableAdapter" GeneratorDataComponentClassName="guruTableAdapter" Name="guru" UserDataComponentName="guruTableAdapter">

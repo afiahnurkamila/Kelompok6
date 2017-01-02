@@ -88,12 +88,6 @@
     <Compile Include="FormDataSiswa.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormKelas.Designer.vb">
-      <DependentUpon>FormKelas.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FormKelas.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -101,10 +95,10 @@
       <DependentUpon>FormLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMataPelajaran.Designer.vb">
-      <DependentUpon>FormMataPelajaran.vb</DependentUpon>
+    <Compile Include="FormMapel.Designer.vb">
+      <DependentUpon>FormMapel.vb</DependentUpon>
     </Compile>
-    <Compile Include="FormMataPelajaran.vb">
+    <Compile Include="FormMapel.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMenuUtama.Designer.vb">
@@ -135,20 +129,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FormDataGuru.resx">
-      <DependentUpon>FormDataGuru.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormDataSiswa.resx">
       <DependentUpon>FormDataSiswa.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormKelas.resx">
-      <DependentUpon>FormKelas.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormMataPelajaran.resx">
-      <DependentUpon>FormMataPelajaran.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuUtama.resx">
       <DependentUpon>FormMenuUtama.vb</DependentUpon>
@@ -161,7 +146,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -177,7 +161,6 @@
     <None Include="project_kel6DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>project_kel6DataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
     </None>
     <None Include="project_kel6DataSet.xss">
       <DependentUpon>project_kel6DataSet.xsd</DependentUpon>
