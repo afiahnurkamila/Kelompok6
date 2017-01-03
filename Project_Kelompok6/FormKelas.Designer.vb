@@ -57,11 +57,12 @@ Partial Class FormKelas
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.ID_KelasTextBox = New System.Windows.Forms.TextBox()
+        Me.KelasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Project_kel6DataSet1 = New Project_Kelompok6.project_kel6DataSet1()
         Me.KelasTextBox = New System.Windows.Forms.TextBox()
         Me.NIP_GuruTextBox = New System.Windows.Forms.TextBox()
         Me.NIP_SiswaTextBox = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -71,8 +72,6 @@ Partial Class FormKelas
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.KelasBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Project_kel6DataSet1 = New Project_Kelompok6.project_kel6DataSet1()
         Me.KelasTableAdapter = New Project_Kelompok6.project_kel6DataSet1TableAdapters.kelasTableAdapter()
         Me.TableAdapterManager = New Project_Kelompok6.project_kel6DataSet1TableAdapters.TableAdapterManager()
         NISLabel = New System.Windows.Forms.Label()
@@ -90,9 +89,9 @@ Partial Class FormKelas
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
-        CType(Me.KelasDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.KelasBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Project_kel6DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.KelasDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'NISLabel
@@ -422,7 +421,6 @@ Partial Class FormKelas
         Me.GroupBox2.Controls.Add(NIP_SiswaLabel)
         Me.GroupBox2.Controls.Add(Me.NIP_SiswaTextBox)
         Me.GroupBox2.Controls.Add(Me.Button1)
-        Me.GroupBox2.Controls.Add(Me.Button2)
         Me.GroupBox2.Controls.Add(Me.Button3)
         Me.GroupBox2.Controls.Add(Me.Button4)
         Me.GroupBox2.Controls.Add(Me.Button5)
@@ -443,6 +441,16 @@ Partial Class FormKelas
         Me.ID_KelasTextBox.Name = "ID_KelasTextBox"
         Me.ID_KelasTextBox.Size = New System.Drawing.Size(202, 20)
         Me.ID_KelasTextBox.TabIndex = 7
+        '
+        'KelasBindingSource
+        '
+        Me.KelasBindingSource.DataMember = "kelas"
+        Me.KelasBindingSource.DataSource = Me.Project_kel6DataSet1
+        '
+        'Project_kel6DataSet1
+        '
+        Me.Project_kel6DataSet1.DataSetName = "project_kel6DataSet1"
+        Me.Project_kel6DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'KelasTextBox
         '
@@ -474,22 +482,12 @@ Partial Class FormKelas
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(197, 159)
+        Me.Button1.Location = New System.Drawing.Point(197, 130)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(86, 23)
+        Me.Button1.Size = New System.Drawing.Size(86, 52)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "Keluar"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(105, 159)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(86, 23)
-        Me.Button2.TabIndex = 4
-        Me.Button2.Text = "Refresh"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -504,7 +502,7 @@ Partial Class FormKelas
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(197, 130)
+        Me.Button4.Location = New System.Drawing.Point(105, 159)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(86, 23)
         Me.Button4.TabIndex = 2
@@ -566,16 +564,6 @@ Partial Class FormKelas
         Me.DataGridViewTextBoxColumn4.HeaderText = "NIP_Siswa"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         '
-        'KelasBindingSource
-        '
-        Me.KelasBindingSource.DataMember = "kelas"
-        Me.KelasBindingSource.DataSource = Me.Project_kel6DataSet1
-        '
-        'Project_kel6DataSet1
-        '
-        Me.Project_kel6DataSet1.DataSetName = "project_kel6DataSet1"
-        Me.Project_kel6DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'KelasTableAdapter
         '
         Me.KelasTableAdapter.ClearBeforeFill = True
@@ -611,9 +599,9 @@ Partial Class FormKelas
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        CType(Me.KelasDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KelasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Project_kel6DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.KelasDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -640,7 +628,6 @@ Partial Class FormKelas
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button5 As System.Windows.Forms.Button

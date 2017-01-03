@@ -41,6 +41,7 @@ Partial Class FormSiswa
         Me.SiswaTableAdapter = New Project_Kelompok6.project_kel6DataSet1TableAdapters.siswaTableAdapter()
         Me.TableAdapterManager = New Project_Kelompok6.project_kel6DataSet1TableAdapters.TableAdapterManager()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ID_KelasTextBox = New System.Windows.Forms.TextBox()
         Me.AlamatRichTextBox = New System.Windows.Forms.RichTextBox()
         Me.KelasTextBox = New System.Windows.Forms.TextBox()
@@ -50,7 +51,6 @@ Partial Class FormSiswa
         Me.Tanggal_LahirDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.AgamaTextBox = New System.Windows.Forms.TextBox()
         Me.ButtonKeluar = New System.Windows.Forms.Button()
-        Me.ButtonRefresh = New System.Windows.Forms.Button()
         Me.ButtonHapus = New System.Windows.Forms.Button()
         Me.ButtonSimpan = New System.Windows.Forms.Button()
         Me.ButtonEdit = New System.Windows.Forms.Button()
@@ -65,7 +65,6 @@ Partial Class FormSiswa
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         NISLabel = New System.Windows.Forms.Label()
         NamaLabel = New System.Windows.Forms.Label()
         Tempat_LahirLabel = New System.Windows.Forms.Label()
@@ -246,7 +245,6 @@ Partial Class FormSiswa
         Me.GroupBox1.Controls.Add(AgamaLabel)
         Me.GroupBox1.Controls.Add(Me.AgamaTextBox)
         Me.GroupBox1.Controls.Add(Me.ButtonKeluar)
-        Me.GroupBox1.Controls.Add(Me.ButtonRefresh)
         Me.GroupBox1.Controls.Add(Me.ButtonHapus)
         Me.GroupBox1.Controls.Add(Me.ButtonSimpan)
         Me.GroupBox1.Controls.Add(Me.ButtonEdit)
@@ -258,6 +256,16 @@ Partial Class FormSiswa
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Mohon Isi Data"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Laki-Laki", "Perempuan"})
+        Me.ComboBox1.Location = New System.Drawing.Point(102, 126)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(200, 21)
+        Me.ComboBox1.TabIndex = 34
         '
         'ID_KelasTextBox
         '
@@ -334,22 +342,12 @@ Partial Class FormSiswa
         'ButtonKeluar
         '
         Me.ButtonKeluar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonKeluar.Location = New System.Drawing.Point(203, 344)
+        Me.ButtonKeluar.Location = New System.Drawing.Point(203, 315)
         Me.ButtonKeluar.Name = "ButtonKeluar"
-        Me.ButtonKeluar.Size = New System.Drawing.Size(86, 23)
+        Me.ButtonKeluar.Size = New System.Drawing.Size(86, 52)
         Me.ButtonKeluar.TabIndex = 5
         Me.ButtonKeluar.Text = "Keluar"
         Me.ButtonKeluar.UseVisualStyleBackColor = True
-        '
-        'ButtonRefresh
-        '
-        Me.ButtonRefresh.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonRefresh.Location = New System.Drawing.Point(111, 344)
-        Me.ButtonRefresh.Name = "ButtonRefresh"
-        Me.ButtonRefresh.Size = New System.Drawing.Size(86, 23)
-        Me.ButtonRefresh.TabIndex = 4
-        Me.ButtonRefresh.Text = "Refresh"
-        Me.ButtonRefresh.UseVisualStyleBackColor = True
         '
         'ButtonHapus
         '
@@ -364,7 +362,7 @@ Partial Class FormSiswa
         'ButtonSimpan
         '
         Me.ButtonSimpan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonSimpan.Location = New System.Drawing.Point(203, 315)
+        Me.ButtonSimpan.Location = New System.Drawing.Point(111, 344)
         Me.ButtonSimpan.Name = "ButtonSimpan"
         Me.ButtonSimpan.Size = New System.Drawing.Size(86, 23)
         Me.ButtonSimpan.TabIndex = 2
@@ -456,16 +454,6 @@ Partial Class FormSiswa
         Me.DataGridViewTextBoxColumn9.HeaderText = "Kelas"
         Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Laki-Laki", "Perempuan"})
-        Me.ComboBox1.Location = New System.Drawing.Point(102, 126)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(200, 21)
-        Me.ComboBox1.TabIndex = 34
-        '
         'FormSiswa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -502,7 +490,6 @@ Partial Class FormSiswa
     Friend WithEvents Tanggal_LahirDateTimePicker As System.Windows.Forms.DateTimePicker
     Friend WithEvents AgamaTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ButtonKeluar As System.Windows.Forms.Button
-    Friend WithEvents ButtonRefresh As System.Windows.Forms.Button
     Friend WithEvents ButtonHapus As System.Windows.Forms.Button
     Friend WithEvents ButtonSimpan As System.Windows.Forms.Button
     Friend WithEvents ButtonEdit As System.Windows.Forms.Button

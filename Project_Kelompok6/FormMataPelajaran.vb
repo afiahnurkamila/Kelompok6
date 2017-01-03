@@ -3,24 +3,28 @@
     Private Sub ButtonTambah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonTambah.Click
         Mata_pelajaranBindingSource.AddNew()
 
-
+        ID_Mata_PelajaranTextBox.Enabled = True
+        Nama_Mata_PelajaranTextBox.Enabled = True
+        KKMTextBox.Enabled = True
+        NIP_GuruTextBox.Enabled = True
 
         ButtonTambah.Enabled = True
         ButtonEdit.Enabled = True
         ButtonSimpan.Enabled = True
         ButtonHapus.Enabled = False
-        ButtonRefresh.Enabled = True
         ButtonKeluar.Enabled = True
     End Sub
 
     Private Sub ButtonEdit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonEdit.Click
-
+        ID_Mata_PelajaranTextBox.Enabled = True
+        Nama_Mata_PelajaranTextBox.Enabled = True
+        KKMTextBox.Enabled = True
+        NIP_GuruTextBox.Enabled = True
 
         ButtonTambah.Enabled = False
         ButtonEdit.Enabled = True
         ButtonSimpan.Enabled = True
         ButtonHapus.Enabled = False
-        ButtonRefresh.Enabled = False
         ButtonKeluar.Enabled = True
     End Sub
 
@@ -30,11 +34,15 @@
         Me.TableAdapterManager.UpdateAll(Me.Project_kel6DataSet1)
         MessageBox.Show("Data anda telah tersimpan !!!")
 
+        ID_Mata_PelajaranTextBox.Enabled = True
+        Nama_Mata_PelajaranTextBox.Enabled = True
+        KKMTextBox.Enabled = True
+        NIP_GuruTextBox.Enabled = True
+
         ButtonTambah.Enabled = True
         ButtonEdit.Enabled = True
         ButtonSimpan.Enabled = True
         ButtonHapus.Enabled = True
-        ButtonRefresh.Enabled = True
         ButtonKeluar.Enabled = True
     End Sub
 
@@ -42,22 +50,15 @@
         Mata_pelajaranBindingSource.RemoveCurrent()
         MessageBox.Show("Data anda telah terhapus !!!")
 
+        ID_Mata_PelajaranTextBox.Enabled = True
+        Nama_Mata_PelajaranTextBox.Enabled = True
+        KKMTextBox.Enabled = True
+        NIP_GuruTextBox.Enabled = True
+
         ButtonTambah.Enabled = True
         ButtonEdit.Enabled = True
         ButtonSimpan.Enabled = False
         ButtonHapus.Enabled = True
-        ButtonRefresh.Enabled = True
-        ButtonKeluar.Enabled = True
-    End Sub
-
-    Private Sub ButtonRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonRefresh.Click
-
-
-        ButtonTambah.Enabled = True
-        ButtonEdit.Enabled = True
-        ButtonSimpan.Enabled = False
-        ButtonHapus.Enabled = False
-        ButtonRefresh.Enabled = True
         ButtonKeluar.Enabled = True
     End Sub
 

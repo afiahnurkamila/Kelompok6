@@ -1,5 +1,6 @@
 ﻿Public Class FormGuru
 
+
     Private Sub ButtonTambah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         GuruBindingSource.AddNew()
 
@@ -20,7 +21,6 @@
         ButtonEdit.Enabled = True
         ButtonSimpan.Enabled = True
         ButtonHapus.Enabled = False
-        ButtonRefresh.Enabled = True
         ButtonKeluar.Enabled = True
     End Sub
 
@@ -42,7 +42,6 @@
         ButtonEdit.Enabled = True
         ButtonSimpan.Enabled = True
         ButtonHapus.Enabled = False
-        ButtonRefresh.Enabled = False
         ButtonKeluar.Enabled = True
     End Sub
 
@@ -69,7 +68,6 @@
         ButtonEdit.Enabled = True
         ButtonSimpan.Enabled = True
         ButtonHapus.Enabled = True
-        ButtonRefresh.Enabled = True
         ButtonKeluar.Enabled = True
     End Sub
 
@@ -94,29 +92,6 @@
         ButtonEdit.Enabled = True
         ButtonSimpan.Enabled = False
         ButtonHapus.Enabled = True
-        ButtonRefresh.Enabled = True
-        ButtonKeluar.Enabled = True
-    End Sub
-
-    Private Sub ButtonRefresh_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonRefresh.Click
-        NIP_GuruTextBox.Enabled = True
-        NamaTextBox.Enabled = True
-        AlamatRichTextBox.Enabled = True
-        Tempat_LahirTextBox.Enabled = True
-        Tanggal_LahirDateTimePicker.Enabled = True
-        ComboBox1.Enabled = True
-        No_TelponTextBox.Enabled = True
-        StatusTextBox.Enabled = True
-        PendidikanTextBox.Enabled = True
-        AgamaTextBox.Enabled = True
-        ID_Mata_PelajaranTextBox.Enabled = True
-        Mata_PelajaranTextBox.Enabled = True
-
-        ButtonTambah.Enabled = True
-        ButtonEdit.Enabled = True
-        ButtonSimpan.Enabled = False
-        ButtonHapus.Enabled = False
-        ButtonRefresh.Enabled = True
         ButtonKeluar.Enabled = True
     End Sub
 

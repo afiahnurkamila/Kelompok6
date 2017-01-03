@@ -70,7 +70,6 @@ Partial Class FormGuru
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.AlamatRichTextBox = New System.Windows.Forms.RichTextBox()
         Me.ButtonKeluar = New System.Windows.Forms.Button()
-        Me.ButtonRefresh = New System.Windows.Forms.Button()
         Me.ButtonHapus = New System.Windows.Forms.Button()
         Me.ButtonSimpan = New System.Windows.Forms.Button()
         Me.ButtonEdit = New System.Windows.Forms.Button()
@@ -447,7 +446,6 @@ Partial Class FormGuru
         Me.GroupBox2.Controls.Add(Me.ComboBox1)
         Me.GroupBox2.Controls.Add(Me.AlamatRichTextBox)
         Me.GroupBox2.Controls.Add(Me.ButtonKeluar)
-        Me.GroupBox2.Controls.Add(Me.ButtonRefresh)
         Me.GroupBox2.Controls.Add(Me.ButtonHapus)
         Me.GroupBox2.Controls.Add(Me.ButtonSimpan)
         Me.GroupBox2.Controls.Add(NIP_GuruLabel)
@@ -504,22 +502,12 @@ Partial Class FormGuru
         'ButtonKeluar
         '
         Me.ButtonKeluar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonKeluar.Location = New System.Drawing.Point(208, 427)
+        Me.ButtonKeluar.Location = New System.Drawing.Point(208, 398)
         Me.ButtonKeluar.Name = "ButtonKeluar"
-        Me.ButtonKeluar.Size = New System.Drawing.Size(86, 23)
+        Me.ButtonKeluar.Size = New System.Drawing.Size(86, 51)
         Me.ButtonKeluar.TabIndex = 5
         Me.ButtonKeluar.Text = "Keluar"
         Me.ButtonKeluar.UseVisualStyleBackColor = True
-        '
-        'ButtonRefresh
-        '
-        Me.ButtonRefresh.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonRefresh.Location = New System.Drawing.Point(116, 427)
-        Me.ButtonRefresh.Name = "ButtonRefresh"
-        Me.ButtonRefresh.Size = New System.Drawing.Size(86, 23)
-        Me.ButtonRefresh.TabIndex = 4
-        Me.ButtonRefresh.Text = "Refresh"
-        Me.ButtonRefresh.UseVisualStyleBackColor = True
         '
         'ButtonHapus
         '
@@ -534,7 +522,7 @@ Partial Class FormGuru
         'ButtonSimpan
         '
         Me.ButtonSimpan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonSimpan.Location = New System.Drawing.Point(208, 398)
+        Me.ButtonSimpan.Location = New System.Drawing.Point(116, 426)
         Me.ButtonSimpan.Name = "ButtonSimpan"
         Me.ButtonSimpan.Size = New System.Drawing.Size(86, 23)
         Me.ButtonSimpan.TabIndex = 2
@@ -635,7 +623,6 @@ Partial Class FormGuru
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents ButtonKeluar As System.Windows.Forms.Button
-    Friend WithEvents ButtonRefresh As System.Windows.Forms.Button
     Friend WithEvents ButtonHapus As System.Windows.Forms.Button
     Friend WithEvents ButtonSimpan As System.Windows.Forms.Button
     Friend WithEvents ButtonEdit As System.Windows.Forms.Button
