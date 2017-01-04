@@ -1,9 +1,7 @@
 ﻿Public Class FormSiswa
 
     Private Sub SiswaBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.Validate()
-        Me.SiswaBindingSource.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me.Project_kel6DataSet)
+
 
     End Sub
 
@@ -14,6 +12,8 @@
     End Sub
 
     Private Sub ButtonTambah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonTambah.Click
+        SiswaBindingSource.AddNew()
+
         NISTextBox.Enabled = True
         NamaTextBox.Enabled = True
         Tempat_LahirTextBox.Enabled = True
@@ -50,6 +50,11 @@
     End Sub
 
     Private Sub ButtonSimpan_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonSimpan.Click
+        Me.Validate()
+        Me.SiswaBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.Project_kel6DataSet)
+        MessageBox.Show("Data anda Tersimpan !!")
+
         NISTextBox.Enabled = True
         NamaTextBox.Enabled = True
         Tempat_LahirTextBox.Enabled = True
@@ -68,6 +73,9 @@
     End Sub
 
     Private Sub ButtonHapus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonHapus.Click
+        SiswaBindingSource.RemoveCurrent()
+        MessageBox.Show("Data anda Terhapus !!")
+
         NISTextBox.Enabled = True
         NamaTextBox.Enabled = True
         Tempat_LahirTextBox.Enabled = True
@@ -87,5 +95,6 @@
 
     Private Sub ButtonKeluar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonKeluar.Click
         Me.Hide()
+        Mainform.Show()
     End Sub
 End Class

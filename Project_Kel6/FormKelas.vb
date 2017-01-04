@@ -1,19 +1,8 @@
 ﻿Public Class FormKelas
 
-    Private Sub KelasBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.Validate()
-        Me.KelasBindingSource.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me.Project_kel6DataSet)
-
-    End Sub
-
-    Private Sub FormKelas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'Project_kel6DataSet.kelas' table. You can move, or remove it, as needed.
-        Me.KelasTableAdapter.Fill(Me.Project_kel6DataSet.kelas)
-
-    End Sub
-
     Private Sub ButtonTambah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonTambah.Click
+        KelasBindingSource.AddNew()
+
         ID_KelasTextBox.Enabled = True
         KelasTextBox.Enabled = True
         NIP_GuruTextBox.Enabled = True
@@ -40,7 +29,12 @@
     End Sub
 
     Private Sub ButtonSimpan_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonSimpan.Click
-       ID_KelasTextBox.Enabled = True
+        Me.Validate()
+        Me.KelasBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.Project_kel6DataSet)
+        MessageBox.Show("Data anda Tersimpan !!!")
+
+        ID_KelasTextBox.Enabled = True
         KelasTextBox.Enabled = True
         NIP_GuruTextBox.Enabled = True
         NIP_SiswaTextBox.Enabled = True
@@ -53,6 +47,9 @@
     End Sub
 
     Private Sub ButtonHapus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonHapus.Click
+        KelasBindingSource.RemoveCurrent()
+        MessageBox.Show("Data anda Terhapus !!!")
+
         ID_KelasTextBox.Enabled = True
         KelasTextBox.Enabled = True
         NIP_GuruTextBox.Enabled = True
@@ -67,5 +64,6 @@
 
     Private Sub ButtonKeluar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonKeluar.Click
         Me.Hide()
+        Mainform.Show()
     End Sub
 End Class

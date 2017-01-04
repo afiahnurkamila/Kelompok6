@@ -174,7 +174,7 @@ Partial Class FormLogin
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FormLogin"
-        Me.Text = "FormLogin"
+        Me.Text = "Login SMP Bunga Nusantara"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

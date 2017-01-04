@@ -304,7 +304,7 @@ Partial Class FormMatpel
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FormMatpel"
-        Me.Text = "FormMatpel"
+        Me.Text = "Data Mata Pelajaran SMP Bunga Nusantara"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

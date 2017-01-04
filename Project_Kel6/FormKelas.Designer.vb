@@ -115,7 +115,7 @@ Partial Class FormKelas
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(97, 24)
+        Me.Label2.Location = New System.Drawing.Point(97, 29)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(233, 28)
         Me.Label2.TabIndex = 29
@@ -304,7 +304,7 @@ Partial Class FormKelas
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FormKelas"
-        Me.Text = "FormKelas"
+        Me.Text = "Data Kelas SMP Bunga Nusantara"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Project_kel6DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.KelasBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

@@ -459,7 +459,7 @@ Partial Class FormSiswa
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FormSiswa"
-        Me.Text = "FormSiswa"
+        Me.Text = "Data Siswa dan Siswi SMP Bunga Nusanatara"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

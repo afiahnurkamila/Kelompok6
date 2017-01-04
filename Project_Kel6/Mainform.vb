@@ -1,7 +1,23 @@
 ﻿Public Class Mainform
 
-    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
-        Label1.Text = TimeOfDay
+    Private Sub GuruToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GuruToolStripMenuItem.Click
+        Me.Hide()
+        FormGuru.Show()
+    End Sub
+
+    Private Sub SiswaSiswiToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SiswaSiswiToolStripMenuItem.Click
+        Me.Hide()
+        FormSiswa.Show()
+    End Sub
+
+    Private Sub KelasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles KelasToolStripMenuItem.Click
+        Me.Hide()
+        FormKelas.Show()
+    End Sub
+
+    Private Sub MataPelajaranToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MataPelajaranToolStripMenuItem.Click
+        Me.Hide()
+        FormMatpel.Show()
     End Sub
 
     Private Sub LogoutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LogoutToolStripMenuItem.Click

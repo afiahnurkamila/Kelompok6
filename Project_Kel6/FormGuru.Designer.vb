@@ -56,11 +56,11 @@ Partial Class FormGuru
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.ButtonTambah = New System.Windows.Forms.Button()
-        Me.ButtonEdit = New System.Windows.Forms.Button()
-        Me.ButtonSimpan = New System.Windows.Forms.Button()
-        Me.ButtonHapus = New System.Windows.Forms.Button()
         Me.ButtonKeluar = New System.Windows.Forms.Button()
+        Me.ButtonHapus = New System.Windows.Forms.Button()
+        Me.ButtonSimpan = New System.Windows.Forms.Button()
+        Me.ButtonEdit = New System.Windows.Forms.Button()
+        Me.ButtonTambah = New System.Windows.Forms.Button()
         Me.GuruDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -93,6 +93,126 @@ Partial Class FormGuru
         CType(Me.GuruDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'NIP_GuruLabel
+        '
+        NIP_GuruLabel.AutoSize = True
+        NIP_GuruLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NIP_GuruLabel.Location = New System.Drawing.Point(6, 19)
+        NIP_GuruLabel.Name = "NIP_GuruLabel"
+        NIP_GuruLabel.Size = New System.Drawing.Size(54, 13)
+        NIP_GuruLabel.TabIndex = 1
+        NIP_GuruLabel.Text = "NIP Guru:"
+        '
+        'NamaLabel
+        '
+        NamaLabel.AutoSize = True
+        NamaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NamaLabel.Location = New System.Drawing.Point(6, 45)
+        NamaLabel.Name = "NamaLabel"
+        NamaLabel.Size = New System.Drawing.Size(38, 13)
+        NamaLabel.TabIndex = 3
+        NamaLabel.Text = "Nama:"
+        '
+        'AlamatLabel
+        '
+        AlamatLabel.AutoSize = True
+        AlamatLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        AlamatLabel.Location = New System.Drawing.Point(6, 71)
+        AlamatLabel.Name = "AlamatLabel"
+        AlamatLabel.Size = New System.Drawing.Size(42, 13)
+        AlamatLabel.TabIndex = 5
+        AlamatLabel.Text = "Alamat:"
+        '
+        'Tempat_LahirLabel
+        '
+        Tempat_LahirLabel.AutoSize = True
+        Tempat_LahirLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Tempat_LahirLabel.Location = New System.Drawing.Point(6, 97)
+        Tempat_LahirLabel.Name = "Tempat_LahirLabel"
+        Tempat_LahirLabel.Size = New System.Drawing.Size(72, 13)
+        Tempat_LahirLabel.TabIndex = 7
+        Tempat_LahirLabel.Text = "Tempat Lahir:"
+        '
+        'Tanggal_LahirLabel
+        '
+        Tanggal_LahirLabel.AutoSize = True
+        Tanggal_LahirLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Tanggal_LahirLabel.Location = New System.Drawing.Point(6, 124)
+        Tanggal_LahirLabel.Name = "Tanggal_LahirLabel"
+        Tanggal_LahirLabel.Size = New System.Drawing.Size(75, 13)
+        Tanggal_LahirLabel.TabIndex = 9
+        Tanggal_LahirLabel.Text = "Tanggal Lahir:"
+        '
+        'JenkelLabel
+        '
+        JenkelLabel.AutoSize = True
+        JenkelLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        JenkelLabel.Location = New System.Drawing.Point(6, 149)
+        JenkelLabel.Name = "JenkelLabel"
+        JenkelLabel.Size = New System.Drawing.Size(41, 13)
+        JenkelLabel.TabIndex = 11
+        JenkelLabel.Text = "Jenkel:"
+        '
+        'No_TelponLabel
+        '
+        No_TelponLabel.AutoSize = True
+        No_TelponLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        No_TelponLabel.Location = New System.Drawing.Point(6, 175)
+        No_TelponLabel.Name = "No_TelponLabel"
+        No_TelponLabel.Size = New System.Drawing.Size(60, 13)
+        No_TelponLabel.TabIndex = 13
+        No_TelponLabel.Text = "No Telpon:"
+        '
+        'StatusLabel
+        '
+        StatusLabel.AutoSize = True
+        StatusLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        StatusLabel.Location = New System.Drawing.Point(6, 201)
+        StatusLabel.Name = "StatusLabel"
+        StatusLabel.Size = New System.Drawing.Size(40, 13)
+        StatusLabel.TabIndex = 15
+        StatusLabel.Text = "Status:"
+        '
+        'PendidikanLabel
+        '
+        PendidikanLabel.AutoSize = True
+        PendidikanLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        PendidikanLabel.Location = New System.Drawing.Point(6, 227)
+        PendidikanLabel.Name = "PendidikanLabel"
+        PendidikanLabel.Size = New System.Drawing.Size(63, 13)
+        PendidikanLabel.TabIndex = 17
+        PendidikanLabel.Text = "Pendidikan:"
+        '
+        'AgamaLabel
+        '
+        AgamaLabel.AutoSize = True
+        AgamaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        AgamaLabel.Location = New System.Drawing.Point(6, 253)
+        AgamaLabel.Name = "AgamaLabel"
+        AgamaLabel.Size = New System.Drawing.Size(43, 13)
+        AgamaLabel.TabIndex = 19
+        AgamaLabel.Text = "Agama:"
+        '
+        'ID_Mata_PelajaranLabel
+        '
+        ID_Mata_PelajaranLabel.AutoSize = True
+        ID_Mata_PelajaranLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ID_Mata_PelajaranLabel.Location = New System.Drawing.Point(6, 279)
+        ID_Mata_PelajaranLabel.Name = "ID_Mata_PelajaranLabel"
+        ID_Mata_PelajaranLabel.Size = New System.Drawing.Size(95, 13)
+        ID_Mata_PelajaranLabel.TabIndex = 21
+        ID_Mata_PelajaranLabel.Text = "ID Mata Pelajaran:"
+        '
+        'Mata_PelajaranLabel
+        '
+        Mata_PelajaranLabel.AutoSize = True
+        Mata_PelajaranLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Mata_PelajaranLabel.Location = New System.Drawing.Point(6, 305)
+        Mata_PelajaranLabel.Name = "Mata_PelajaranLabel"
+        Mata_PelajaranLabel.Size = New System.Drawing.Size(81, 13)
+        Mata_PelajaranLabel.TabIndex = 23
+        Mata_PelajaranLabel.Text = "Mata Pelajaran:"
+        '
         'Project_kel6DataSet
         '
         Me.Project_kel6DataSet.DataSetName = "project_kel6DataSet"
@@ -116,16 +236,6 @@ Partial Class FormGuru
         Me.TableAdapterManager.siswaTableAdapter = Nothing
         Me.TableAdapterManager.UpdateOrder = Project_Kel6.project_kel6DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
-        'NIP_GuruLabel
-        '
-        NIP_GuruLabel.AutoSize = True
-        NIP_GuruLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        NIP_GuruLabel.Location = New System.Drawing.Point(6, 19)
-        NIP_GuruLabel.Name = "NIP_GuruLabel"
-        NIP_GuruLabel.Size = New System.Drawing.Size(54, 13)
-        NIP_GuruLabel.TabIndex = 1
-        NIP_GuruLabel.Text = "NIP Guru:"
-        '
         'NIP_GuruTextBox
         '
         Me.NIP_GuruTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GuruBindingSource, "NIP_Guru", True))
@@ -134,16 +244,6 @@ Partial Class FormGuru
         Me.NIP_GuruTextBox.Name = "NIP_GuruTextBox"
         Me.NIP_GuruTextBox.Size = New System.Drawing.Size(271, 20)
         Me.NIP_GuruTextBox.TabIndex = 2
-        '
-        'NamaLabel
-        '
-        NamaLabel.AutoSize = True
-        NamaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        NamaLabel.Location = New System.Drawing.Point(6, 45)
-        NamaLabel.Name = "NamaLabel"
-        NamaLabel.Size = New System.Drawing.Size(38, 13)
-        NamaLabel.TabIndex = 3
-        NamaLabel.Text = "Nama:"
         '
         'NamaTextBox
         '
@@ -154,16 +254,6 @@ Partial Class FormGuru
         Me.NamaTextBox.Size = New System.Drawing.Size(271, 20)
         Me.NamaTextBox.TabIndex = 4
         '
-        'AlamatLabel
-        '
-        AlamatLabel.AutoSize = True
-        AlamatLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        AlamatLabel.Location = New System.Drawing.Point(6, 71)
-        AlamatLabel.Name = "AlamatLabel"
-        AlamatLabel.Size = New System.Drawing.Size(42, 13)
-        AlamatLabel.TabIndex = 5
-        AlamatLabel.Text = "Alamat:"
-        '
         'AlamatTextBox
         '
         Me.AlamatTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GuruBindingSource, "Alamat", True))
@@ -172,16 +262,6 @@ Partial Class FormGuru
         Me.AlamatTextBox.Name = "AlamatTextBox"
         Me.AlamatTextBox.Size = New System.Drawing.Size(271, 20)
         Me.AlamatTextBox.TabIndex = 6
-        '
-        'Tempat_LahirLabel
-        '
-        Tempat_LahirLabel.AutoSize = True
-        Tempat_LahirLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Tempat_LahirLabel.Location = New System.Drawing.Point(6, 97)
-        Tempat_LahirLabel.Name = "Tempat_LahirLabel"
-        Tempat_LahirLabel.Size = New System.Drawing.Size(72, 13)
-        Tempat_LahirLabel.TabIndex = 7
-        Tempat_LahirLabel.Text = "Tempat Lahir:"
         '
         'Tempat_LahirTextBox
         '
@@ -192,16 +272,6 @@ Partial Class FormGuru
         Me.Tempat_LahirTextBox.Size = New System.Drawing.Size(271, 20)
         Me.Tempat_LahirTextBox.TabIndex = 8
         '
-        'Tanggal_LahirLabel
-        '
-        Tanggal_LahirLabel.AutoSize = True
-        Tanggal_LahirLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Tanggal_LahirLabel.Location = New System.Drawing.Point(6, 124)
-        Tanggal_LahirLabel.Name = "Tanggal_LahirLabel"
-        Tanggal_LahirLabel.Size = New System.Drawing.Size(75, 13)
-        Tanggal_LahirLabel.TabIndex = 9
-        Tanggal_LahirLabel.Text = "Tanggal Lahir:"
-        '
         'Tanggal_LahirDateTimePicker
         '
         Me.Tanggal_LahirDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.GuruBindingSource, "Tanggal_Lahir", True))
@@ -210,16 +280,6 @@ Partial Class FormGuru
         Me.Tanggal_LahirDateTimePicker.Name = "Tanggal_LahirDateTimePicker"
         Me.Tanggal_LahirDateTimePicker.Size = New System.Drawing.Size(271, 20)
         Me.Tanggal_LahirDateTimePicker.TabIndex = 10
-        '
-        'JenkelLabel
-        '
-        JenkelLabel.AutoSize = True
-        JenkelLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        JenkelLabel.Location = New System.Drawing.Point(6, 149)
-        JenkelLabel.Name = "JenkelLabel"
-        JenkelLabel.Size = New System.Drawing.Size(41, 13)
-        JenkelLabel.TabIndex = 11
-        JenkelLabel.Text = "Jenkel:"
         '
         'JenkelTextBox
         '
@@ -230,16 +290,6 @@ Partial Class FormGuru
         Me.JenkelTextBox.Size = New System.Drawing.Size(271, 20)
         Me.JenkelTextBox.TabIndex = 12
         '
-        'No_TelponLabel
-        '
-        No_TelponLabel.AutoSize = True
-        No_TelponLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        No_TelponLabel.Location = New System.Drawing.Point(6, 175)
-        No_TelponLabel.Name = "No_TelponLabel"
-        No_TelponLabel.Size = New System.Drawing.Size(60, 13)
-        No_TelponLabel.TabIndex = 13
-        No_TelponLabel.Text = "No Telpon:"
-        '
         'No_TelponTextBox
         '
         Me.No_TelponTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GuruBindingSource, "No_Telpon", True))
@@ -248,16 +298,6 @@ Partial Class FormGuru
         Me.No_TelponTextBox.Name = "No_TelponTextBox"
         Me.No_TelponTextBox.Size = New System.Drawing.Size(271, 20)
         Me.No_TelponTextBox.TabIndex = 14
-        '
-        'StatusLabel
-        '
-        StatusLabel.AutoSize = True
-        StatusLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        StatusLabel.Location = New System.Drawing.Point(6, 201)
-        StatusLabel.Name = "StatusLabel"
-        StatusLabel.Size = New System.Drawing.Size(40, 13)
-        StatusLabel.TabIndex = 15
-        StatusLabel.Text = "Status:"
         '
         'StatusTextBox
         '
@@ -268,16 +308,6 @@ Partial Class FormGuru
         Me.StatusTextBox.Size = New System.Drawing.Size(271, 20)
         Me.StatusTextBox.TabIndex = 16
         '
-        'PendidikanLabel
-        '
-        PendidikanLabel.AutoSize = True
-        PendidikanLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        PendidikanLabel.Location = New System.Drawing.Point(6, 227)
-        PendidikanLabel.Name = "PendidikanLabel"
-        PendidikanLabel.Size = New System.Drawing.Size(63, 13)
-        PendidikanLabel.TabIndex = 17
-        PendidikanLabel.Text = "Pendidikan:"
-        '
         'PendidikanTextBox
         '
         Me.PendidikanTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GuruBindingSource, "Pendidikan", True))
@@ -286,16 +316,6 @@ Partial Class FormGuru
         Me.PendidikanTextBox.Name = "PendidikanTextBox"
         Me.PendidikanTextBox.Size = New System.Drawing.Size(271, 20)
         Me.PendidikanTextBox.TabIndex = 18
-        '
-        'AgamaLabel
-        '
-        AgamaLabel.AutoSize = True
-        AgamaLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        AgamaLabel.Location = New System.Drawing.Point(6, 253)
-        AgamaLabel.Name = "AgamaLabel"
-        AgamaLabel.Size = New System.Drawing.Size(43, 13)
-        AgamaLabel.TabIndex = 19
-        AgamaLabel.Text = "Agama:"
         '
         'AgamaTextBox
         '
@@ -306,16 +326,6 @@ Partial Class FormGuru
         Me.AgamaTextBox.Size = New System.Drawing.Size(271, 20)
         Me.AgamaTextBox.TabIndex = 20
         '
-        'ID_Mata_PelajaranLabel
-        '
-        ID_Mata_PelajaranLabel.AutoSize = True
-        ID_Mata_PelajaranLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ID_Mata_PelajaranLabel.Location = New System.Drawing.Point(6, 279)
-        ID_Mata_PelajaranLabel.Name = "ID_Mata_PelajaranLabel"
-        ID_Mata_PelajaranLabel.Size = New System.Drawing.Size(95, 13)
-        ID_Mata_PelajaranLabel.TabIndex = 21
-        ID_Mata_PelajaranLabel.Text = "ID Mata Pelajaran:"
-        '
         'ID_Mata_PelajaranTextBox
         '
         Me.ID_Mata_PelajaranTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.GuruBindingSource, "ID_Mata_Pelajaran", True))
@@ -324,16 +334,6 @@ Partial Class FormGuru
         Me.ID_Mata_PelajaranTextBox.Name = "ID_Mata_PelajaranTextBox"
         Me.ID_Mata_PelajaranTextBox.Size = New System.Drawing.Size(271, 20)
         Me.ID_Mata_PelajaranTextBox.TabIndex = 22
-        '
-        'Mata_PelajaranLabel
-        '
-        Mata_PelajaranLabel.AutoSize = True
-        Mata_PelajaranLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Mata_PelajaranLabel.Location = New System.Drawing.Point(6, 305)
-        Mata_PelajaranLabel.Name = "Mata_PelajaranLabel"
-        Mata_PelajaranLabel.Size = New System.Drawing.Size(81, 13)
-        Mata_PelajaranLabel.TabIndex = 23
-        Mata_PelajaranLabel.Text = "Mata Pelajaran:"
         '
         'Mata_PelajaranTextBox
         '
@@ -358,7 +358,7 @@ Partial Class FormGuru
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Monotype Corsiva", 18.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(94, 22)
+        Me.Label2.Location = New System.Drawing.Point(94, 29)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(233, 28)
         Me.Label2.TabIndex = 26
@@ -413,32 +413,14 @@ Partial Class FormGuru
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Isikan Data :"
         '
-        'ButtonTambah
+        'ButtonKeluar
         '
-        Me.ButtonTambah.Location = New System.Drawing.Point(12, 337)
-        Me.ButtonTambah.Name = "ButtonTambah"
-        Me.ButtonTambah.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonTambah.TabIndex = 25
-        Me.ButtonTambah.Text = "Tambah"
-        Me.ButtonTambah.UseVisualStyleBackColor = True
-        '
-        'ButtonEdit
-        '
-        Me.ButtonEdit.Location = New System.Drawing.Point(93, 337)
-        Me.ButtonEdit.Name = "ButtonEdit"
-        Me.ButtonEdit.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonEdit.TabIndex = 26
-        Me.ButtonEdit.Text = "Edit"
-        Me.ButtonEdit.UseVisualStyleBackColor = True
-        '
-        'ButtonSimpan
-        '
-        Me.ButtonSimpan.Location = New System.Drawing.Point(174, 336)
-        Me.ButtonSimpan.Name = "ButtonSimpan"
-        Me.ButtonSimpan.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonSimpan.TabIndex = 27
-        Me.ButtonSimpan.Text = "Simpan"
-        Me.ButtonSimpan.UseVisualStyleBackColor = True
+        Me.ButtonKeluar.Location = New System.Drawing.Point(336, 337)
+        Me.ButtonKeluar.Name = "ButtonKeluar"
+        Me.ButtonKeluar.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonKeluar.TabIndex = 29
+        Me.ButtonKeluar.Text = "Keluar"
+        Me.ButtonKeluar.UseVisualStyleBackColor = True
         '
         'ButtonHapus
         '
@@ -449,14 +431,32 @@ Partial Class FormGuru
         Me.ButtonHapus.Text = "Hapus"
         Me.ButtonHapus.UseVisualStyleBackColor = True
         '
-        'ButtonKeluar
+        'ButtonSimpan
         '
-        Me.ButtonKeluar.Location = New System.Drawing.Point(336, 337)
-        Me.ButtonKeluar.Name = "ButtonKeluar"
-        Me.ButtonKeluar.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonKeluar.TabIndex = 29
-        Me.ButtonKeluar.Text = "Keluar"
-        Me.ButtonKeluar.UseVisualStyleBackColor = True
+        Me.ButtonSimpan.Location = New System.Drawing.Point(174, 336)
+        Me.ButtonSimpan.Name = "ButtonSimpan"
+        Me.ButtonSimpan.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonSimpan.TabIndex = 27
+        Me.ButtonSimpan.Text = "Simpan"
+        Me.ButtonSimpan.UseVisualStyleBackColor = True
+        '
+        'ButtonEdit
+        '
+        Me.ButtonEdit.Location = New System.Drawing.Point(93, 337)
+        Me.ButtonEdit.Name = "ButtonEdit"
+        Me.ButtonEdit.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonEdit.TabIndex = 26
+        Me.ButtonEdit.Text = "Edit"
+        Me.ButtonEdit.UseVisualStyleBackColor = True
+        '
+        'ButtonTambah
+        '
+        Me.ButtonTambah.Location = New System.Drawing.Point(12, 337)
+        Me.ButtonTambah.Name = "ButtonTambah"
+        Me.ButtonTambah.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonTambah.TabIndex = 25
+        Me.ButtonTambah.Text = "Tambah"
+        Me.ButtonTambah.UseVisualStyleBackColor = True
         '
         'GuruDataGridView
         '
@@ -553,7 +553,7 @@ Partial Class FormGuru
         Me.Controls.Add(Me.Label1)
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.Name = "FormGuru"
-        Me.Text = "Form Guru SMP Bunga Nusantara"
+        Me.Text = "Data Guru SMP Bunga Nusantara"
         CType(Me.Project_kel6DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GuruBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

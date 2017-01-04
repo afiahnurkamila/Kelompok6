@@ -1,19 +1,8 @@
 ﻿Public Class FormGuru
 
-    Private Sub GuruBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        Me.Validate()
-        Me.GuruBindingSource.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me.Project_kel6DataSet)
-
-    End Sub
-
-    Private Sub FormGuru_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'Project_kel6DataSet.guru' table. You can move, or remove it, as needed.
-        Me.GuruTableAdapter.Fill(Me.Project_kel6DataSet.guru)
-
-    End Sub
-
     Private Sub ButtonTambah_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonTambah.Click
+        GuruBindingSource.AddNew()
+
         NIP_GuruTextBox.Enabled = True
         NamaTextBox.Enabled = True
         AlamatTextBox.Enabled = True
@@ -56,6 +45,11 @@
     End Sub
 
     Private Sub ButtonSimpan_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonSimpan.Click
+        Me.Validate()
+        Me.GuruBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.Project_kel6DataSet)
+        MessageBox.Show("Data anda Tersimpan !!!")
+
         NIP_GuruTextBox.Enabled = True
         NamaTextBox.Enabled = True
         AlamatTextBox.Enabled = True
@@ -77,6 +71,9 @@
     End Sub
 
     Private Sub ButtonHapus_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonHapus.Click
+        GuruBindingSource.RemoveCurrent()
+        MessageBox.Show("Data Telah Terhapus !!!")
+
         NIP_GuruTextBox.Enabled = True
         NamaTextBox.Enabled = True
         AlamatTextBox.Enabled = True
@@ -99,5 +96,6 @@
 
     Private Sub ButtonKeluar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonKeluar.Click
         Me.Hide()
+        Mainform.Show()
     End Sub
 End Class
