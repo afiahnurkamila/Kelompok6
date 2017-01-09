@@ -21,6 +21,7 @@
     End Sub
 
     Private Sub LogoutToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LogoutToolStripMenuItem.Click
+        MessageBox.Show("-- Terima Kasih --")
         End
     End Sub
 End Class

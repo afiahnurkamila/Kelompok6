@@ -22,4 +22,8 @@
             TextBoxPassword.Clear()
         End If
     End Sub
+
+    Private Sub FormLogin_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        MessageBox.Show(" -- Selamat Datang di Database SMP Bunga Nusantara -- ")
+    End Sub
 End Class

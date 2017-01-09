@@ -74,7 +74,7 @@ Partial Class FormLogin
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(179, 219)
+        Me.Label4.Location = New System.Drawing.Point(181, 219)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(80, 18)
         Me.Label4.TabIndex = 3
@@ -133,21 +133,25 @@ Partial Class FormLogin
         '
         'ButtonMasuk
         '
-        Me.ButtonMasuk.Location = New System.Drawing.Point(182, 277)
+        Me.ButtonMasuk.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.ButtonMasuk.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonMasuk.Location = New System.Drawing.Point(172, 277)
         Me.ButtonMasuk.Name = "ButtonMasuk"
-        Me.ButtonMasuk.Size = New System.Drawing.Size(115, 23)
+        Me.ButtonMasuk.Size = New System.Drawing.Size(132, 23)
         Me.ButtonMasuk.TabIndex = 11
         Me.ButtonMasuk.Text = "Masuk"
-        Me.ButtonMasuk.UseVisualStyleBackColor = True
+        Me.ButtonMasuk.UseVisualStyleBackColor = False
         '
         'ButtonKeluar
         '
-        Me.ButtonKeluar.Location = New System.Drawing.Point(303, 277)
+        Me.ButtonKeluar.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.ButtonKeluar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ButtonKeluar.Location = New System.Drawing.Point(310, 277)
         Me.ButtonKeluar.Name = "ButtonKeluar"
-        Me.ButtonKeluar.Size = New System.Drawing.Size(115, 23)
+        Me.ButtonKeluar.Size = New System.Drawing.Size(132, 23)
         Me.ButtonKeluar.TabIndex = 12
         Me.ButtonKeluar.Text = "Keluar"
-        Me.ButtonKeluar.UseVisualStyleBackColor = True
+        Me.ButtonKeluar.UseVisualStyleBackColor = False
         '
         'DateTimePicker1
         '

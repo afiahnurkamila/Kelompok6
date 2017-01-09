@@ -50,6 +50,7 @@ Partial Class FormKelas
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         ID_KelasLabel = New System.Windows.Forms.Label()
         KelasLabel = New System.Windows.Forms.Label()
         NIP_GuruLabel = New System.Windows.Forms.Label()
@@ -215,48 +216,53 @@ Partial Class FormKelas
         '
         'ButtonKeluar
         '
+        Me.ButtonKeluar.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ButtonKeluar.Location = New System.Drawing.Point(115, 157)
         Me.ButtonKeluar.Name = "ButtonKeluar"
         Me.ButtonKeluar.Size = New System.Drawing.Size(75, 23)
         Me.ButtonKeluar.TabIndex = 44
         Me.ButtonKeluar.Text = "Keluar"
-        Me.ButtonKeluar.UseVisualStyleBackColor = True
+        Me.ButtonKeluar.UseVisualStyleBackColor = False
         '
         'ButtonHapus
         '
+        Me.ButtonHapus.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ButtonHapus.Location = New System.Drawing.Point(34, 157)
         Me.ButtonHapus.Name = "ButtonHapus"
         Me.ButtonHapus.Size = New System.Drawing.Size(75, 23)
         Me.ButtonHapus.TabIndex = 43
         Me.ButtonHapus.Text = "Hapus"
-        Me.ButtonHapus.UseVisualStyleBackColor = True
+        Me.ButtonHapus.UseVisualStyleBackColor = False
         '
         'ButtonSimpan
         '
+        Me.ButtonSimpan.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ButtonSimpan.Location = New System.Drawing.Point(196, 128)
         Me.ButtonSimpan.Name = "ButtonSimpan"
         Me.ButtonSimpan.Size = New System.Drawing.Size(75, 23)
         Me.ButtonSimpan.TabIndex = 42
         Me.ButtonSimpan.Text = "Simpan"
-        Me.ButtonSimpan.UseVisualStyleBackColor = True
+        Me.ButtonSimpan.UseVisualStyleBackColor = False
         '
         'ButtonEdit
         '
+        Me.ButtonEdit.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ButtonEdit.Location = New System.Drawing.Point(115, 128)
         Me.ButtonEdit.Name = "ButtonEdit"
         Me.ButtonEdit.Size = New System.Drawing.Size(75, 23)
         Me.ButtonEdit.TabIndex = 41
         Me.ButtonEdit.Text = "Edit"
-        Me.ButtonEdit.UseVisualStyleBackColor = True
+        Me.ButtonEdit.UseVisualStyleBackColor = False
         '
         'ButtonTambah
         '
+        Me.ButtonTambah.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ButtonTambah.Location = New System.Drawing.Point(34, 128)
         Me.ButtonTambah.Name = "ButtonTambah"
         Me.ButtonTambah.Size = New System.Drawing.Size(75, 23)
         Me.ButtonTambah.TabIndex = 40
         Me.ButtonTambah.Text = "Tambah"
-        Me.ButtonTambah.UseVisualStyleBackColor = True
+        Me.ButtonTambah.UseVisualStyleBackColor = False
         '
         'KelasDataGridView
         '
@@ -292,6 +298,10 @@ Partial Class FormKelas
         Me.DataGridViewTextBoxColumn4.DataPropertyName = "NIP_Siswa"
         Me.DataGridViewTextBoxColumn4.HeaderText = "NIP_Siswa"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'FormKelas
         '
@@ -337,4 +347,5 @@ Partial Class FormKelas
     Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
 End Class
