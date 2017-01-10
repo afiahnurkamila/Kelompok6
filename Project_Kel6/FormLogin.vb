@@ -22,13 +22,11 @@
             TextBoxPassword.Clear()
         End If
     End Sub
-
-<<<<<<< HEAD
-    Private Sub DateTimePicker1_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DateTimePicker1.ValueChanged
-
-=======
     Private Sub FormLogin_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         MessageBox.Show(" -- Selamat Datang di Database SMP Bunga Nusantara -- ")
->>>>>>> 0093f04a6494706c2bcc57af5b30d82ac5a14c87
+    End Sub
+
+    Private Sub DateTimePicker1_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DateTimePicker1.ValueChanged
+
     End Sub
 End Class
