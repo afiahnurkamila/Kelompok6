@@ -40,7 +40,7 @@
         ButtonTambah.Enabled = True
         ButtonEdit.Enabled = True
         ButtonSimpan.Enabled = True
-        ButtonHapus.Enabled = False
+        ButtonHapus.Enabled = True
         ButtonKeluar.Enabled = False
     End Sub
 
@@ -66,7 +66,7 @@
         ButtonTambah.Enabled = True
         ButtonEdit.Enabled = True
         ButtonSimpan.Enabled = True
-        ButtonHapus.Enabled = False
+        ButtonHapus.Enabled = True
         ButtonKeluar.Enabled = True
     End Sub
 
@@ -97,5 +97,9 @@
     Private Sub ButtonKeluar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonKeluar.Click
         Me.Hide()
         Mainform.Show()
+    End Sub
+
+    Private Sub OpenFileDialog1_FileOk(ByVal sender As System.Object, ByVal e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
+        OpenFileDialog1.ShowDialog()
     End Sub
 End Class

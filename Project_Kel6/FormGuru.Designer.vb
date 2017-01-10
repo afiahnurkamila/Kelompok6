@@ -74,6 +74,7 @@ Partial Class FormGuru
         Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         NIP_GuruLabel = New System.Windows.Forms.Label()
         NamaLabel = New System.Windows.Forms.Label()
         AlamatLabel = New System.Windows.Forms.Label()
@@ -415,48 +416,53 @@ Partial Class FormGuru
         '
         'ButtonKeluar
         '
-        Me.ButtonKeluar.Location = New System.Drawing.Point(336, 337)
+        Me.ButtonKeluar.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.ButtonKeluar.Location = New System.Drawing.Point(336, 336)
         Me.ButtonKeluar.Name = "ButtonKeluar"
         Me.ButtonKeluar.Size = New System.Drawing.Size(75, 23)
         Me.ButtonKeluar.TabIndex = 29
         Me.ButtonKeluar.Text = "Keluar"
-        Me.ButtonKeluar.UseVisualStyleBackColor = True
+        Me.ButtonKeluar.UseVisualStyleBackColor = False
         '
         'ButtonHapus
         '
-        Me.ButtonHapus.Location = New System.Drawing.Point(255, 337)
+        Me.ButtonHapus.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.ButtonHapus.Location = New System.Drawing.Point(255, 336)
         Me.ButtonHapus.Name = "ButtonHapus"
         Me.ButtonHapus.Size = New System.Drawing.Size(75, 23)
         Me.ButtonHapus.TabIndex = 28
         Me.ButtonHapus.Text = "Hapus"
-        Me.ButtonHapus.UseVisualStyleBackColor = True
+        Me.ButtonHapus.UseVisualStyleBackColor = False
         '
         'ButtonSimpan
         '
+        Me.ButtonSimpan.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ButtonSimpan.Location = New System.Drawing.Point(174, 336)
         Me.ButtonSimpan.Name = "ButtonSimpan"
         Me.ButtonSimpan.Size = New System.Drawing.Size(75, 23)
         Me.ButtonSimpan.TabIndex = 27
         Me.ButtonSimpan.Text = "Simpan"
-        Me.ButtonSimpan.UseVisualStyleBackColor = True
+        Me.ButtonSimpan.UseVisualStyleBackColor = False
         '
         'ButtonEdit
         '
+        Me.ButtonEdit.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ButtonEdit.Location = New System.Drawing.Point(93, 337)
         Me.ButtonEdit.Name = "ButtonEdit"
         Me.ButtonEdit.Size = New System.Drawing.Size(75, 23)
         Me.ButtonEdit.TabIndex = 26
         Me.ButtonEdit.Text = "Edit"
-        Me.ButtonEdit.UseVisualStyleBackColor = True
+        Me.ButtonEdit.UseVisualStyleBackColor = False
         '
         'ButtonTambah
         '
+        Me.ButtonTambah.BackColor = System.Drawing.SystemColors.ControlDark
         Me.ButtonTambah.Location = New System.Drawing.Point(12, 337)
         Me.ButtonTambah.Name = "ButtonTambah"
         Me.ButtonTambah.Size = New System.Drawing.Size(75, 23)
         Me.ButtonTambah.TabIndex = 25
         Me.ButtonTambah.Text = "Tambah"
-        Me.ButtonTambah.UseVisualStyleBackColor = True
+        Me.ButtonTambah.UseVisualStyleBackColor = False
         '
         'GuruDataGridView
         '
@@ -541,6 +547,10 @@ Partial Class FormGuru
         Me.DataGridViewTextBoxColumn12.HeaderText = "Mata_Pelajaran"
         Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'FormGuru
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -602,5 +612,6 @@ Partial Class FormGuru
     Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn11 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
 
 End Class
